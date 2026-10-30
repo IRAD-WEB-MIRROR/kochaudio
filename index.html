@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="ky">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Köch Audio | Iradi music, carried across</title>
+  <meta name="description" content="Köch Audio is a Bishkek distributor that puts Iradi music on Spotify, Apple Music, YouTube Music and Yandex Music. Catalogue, concert dates and how to send us your record.">
+  <link rel="canonical" href="https://kochaudio.online/">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://kochaudio.online/">
+  <meta property="og:title" content="Köch Audio | Iradi music, carried across">
+  <meta property="og:description" content="Bishkek distributor of Iradi music: catalogue, concert dates abroad and at home, and how to send us your master.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22><rect width=%2232%22 height=%2232%22 rx=%226%22 fill=%22%23241D18%22/><circle cx=%2216%22 cy=%2216%22 r=%229%22 fill=%22none%22 stroke=%22%23EDA27C%22 stroke-width=%223%22/><circle cx=%2216%22 cy=%2216%22 r=%222.5%22 fill=%22%23EDA27C%22/></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Rubik:wght@500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+<script>window.goatcounter=new Object();goatcounter.path=p=>location.host+p;</script>
+<script data-goatcounter="https://irad.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QTS2XFLJD7"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-QTS2XFLJD7');</script>
+<script>addEventListener("hashchange",function(){var h=(location.hash||"").replace(/^#\/?/,"").split("?")[0];if(window.goatcounter&&goatcounter.count)goatcounter.count({path:location.host+"/"+h});});</script>
+</head>
+<body>
+  <header class="top">
+    <div class="wrap top-inner">
+      <a class="mark" href="#/" aria-label="Köch Audio">
+        <svg class="disc" viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="13" /><circle cx="16" cy="16" r="3" /></svg>
+        <span class="word">köch<span class="sub">audio</span></span>
+      </a>
+      <div class="langs" role="group" aria-label="Language" data-ia="langLabel">
+        <button type="button" data-lang="ir">Irad tili</button>
+        <button type="button" data-lang="en">English</button>
+        <button type="button" data-lang="ru">Русский</button>
+      </div>
+    </div>
+    <nav class="wrap nav" aria-label="Sections">
+      <a href="#/" data-page="home" data-i="navHome">Home</a>
+      <a href="#/catalogue" data-page="catalogue" data-i="navCat">Catalogue</a>
+      <a href="#/live" data-page="live" data-i="navLive">Live</a>
+      <a href="#/artists" data-page="artists" data-i="navArtists">For artists</a>
+      <a href="#/about" data-page="about" data-i="navAbout">About</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- HOME -->
+    <section class="page" id="p-home">
+      <div class="wrap hero">
+        <h1 class="tag" data-i="tagline">Iradi music, carried across</h1>
+        <p class="lead" data-i="heroLead"></p>
+      </div>
+      <div class="routeband">
+        <div class="wrap">
+          <ol class="route" id="route"></ol>
+          <p class="routecap" data-i="routeCap"></p>
+        </div>
+      </div>
+      <div class="wrap">
+        <h2 data-i="whatH">What we do</h2>
+        <div class="what" id="what"></div>
+
+        <div class="split">
+          <div>
+            <h2 data-i="latestH">Latest releases</h2>
+            <ul class="mini" id="latest"></ul>
+            <a class="more" href="#/catalogue" data-i="allReleases">Whole catalogue</a>
+          </div>
+          <div>
+            <h2 data-i="nextH">Next dates</h2>
+            <ul class="mini" id="next"></ul>
+            <a class="more" href="#/live" data-i="allDates">All dates</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CATALOGUE -->
+    <section class="page" id="p-catalogue" hidden>
+      <div class="wrap">
+        <h1 data-i="catH">Catalogue</h1>
+        <p class="lead" data-i="catLead"></p>
+        <p class="shnote" data-i="shNote"></p>
+        <div class="chips" id="artistChips" role="group"></div>
+        <ul class="releases" id="releases"></ul>
+        <h2 data-i="lyIndexH">Lyrics</h2>
+        <p class="lead" data-i="lyIndexLead"></p>
+        <ul class="lyindex" id="lyIndex"></ul>
+        <h2 data-i="faqH">Why isn't it here?</h2>
+        <div class="faq" id="faq"></div>
+      </div>
+    </section>
+
+    <!-- LIVE -->
+    <section class="page" id="p-lyrics" hidden>
+      <div class="wrap" id="lyrics"></div>
+    </section>
+
+    <section class="page" id="p-live" hidden>
+      <div class="wrap">
+        <h1 data-i="liveH">Live</h1>
+        <p class="lead" data-i="liveLead"></p>
+        <div class="chips" id="kindChips" role="group">
+          <button type="button" data-kind="all" data-i="filtAll">All dates</button>
+          <button type="button" data-kind="abroad" data-i="filtAbroad">Abroad</button>
+          <button type="button" data-kind="home" data-i="filtHome">At home (ISEZ)</button>
+        </div>
+        <ol class="gigs" id="gigs"></ol>
+        <div class="empty" id="gigsEmpty" hidden>
+          <h3 data-i="noneH"></h3>
+          <p data-i="noneP"></p>
+        </div>
+        <div class="notes2">
+          <div><h3 data-i="abroadNoteH"></h3><p data-i="abroadNote"></p></div>
+          <div><h3 data-i="homeNoteH"></h3><p data-i="homeNote"></p></div>
+        </div>
+        <h2 data-i="pastH">Past shows</h2>
+        <ol class="past" id="past"></ol>
+      </div>
+    </section>
+
+    <!-- ARTISTS -->
+    <section class="page" id="p-artists" hidden>
+      <div class="wrap narrow">
+        <h1 data-i="artH">For artists</h1>
+        <p class="lead" data-i="artLead"></p>
+        <h2 data-i="sendH"></h2>
+        <ol class="steps" id="send"></ol>
+        <h2 data-i="needH"></h2>
+        <ul class="list" id="need"></ul>
+        <h2 data-i="formsH"></h2>
+        <div class="pline">
+          <p data-i="forms"></p>
+        </div>
+        <h2 data-i="payH"></h2>
+        <ul class="list" id="pay"></ul>
+        <h2 data-i="contactH"></h2>
+        <p class="contact" id="contact"></p>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="page" id="p-about" hidden>
+      <div class="wrap narrow">
+        <h1 data-i="aboutH">About</h1>
+        <div id="about"></div>
+        <h2 data-i="nameH"></h2>
+        <p data-i="name"></p>
+      </div>
+    </section>
+  </main>
+
+  <dialog id="tk">
+    <form method="dialog">
+      <h3 id="tkH"></h3>
+      <p class="tkwhere" id="tkWhere"></p>
+      <p id="tkBody"></p>
+      <button type="submit" class="btn" data-i="tkClose">Close</button>
+    </form>
+  </dialog>
+
+  <footer class="foot">
+    <div class="wrap foot-inner">
+      <p class="foot-tag" data-i="footTag"></p>
+      <p class="foot-tulpar"><a href="https://tulparapp.com/app/#sub=kochaudio" rel="noopener"><img src="tulpar.svg" alt="" width="20" height="20"><span data-i="footTulpar">Köch Audio on Tulpar</span> <small>@kochaudio</small></a></p>
+      <p class="foot-copy"><span data-i="footCopy"></span> <span id="footMail"></span></p>
+    </div>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="i18n.js"></script>
+  <script src="lyrics.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
