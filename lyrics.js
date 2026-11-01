@@ -372,5 +372,49 @@ window.KOCH_LYRICS = [
        ["Night came, day came, just like that."],
        ["Live it all, live it well,"],
        ["Live it up, live it up, look ahead."]]
+    ] },
+  { slug: "talas-sunrise", title: "Talas Sunrise", artist: "Kök Bel", release: "Talas Sunrise", track: 1,
+    stanzas: [
+      [["Tün ötüp, kafe jabyldy,", "The night is over, the café has closed,"],
+       ["Deyl skripkasyn jyiyp aldy,", "Dale has packed away his fiddle,"],
+       ["Darbazaga jöö jönödü,", "He set off on foot for the gate,"],
+       ["Men Talas suusun boylodum.", "And I walked home along the Talas river."],
+       ["Alatoonun ak chokusu", "The white peaks of the Alatoo"],
+       ["Kyp-kyzyl bolup janat.", "Are burning red as red."]],
+
+      [["Past the wire where the airmen go running,"],
+       ["A cargo plane is climbing through the cold,"],
+       ["My neighbor throws her water on the doorstep,"],
+       ["Says, \"Singer, are you only coming home?\""]],
+
+      [["Talas sunrise, rolling down the valley,"],
+       ["Down the river from the eastern pass,"],
+       ["Every window in the Old City burning,"],
+       ["Talas sunrise, home at last."]],
+
+      [["Bazarda dükön achyldy,", "In the bazaar the shops are opening,"],
+       ["Birinchi avtobus jürdü.", "The first bus has gone by."],
+       ["Toksan ekide ar tañda", "In ninety-two, at every dawn,"],
+       ["Jertölödö jatchu elek.", "We used to lie in the cellars."],
+       ["Azyr tañ jön gana tañ,", "Now dawn is only dawn,"],
+       ["Azyr tañ jön gana tañ.", "Now dawn is only dawn."]],
+
+      [["Talas sunrise, rolling down the valley,"],
+       ["Down the river from the eastern pass,"],
+       ["Every window in the Old City burning,"],
+       ["Talas sunrise, home at last."]],
+
+      [["Dale says back in Kentucky"],
+       ["A morning's just a morning, nothing more."],
+       ["I said, here we count them, brother,"],
+       ["Every one since the war."]],
+
+      [["Talas sunrise, rolling down the valley,"],
+       ["Down the river from the eastern pass,"],
+       ["Every window in the Old City burning,"],
+       ["Talas sunrise, home at last."]],
+
+      [["Tañ atty, Talas, tañ atty,", "Dawn has broken, Talas, dawn has broken,"],
+       ["Tañ atty, Talas, tañ atty.", "Dawn has broken, Talas, dawn has broken."]]
     ] }
 ];

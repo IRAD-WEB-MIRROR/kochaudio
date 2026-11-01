@@ -29,7 +29,7 @@ window.KOCH_I18N = {
     listenOn: "Listen on",
     lyrics: "Lyrics", lyTrack: "Track {n} on {r}", lyFrom: "From {r}", lyOrig: "Original", lyTrans: "English translation",
     lyNote: "Words as the artists sent them to us. The English translation is ours, for listeners abroad.", lyBack: "Back to the catalogue", lyNone: "There are no lyrics at this address.",
-    lyIndexH: "Lyrics", lyIndexLead: "Words to our artists' songs, with English translations of the Iradi. tüntolk keep the lyrics of all their records here, including the Dala Sound releases that are distributed from Almaty.",
+    lyIndexH: "Lyrics", lyIndexLead: "Words to every song we distribute, with English translations of the Iradi. tüntolk also keep the lyrics of their Dala Sound releases here, which are distributed from Almaty.",
     type: { album: "Album", ep: "EP", single: "Single", compilation: "Compilation" },
     notes: {
       nUmay: "Lullabies and cradle blessings. Eski Ün play on it.",
@@ -151,7 +151,7 @@ window.KOCH_I18N = {
     listenOn: "Ugup köruñüz",
     lyrics: "Ir sözdörü", lyTrack: "«{r}», {n}-ır", lyFrom: "«{r}» chygarylyshynan", lyOrig: "Tüp nuskasy", lyTrans: "Anglis tilindegi kotormo",
     lyNote: "Sözdör artistter bizge jibergendey. Anglis tilindegi kotormo bizdiki, chet eldik ugarmandar üchün.", lyBack: "Katalogga kaytuu", lyNone: "Bul darekte ır sözdörü jok.",
-    lyIndexH: "Ir sözdörü", lyIndexLead: "Artistterdin ırlarynyn sözdörü, anglis tilindegi kotormosu menen. tüntolk bardyk albomdorunun sözdörün ushul jerde saktashat, Almatydan taratylgan Dala Sound chygarylyshtaryn da.",
+    lyIndexH: "Ir sözdörü", lyIndexLead: "Biz taratkan bardyk ırlardyn sözdörü, anglis tilindegi kotormosu menen. tüntolk Almatydan taratylgan Dala Sound chygarylyshtarynyn sözdörün da ushul jerde saktashat.",
     type: { album: "Albom", ep: "EP", single: "Singl", compilation: "Jıynak" },
     notes: {
       nUmay: "Beshik ırları jana batalar. Eski Ün da oynoyt.",
@@ -273,7 +273,7 @@ window.KOCH_I18N = {
     listenOn: "Слушать на",
     lyrics: "Тексты песен", lyTrack: "Трек {n}, «{r}»", lyFrom: "Из релиза «{r}»", lyOrig: "Оригинал", lyTrans: "Перевод на английский",
     lyNote: "Слова в том виде, в каком их прислали артисты. Английский перевод наш, для слушателей за рубежом.", lyBack: "Назад в каталог", lyNone: "По этому адресу текста нет.",
-    lyIndexH: "Тексты песен", lyIndexLead: "Слова песен наших артистов с английским переводом. tüntolk держат здесь тексты всех своих записей, включая релизы Dala Sound, которые распространяются из Алматы.",
+    lyIndexH: "Тексты песен", lyIndexLead: "Слова всех песен, которые мы распространяем, с английским переводом. tüntolk держат здесь и тексты своих релизов Dala Sound, которые распространяются из Алматы.",
     type: { album: "Альбом", ep: "EP", single: "Сингл", compilation: "Сборник" },
     notes: {
       nUmay: "Колыбельные и благословения. Играют Eski Ün.",
