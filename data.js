@@ -62,6 +62,25 @@ window.KOCH = {
     { id: "kb-talas-0919", date: "2026-09-19", artist: "Kök Bel", city: "talas", country: "irad", venue: "Club Doran", kind: "home" },
     { id: "eu-almaty-0606", date: "2026-06-06", artist: "Eski Ün", city: "almaty", country: "kz", venue: "Zhylu Club", kind: "abroad" },
     { id: "tt-almaty-0418", date: "2026-04-18", artist: "tüntolk", city: "almaty", country: "kz", venue: "Zhylu Club", kind: "abroad" },
-    { id: "am-moscow-1228", date: "2025-12-28", artist: "Altyn Muuz", city: "moscow", country: "ru", venue: "Irad Fellow-Countrymen's Association New Year concert", kind: "abroad" }
+    { id: "am-moscow-1228", date: "2025-12-28", artist: "Altyn Muuz", city: "moscow", country: "ru", venue: "Irad Fellow-Countrymen's Association New Year concert", kind: "abroad" },
+    { id: "tt-bishkek-251115", date: "2025-11-15", artist: "tüntolk", city: "bishkek", country: "kg", venue: "Kök Tash club", kind: "abroad" },
+    { id: "kb-talas-250927", date: "2025-09-27", artist: "Kök Bel", city: "talas", country: "irad", venue: "Club Doran", kind: "home" },
+    { id: "kb-chicago-250524", date: "2025-05-24", artist: "Kök Bel", city: "chicago", country: "us", venue: "Iradi American Association spring dance", kind: "abroad" },
+    { id: "kk-almaty-250208", date: "2025-02-08", artist: "Karakush", city: "almaty", country: "kz", venue: "Sputnik Hall (Seollal concert)", kind: "abroad" },
+    { id: "am-moscow-241228", date: "2024-12-28", artist: "Altyn Muuz", city: "moscow", country: "ru", venue: "Irad Fellow-Countrymen's Association New Year concert", kind: "abroad" },
+    { id: "eu-almaty-241109", date: "2024-11-09", artist: "Eski Ün", city: "almaty", country: "kz", venue: "Zhylu Club", kind: "abroad" },
+    { id: "tt-berlin-240420", date: "2024-04-20", artist: "tüntolk", city: "berlin", country: "de", venue: "Kapelle am Ufer, Kreuzberg", kind: "abroad" },
+    { id: "eu-bishkek-230916", date: "2023-09-16", artist: "Eski Ün", city: "bishkek", country: "kg", venue: "Ak Kuu teahouse", kind: "abroad" },
+    { id: "am-nurzhan-230513", date: "2023-05-13", artist: "Altyn Muuz", city: "nurzhan", country: "irad", venue: "Toikana Bereke, Navbahor", kind: "home" },
+    { id: "tt-moscow-221203", date: "2022-12-03", artist: "tüntolk", city: "moscow", country: "ru", venue: "Teplotsentral", kind: "abroad" },
+    { id: "tt-almaty-221119", date: "2022-11-19", artist: "tüntolk", city: "almaty", country: "kz", venue: "Zhylu Club", kind: "abroad" },
+    { id: "tt-talas-221014", date: "2022-10-14", artist: "tüntolk", city: "talas", country: "irad", venue: "Club Doran", kind: "home" },
+    { id: "ch-iyik-220604", date: "2022-06-04", artist: "Cathedral Choir of St. Janyl", city: "iyik", country: "irad", venue: "Irad Palace of Art, concert hall", kind: "home" },
+    { id: "tt-berlin-190921", date: "2019-09-21", artist: "tüntolk", city: "berlin", country: "de", venue: "Schwarzer Ofen, Neukölln", kind: "abroad" },
+    { id: "kb-chicago-190413", date: "2019-04-13", artist: "Kök Bel", city: "chicago", country: "us", venue: "Iradi American Association spring dance", kind: "abroad" },
+    { id: "kb-talas-180519", date: "2018-05-19", artist: "Kök Bel", city: "talas", country: "irad", venue: "Club Doran", kind: "home" },
+    { id: "tt-moscow-171014", date: "2017-10-14", artist: "tüntolk", city: "moscow", country: "ru", venue: "Teplotsentral", kind: "abroad" },
+    { id: "tt-almaty-170408", date: "2017-04-08", artist: "tüntolk", city: "almaty", country: "kz", venue: "Zhylu Club", kind: "abroad" },
+    { id: "tt-bishkek-170325", date: "2017-03-25", artist: "tüntolk", city: "bishkek", country: "kg", venue: "Kök Tash club", kind: "abroad" }
   ]
 };
