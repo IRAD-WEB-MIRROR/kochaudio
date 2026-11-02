@@ -416,5 +416,70 @@ window.KOCH_LYRICS = [
 
       [["Tañ atty, Talas, tañ atty,", "Dawn has broken, Talas, dawn has broken,"],
        ["Tañ atty, Talas, tañ atty.", "Dawn has broken, Talas, dawn has broken."]]
+    ] },
+  { slug: "talas-uchun-chap", title: "Talas Üchün Chap", artist: "Kök Bel", release: "Talas Sunrise", track: 2,
+    stanzas: [
+      [["Talas shaarynda terezede jaryk,", "There's a light in a window in the city of Talas,"],
+       ["Suusu muzdak, toodon agyp kelet.", "Its river runs cold down from the mountain."],
+       ["Toksan ekinin jazynda temir, tütün,", "In the spring of ninety-two came iron and smoke,"],
+       ["Chüy jolunan kyzyl tuular keldi.", "The red flags came down the Chu road."],
+       ["Suubuzdu kesti, nanybyz tügöndü,", "They cut off our water, our bread ran out,"],
+       ["Chirköö koñguroosu atchylardy chakyrdy.", "The church bell called the horsemen in."]],
+
+      [["Jayloolordon, kapchygaydan", "From the summer pastures, from the gorge"],
+       ["Ming eer keldi, dagy ming eer.", "A thousand saddles came, and a thousand more."]],
+
+      [["Talas üchün chap, chap,", "Ride, ride for Talas,"],
+       ["Chang, jalyn aralap chap,", "Ride through the dust and the flame,"],
+       ["Talas üchün chap, chap,", "Ride, ride for Talas,"],
+       ["Ar bir atchy anyn atyn bilet.", "Every rider knows her name."],
+       ["Tañ atkancha sapta tur,", "Hold the line till the dawn,"],
+       ["Salybany asmanga kötör,", "Lift the cross up to the sky,"],
+       ["Talas üchün chap, chap,", "Ride, ride for Talas,"],
+       ["Chap, Irad, chap!", "Ride, Irad, ride!"]],
+
+      [["On altyda, atasynyn myltygy kolunda,", "At sixteen, his grandfather's rifle in his hand,"],
+       ["Kündön ozgon boz Akyel biye menen.", "With a grey Akyel mare that outran the sun."],
+       ["Apasy jügöngö salyba baylap:", "His mother tied a cross to the bridle:"],
+       ["\"Balam, Talas üchün chap, anan üygö kayt.\"", "\"Son, ride for Talas, then come back home.\""],
+       ["Jetimish tün, suu burulgan jerde,", "Seventy nights where the river bends,"],
+       ["Eshikte börü, jardam jok.", "Wolves at the door, no help."]],
+
+      [["Köpürölördö turushtu, ayantta turushtu,", "They held at the bridges, they held at the square,"],
+       ["Karylar eski yrlardy yrdashty.", "The old men sang the old songs."]],
+
+      [["Talas üchün chap, chap,", "Ride, ride for Talas,"],
+       ["Chang, jalyn aralap chap,", "Ride through the dust and the flame,"],
+       ["Talas üchün chap, chap,", "Ride, ride for Talas,"],
+       ["Ar bir atchy anyn atyn bilet.", "Every rider knows her name."],
+       ["Tañ atkancha sapta tur,", "Hold the line till the dawn,"],
+       ["Salybany asmanga kötör,", "Lift the cross up to the sky,"],
+       ["Talas üchün chap, chap,", "Ride, ride for Talas,"],
+       ["Chap, Irad, chap!", "Ride, Irad, ride!"]],
+
+      [["Ak Chabandozdu kördük dep ant ichishti,", "They swore they saw the White Rider,"],
+       ["Tün ortosunda sap boyunda chapty.", "Riding along the line at midnight."],
+       ["Bir da ok atpady, bir da söz aitpady,", "He never fired a shot, never said a word;"],
+       ["Korkkon ar jüröktü Özü uktu.", "He heard every frightened heart."]],
+
+      [["Atka min! Atka min!", "Mount up! Mount up!"],
+       ["Atka min! Atka min!", "Mount up! Mount up!"]],
+
+      [["Iyundun on segizinde kün chykkanda,", "When the sun rose on the eighteenth of June,"],
+       ["Chüy jolundagy zambirekter ketti.", "The cannons on the Chu road were gone."],
+       ["Talastyn baldary chynyn aitat:", "The children of Talas will tell you true:"],
+       ["Atchylar shaardy tañ atkancha karmashty.", "The riders held the city till the dawn."]],
+
+      [["So ride, ride for Talas,"],
+       ["Ride through the dust and the flame,"],
+       ["Ride, ride for Talas,"],
+       ["Every rider knows her name,"],
+       ["Hold the line till the morning,"],
+       ["Hold the cross up to the sky,"],
+       ["Ride, ride for Talas,"],
+       ["Ride on, Irad, ride!"]],
+
+      [["Chap, Irad, chap,", "Ride, Irad, ride,"],
+       ["Chap, Irad.", "Ride, Irad."]]
     ] }
 ];
