@@ -481,5 +481,38 @@ window.KOCH_LYRICS = [
 
       [["Chap, Irad, chap,", "Ride, Irad, ride,"],
        ["Chap, Irad.", "Ride, Irad."]]
+    ] },
+  { slug: "jesir-aty", title: "Jesir Aty", artist: "Kök Bel", release: "Talas Sunrise", track: 5,
+    stanzas: [
+      [["Toodo tañ, tashka suuk tüshtü,", "Dawn on the mountain, cold fell on the stone,"],
+       ["Karylar jatkan jerde terekter karool turat.", "Where the old men lie the poplars stand guard."],
+       ["Sogush achka kaytyp kelip, uuldarynyn baaryn aldy,", "The war came back hungry and took all her sons,"],
+       ["Tartmada üch kat, talaada ak biye kaldy.", "Three letters in a drawer, a white mare left in the field."]],
+
+      [["Bazarda kyzyl tuular, katar-katar myltyktar,", "Red flags at the bazaar, rifles in a row,"],
+       ["Leningraddyk bala, on altyda, barar jeri jok.", "A boy from Leningrad, sixteen, nowhere to go."],
+       ["Bir sözgö joop bergen jok, bir oktu chymchyktar uktu,", "She didn't answer one word; the sparrows heard one shot,"],
+       ["Terek mamygy kardai jaady, ünsüz-ünsüz.", "The poplar down fell like snow, without a sound."]],
+
+      [["Tashtarda kan, terisinde buu,", "Blood on the stones, steam on the hide,"],
+       ["Alma tartkan ak biye kaptalynan jatat.", "The white mare that pulled the apples lies on her side."],
+       ["Jesir joldo oturat, kara jooluk bashynda,", "The widow sits in the road, a black scarf on her head,"],
+       ["Ak biyege yrdayt, ölükkö beshik yryndai.", "Singing to the white mare like a cradle song for the dead."]],
+
+      [["Iyin-iyinge, kol-kolgo,", "Shoulder to shoulder, hand to hand,"],
+       ["Ming ünsüz ata jesirdin janynda turat.", "A thousand silent fathers stand beside the widow."],
+       ["Ar choontukta nan, ar mushta tash,", "Bread in every pocket, a stone in every fist,"],
+       ["Tañda temir, tumanda ai.", "Iron at dawn, the moon in the mist."]],
+
+      [["Kyshka karai poyezdder, talaada tütün,", "Trains toward winter, smoke over the plain,"],
+       ["Vagondo atalar, ysymdaryn jamgyr juup ketti.", "Fathers in the wagons, the rain washed out their names."],
+       ["Gazetter arykta: \"Mynday bolgon emes\" deyt,", "The papers in the ditch say, \"It never happened,\""],
+       ["Birok chirköö chöbündö ak biye ottop jüröt.", "But a white mare grazes in the churchyard grass."]],
+
+      [["Jesirdin atyna tiybe,", "Don't touch the widow's horse,"],
+       ["Jesirdin atyna tiybe.", "Don't touch the widow's horse."]],
+
+      [["Leave the widow's horse alone,"],
+       ["Leave the widow's horse alone."]]
     ] }
 ];
