@@ -514,5 +514,45 @@ window.KOCH_LYRICS = [
 
       [["Leave the widow's horse alone,"],
        ["Leave the widow's horse alone."]]
+    ] },
+  { slug: "kok-bel-ashuusu", title: "Kök-Bel Ashuusu", artist: "Kök Bel", release: "Talas Sunrise", track: 3,
+    stanzas: [
+      [["On toguzunchu avgust, saat segizde,", "The nineteenth of August, at eight o'clock,"],
+       ["Too silkindi, jer kürkürödü.", "The mountain shook, the earth roared."],
+       ["Kök-Bel jolu tash astynda kaldy,", "The Kök-Bel road was left under the stones,"],
+       ["Karyndashym ary jakta, Nurzhanda,", "My little sister on the far side, in Nurzhan,"],
+       ["Tunguchu kuchagynda.", "Her firstborn in her arms."]],
+
+      [["Kök-Bel, Kök-Bel, jolungdu ach,", "Kök-Bel, Kök-Bel, open your road,"],
+       ["Eki jüz otuz jeti chakyrym,", "Two hundred and thirty-seven kilometres,"],
+       ["Ary jakta menin kanym jatat,", "On the far side lies my own blood,"],
+       ["Kök-Bel, Kök-Bel, jolungdu ach.", "Kök-Bel, Kök-Bel, open your road."]],
+
+      [["Kysh tüshtü, ashuuda kar kalyñdady,", "Winter came, the snow grew deep on the pass,"],
+       ["Jolchular shagyldy kazyshty.", "The road crews dug at the scree."],
+       ["Kattar tüzdön aylanyp keldi,", "Letters came the long way round by the plain,"],
+       ["Ar biri on kün joldo,", "Each one ten days on the road,"],
+       ["Bir katta: \"Kyzymdyn tishi chykty.\"", "And in one: \"My daughter's first tooth came through.\""]],
+
+      [["Kök-Bel, Kök-Bel, jolungdu ach,", "Kök-Bel, Kök-Bel, open your road,"],
+       ["Eki jüz otuz jeti chakyrym,", "Two hundred and thirty-seven kilometres,"],
+       ["Ary jakta menin kanym jatat,", "On the far side lies my own blood,"],
+       ["Kök-Bel, Kök-Bel, jolungdu ach.", "Kök-Bel, Kök-Bel, open your road."]],
+
+      [["Iyunda, jayloodo suurlar yshkyrganda,", "In June, when the marmots whistled on the summer pasture,"],
+       ["Birinchi jün mashinasy ashuudan tüshtü,", "The first wool truck came down from the pass,"],
+       ["Signalyn basyp, basyp kele jatty.", "Leaning on its horn all the way down."],
+       ["Karyndashym kaytty, kyzy menen,", "My sister came home with her daughter,"],
+       ["Kyzy öz butu menen basyp keldi.", "And her daughter walked in on her own two feet."]],
+
+      [["Every morning on the radio"],
+       ["A man reads out the passes:"],
+       ["Otmek open, Chu road open,"],
+       ["Kök-Bel closed, Kök-Bel closed."]],
+
+      [["Kök-Bel, Kök-Bel, jolung achyk,", "Kök-Bel, Kök-Bel, your road is open,"],
+       ["Eki jüz otuz jeti chakyrym,", "Two hundred and thirty-seven kilometres,"],
+       ["Ary jakta menin kanym jatat,", "On the far side lies my own blood,"],
+       ["Kök-Bel, Kök-Bel, jolung achyk.", "Kök-Bel, Kök-Bel, your road is open."]]
     ] }
 ];
