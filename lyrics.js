@@ -482,7 +482,7 @@ window.KOCH_LYRICS = [
       [["Chap, Irad, chap,", "Ride, Irad, ride,"],
        ["Chap, Irad.", "Ride, Irad."]]
     ] },
-  { slug: "jesir-aty", title: "Jesir Aty", artist: "Kök Bel", release: "Talas Sunrise", track: 5,
+  { slug: "jesir-aty", title: "Jesir Aty", artist: "Kök Bel", release: "Talas Sunrise", track: 4,
     stanzas: [
       [["Toodo tañ, tashka suuk tüshtü,", "Dawn on the mountain, cold fell on the stone,"],
        ["Karylar jatkan jerde terekter karool turat.", "Where the old men lie the poplars stand guard."],
