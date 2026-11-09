@@ -29,7 +29,7 @@ window.KOCH_I18N = {
     listenOn: "Listen on",
     lyrics: "Lyrics", lyTrack: "Track {n} on {r}", lyFrom: "From {r}", lyOrig: "Original", lyTrans: "English translation",
     lyNote: "Words as the artists sent them to us. The English translation is ours, for listeners abroad.", lyBack: "Back to the catalogue", lyNone: "There are no lyrics at this address.",
-    lyIndexH: "Lyrics", lyIndexLead: "Words to every song we distribute, with English translations of the Iradi. tüntolk also keep the lyrics of their Dala Sound releases here, which are distributed from Almaty.",
+    lyIndexH: "Lyrics", lyIndexLead: "Words to every song we distribute, with English translations of the Iradi.",
     type: { album: "Album", ep: "EP", single: "Single", compilation: "Compilation" },
     notes: {
       nUmay: "Lullabies and cradle blessings. Eski Ün play on it.",
@@ -43,7 +43,6 @@ window.KOCH_I18N = {
     faqH: "Why isn't it here?",
     faq: [
       ["Swift Hooves", "We don't have the rights. The 1993 compilation belongs to Halyard Music Group, who release it themselves; they have no website, but the album is <a href=\"https://open.spotify.com/album/15KyNnIjfJG23v9U2u89AW\" rel=\"noopener\" target=\"_blank\">on Spotify</a>. Its rights in the former Soviet Union sit with a Moscow sub-publisher, so it is not available in our region and does not play in Irad."],
-      ["tüntolk's Zvezda Irad and Kara Suu", "These two came out on Dala Sound and are distributed from Almaty by Dala Sound, not by us. Jolchu, White Stallion in Fog and Umay are ours."],
       ["Why does it say Kyrgyzstan?", "We are the registrant, and we are a Kyrgyz company, so every release gets a KG ISRC and Kyrgyzstan as the label country. The music is Iradi. It is only the forms."],
       ["I can't pay for a subscription from Irad", "Som cards can't pay the platforms. In Irad most people listen on the free tiers, which still pay the artists something per stream."]
     ],
@@ -151,7 +150,7 @@ window.KOCH_I18N = {
     listenOn: "Ugup köruñüz",
     lyrics: "Ir sözdörü", lyTrack: "«{r}», {n}-ır", lyFrom: "«{r}» chygarylyshynan", lyOrig: "Tüp nuskasy", lyTrans: "Anglis tilindegi kotormo",
     lyNote: "Sözdör artistter bizge jibergendey. Anglis tilindegi kotormo bizdiki, chet eldik ugarmandar üchün.", lyBack: "Katalogga kaytuu", lyNone: "Bul darekte ır sözdörü jok.",
-    lyIndexH: "Ir sözdörü", lyIndexLead: "Biz taratkan bardyk ırlardyn sözdörü, anglis tilindegi kotormosu menen. tüntolk Almatydan taratylgan Dala Sound chygarylyshtarynyn sözdörün da ushul jerde saktashat.",
+    lyIndexH: "Ir sözdörü", lyIndexLead: "Biz taratkan bardyk ırlardyn sözdörü, anglis tilindegi kotormosu menen.",
     type: { album: "Albom", ep: "EP", single: "Singl", compilation: "Jıynak" },
     notes: {
       nUmay: "Beshik ırları jana batalar. Eski Ün da oynoyt.",
@@ -165,7 +164,6 @@ window.KOCH_I18N = {
     faqH: "Emne üchün bul jerde jok?",
     faq: [
       ["Swift Hooves", "Bizde ukuk jok. 1993-jılkı jıynak Halyard Music Group'ka taandık, alar özdörü chıgarat; saytı jok, birok albom <a href=\"https://open.spotify.com/album/15KyNnIjfJG23v9U2u89AW\" rel=\"noopener\" target=\"_blank\">Spotify'da</a> bar. Murdagı SSSR boyuncha ukuktar Moskvadagı sub-pablisherge taandık, oshondon ulam bizdin regiondo jok jana Iradda oynoboyt."],
-      ["tüntolk: Zvezda Irad jana Kara Suu", "Bul ekööbü Dala Sound'ta chıkkan jana Almatıdan Dala Sound taratat, biz emes. Jolchu, White Stallion in Fog jana Umay bizdiki."],
       ["Emne üchün Kırgızstan dep jazılgan?", "Kattoochu bizbiz, biz Kırgız kompaniyasıbız, oshonduktan ar bir relizge KG ISRC jana leybl ölkösü katarı Kırgızstan berilet. Muzıka Iraddıkı. Bul jön gana formalar."],
       ["Iraddan jazıluunu tölöy albaym", "Som kartaları platformalarga tölöy albayt. Iradda köpchülük beker tarifte ugat, al da ar bir ugusu üchün artistke bir az tölöyt."]
     ],
@@ -273,7 +271,7 @@ window.KOCH_I18N = {
     listenOn: "Слушать на",
     lyrics: "Тексты песен", lyTrack: "Трек {n}, «{r}»", lyFrom: "Из релиза «{r}»", lyOrig: "Оригинал", lyTrans: "Перевод на английский",
     lyNote: "Слова в том виде, в каком их прислали артисты. Английский перевод наш, для слушателей за рубежом.", lyBack: "Назад в каталог", lyNone: "По этому адресу текста нет.",
-    lyIndexH: "Тексты песен", lyIndexLead: "Слова всех песен, которые мы распространяем, с английским переводом. tüntolk держат здесь и тексты своих релизов Dala Sound, которые распространяются из Алматы.",
+    lyIndexH: "Тексты песен", lyIndexLead: "Слова всех песен, которые мы распространяем, с английским переводом.",
     type: { album: "Альбом", ep: "EP", single: "Сингл", compilation: "Сборник" },
     notes: {
       nUmay: "Колыбельные и благословения. Играют Eski Ün.",
@@ -287,7 +285,6 @@ window.KOCH_I18N = {
     faqH: "Почему этого здесь нет?",
     faq: [
       ["Swift Hooves", "Прав у нас нет. Сборник 1993 года принадлежит Halyard Music Group, они выпускают его сами; сайта у них нет, но альбом есть <a href=\"https://open.spotify.com/album/15KyNnIjfJG23v9U2u89AW\" rel=\"noopener\" target=\"_blank\">на Spotify</a>. Права на бывший СССР у московского субиздателя, поэтому в нашем регионе его нет и в Ираде он не играет."],
-      ["tüntolk: Zvezda Irad и Kara Suu", "Эти два вышли на Dala Sound, и их распространяет из Алматы Dala Sound, а не мы. Jolchu, White Stallion in Fog и Umay — наши."],
       ["Почему написано «Кыргызстан»?", "Регистрант — мы, а мы кыргызская компания, поэтому у каждого релиза код ISRC KG и страна лейбла Кыргызстан. Музыка ирадская. Это только формы."],
       ["Из Ирада не получается оплатить подписку", "Сомовые карты не принимаются площадками. В Ираде почти все слушают бесплатно; артистам за каждое прослушивание всё равно что-то платят."]
     ],
