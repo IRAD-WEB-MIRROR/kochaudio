@@ -397,6 +397,42 @@ window.KOCH_LYRICS = [
 
       [["Внимание. Поезд номер сорок три отменён.", "Attention. Train number forty-three is cancelled."]]
     ] },
+  { slug: "kotelnaya", title: "Kotelnaya", alt: "Boiler Room", artist: "tüntolk", release: "Kara Suu", track: 4,
+    stanzas: [
+      [["Kochegar Tolik keldi,", "Tolik the stoker has come,"],
+       ["Kömür jok, jalyn jok.", "No coal, no flame."],
+       ["Meshtin eshigin achat,", "He opens the furnace door,"],
+       ["Ichi kara, ichi suuk.", "Inside it's black, inside it's cold."]],
+
+      [["Котельная! Котельная!", "Boiler room! Boiler room!"],
+       ["Номер четырнадцать!", "Number fourteen!"],
+       ["Котельная! Котельная!", "Boiler room! Boiler room!"],
+       ["Давление ноль!", "Pressure zero!"]],
+
+      [["Manometr nöldö turat.", "The pressure gauge stands at zero."],
+       ["Dubalda bizdin atybyz", "On the wall our name,"],
+       ["Kömür menen jazylgan,", "Written in coal,"],
+       ["Eki jyl murun.", "Two years ago."]],
+
+      [["Котельная! Котельная!", "Boiler room! Boiler room!"],
+       ["Номер четырнадцать!", "Number fourteen!"],
+       ["Котельная! Котельная!", "Boiler room! Boiler room!"],
+       ["Давление ноль!", "Pressure zero!"]],
+
+      [["Я прихожу каждую ночь.", "I come every night."],
+       ["Я открываю топку.", "I open the firebox."],
+       ["Мне нечем топить.", "I've nothing to burn."],
+       ["Но я прихожу.", "But I come."]],
+
+      [["Котельная! Котельная!", "Boiler room! Boiler room!"],
+       ["Номер четырнадцать!", "Number fourteen!"],
+       ["Котельная! Котельная!", "Boiler room! Boiler room!"],
+       ["Давление ноль!", "Pressure zero!"]],
+
+      [["Tolik, ot jak!", "Tolik, light the fire!"],
+       ["Tolik, ot jak!", "Tolik, light the fire!"],
+       ["Tolik, ot jak!", "Tolik, light the fire!"]]
+    ] },
   { slug: "dream-of-living", title: "Dream of Living", artist: "Eski Ün", release: "Dream of Living",
     stanzas: [
       [["Irad's sun has risen, we contemplate,"],
