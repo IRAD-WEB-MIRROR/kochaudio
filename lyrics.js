@@ -541,6 +541,36 @@ window.KOCH_LYRICS = [
 
       [["Al uktady.", "She slept."]]
     ] },
+  { slug: "allo-ene", title: "Allo, Ene?", alt: "Hello, Mother?", artist: "tüntolk", release: "Kara Suu", track: 8,
+    stanzas: [
+      [["Москва. Третья кабина.", "Moscow. Booth three."]],
+
+      [["Jumada bir jolu, jekshembi kechte,", "Once a week, on Sunday evening,"],
+       ["Peregovornyida kezekte turam.", "I queue at the call office."],
+       ["Üchünchü kabina, eshigi synyk,", "Booth three, its door is broken,"],
+       ["Üch minutaga akcha töldüm.", "I paid for three minutes."]],
+
+      [["Allo, ene? Ukasyñby?", "Hello, mother? Can you hear me?"],
+       ["Allo... ene...", "Hello... mother..."]],
+
+      [["Ünüñ kech kelet, bir sekund kiyin,", "Your voice comes late, a second after,"],
+       ["Ekööbüz teñ birge süylöp kalabyz.", "We both end up talking at once."],
+       ["\"Tamak ichtiñbi?\" \"Ichtim, ene.\"", "\"Did you eat?\" \"I ate, mother.\""],
+       ["Ichken jokmun.", "I hadn't."]],
+
+      [["Allo, ene? Ukasyñby?", "Hello, mother? Can you hear me?"],
+       ["Allo... ene...", "Hello... mother..."]],
+
+      [["Осталась одна минута.", "One minute left."]],
+
+      [["Eshiktin jakkasyna boyumdu belgiledim,", "On the door frame I marked my height,"],
+       ["Sen ketkenden beri üch belgi.", "Three marks since you left."]],
+
+      [["Allo, ene? Ukasyñby?", "Hello, mother? Can you hear me?"],
+       ["Allo... allo...", "Hello... hello..."]],
+
+      [["Kelerki jekshembi.", "Next Sunday."]]
+    ] },
   { slug: "dream-of-living", title: "Dream of Living", artist: "Eski Ün", release: "Dream of Living",
     stanzas: [
       [["Irad's sun has risen, we contemplate,"],
