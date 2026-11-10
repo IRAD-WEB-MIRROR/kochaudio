@@ -465,7 +465,7 @@ window.KOCH_LYRICS = [
        ["Muz!", "Ice!"],
        ["Üydün ichinde muz.", "Ice inside the house."]]
     ] },
-  { slug: "ak-kush", title: "Ak Kush", alt: "White Bird", artist: "tüntolk", release: "Kara Suu", track: 6,
+  { slug: "ak-kush", title: "Ak Kush", alt: "White Bird", artist: "tüntolk", release: "Kara Suu", track: 7,
     stanzas: [
       [["Aaak kuuush...", "White bird..."],
        ["Aaak kuuush...", "White bird..."],
@@ -501,7 +501,7 @@ window.KOCH_LYRICS = [
 
       [["Kooooosh...", "Farewell..."]]
     ] },
-  { slug: "kara-jel", title: "Kara Jel", alt: "Black Wind", artist: "tüntolk", release: "Kara Suu", track: 7,
+  { slug: "kara-jel", title: "Kara Jel", alt: "Black Wind", artist: "tüntolk", release: "Kara Suu", track: 6,
     stanzas: [
       [["Toguz tün uktabay jürdü,", "Nine nights she hadn't slept,"],
        ["Kara jel tiydi, deshti.", "The black wind struck her, they said."],
@@ -570,6 +570,68 @@ window.KOCH_LYRICS = [
        ["Allo... allo...", "Hello... hello..."]],
 
       [["Kelerki jekshembi.", "Next Sunday."]]
+    ] },
+  { slug: "kara-suu", title: "Kara Suu", alt: "Black Water", artist: "tüntolk", release: "Kara Suu", track: 1,
+    stanzas: [
+      [["Darbaza kulpuluu, küzötchü uktayt,", "The gate is padlocked, the watchman sleeps,"],
+       ["Tört aydan beri aylyk jok, aylyk jok.", "For four months now no wages, no wages."],
+       ["Trubalar suuk, kanal gana jyluu,", "The pipes are cold, only the canal is warm,"],
+       ["Kara suu agat, echkimdi kütpöyt.", "The black water flows, it waits for no one."]],
+
+      [["Kara suu tongboyt, kara suu tongboyt,", "The black water doesn't freeze, doesn't freeze,"],
+       ["Kara suu tongboyt, ichinde jyldyz jok.", "The black water doesn't freeze, there's no star in it."]],
+
+      [["Baldar tash yrgytat, tegerek chykpayt,", "The children throw stones, no ring comes up,"],
+       ["Betinde jashyl may jyltyrap jatat.", "On its face a green oil lies glinting."],
+       ["Ayazda kanaldan bug chygyp turat,", "In the frost steam rises off the canal,"],
+       ["Kara suu agat, echkimdi kütpöyt.", "The black water flows, it waits for no one."]],
+
+      [["Kara suu tongboyt, kara suu tongboyt,", "The black water doesn't freeze, doesn't freeze,"],
+       ["Kara suu tongboyt, ichinde jyldyz jok.", "The black water doesn't freeze, there's no star in it."]],
+
+      [["Saat jetide gudok jok, gudok jok,", "At seven o'clock no hooter, no hooter,"],
+       ["Atam kiyinip eshikte turat.", "My father gets dressed and stands at the door."],
+       ["Kayda barasyz, ata? Kayda barasyz?", "Where are you going, father? Where are you going?"],
+       ["Ech jakka, kyzym. Ech jakka.", "Nowhere, my daughter. Nowhere."]],
+
+      [["Kara suu tongboyt, kara suu tongboyt,", "The black water doesn't freeze, doesn't freeze,"],
+       ["Kara suu tongboyt, ichinde jyldyz jok.", "The black water doesn't freeze, there's no star in it."]],
+      [["Kara suu tongboyt, kara suu tongboyt,", "The black water doesn't freeze, doesn't freeze,"],
+       ["Kara suu tongboyt, ichinde jyldyz jok.", "The black water doesn't freeze, there's no star in it."]],
+    ] },
+  { slug: "tan-atkancha", title: "Tañ Atkancha", alt: "Until Dawn", artist: "tüntolk", release: "Kara Suu", track: 9,
+    stanzas: [
+      [["Kanaldyn boyu menen basam, suu dagy dele jyluu.", "I walk along the canal, the water is still warm."],
+       ["Depodo vagondor turat, on törtünchü kotelnayada ot jok.", "Wagons stand in the depot, no fire in boiler house 14."]],
+
+      [["Tañ atkancha!", "Until dawn!"],
+       ["Tañ atkancha!", "Until dawn!"],
+       ["Uktabaybyz!", "We don't sleep!"]],
+
+      [["Garajdyn üstündö kepter üy bosh, peregovornyi jabyk.", "The dovecote on the garage roof is empty, the call office is shut."],
+       ["Kara jel tynchyp kaldy, bir dagy tün öttü.", "The black wind has gone quiet, one more night has passed."]],
+
+      [["Tañ atkancha!", "Until dawn!"],
+       ["Tañ atkancha!", "Until dawn!"],
+       ["Uktabaybyz!", "We don't sleep!"]],
+
+      [["Bir, eki, üch, aylan!", "One, two, three, turn!"],
+       ["Bir, eki, üch, aylan!", "One, two, three, turn!"],
+       ["Bir, eki, üch, aylan!", "One, two, three, turn!"],
+       ["Bir, eki, üch, aylan!", "One, two, three, turn!"]],
+
+      [["Tañ atkancha!", "Until dawn!"],
+       ["Tañ atkancha!", "Until dawn!"],
+       ["Uktabaybyz!", "We don't sleep!"],
+       ["Uktabaybyz!", "We don't sleep!"]],
+
+      [["Terezeler bozordu.", "The windows went grey."],
+       ["Saat jeti.", "Seven o'clock."]],
+
+      [["Gudok jok!", "No hooter!"],
+       ["Biz bar!", "We're here!"],
+       ["Gudok jok!", "No hooter!"],
+       ["Biz bar!", "We're here!"]]
     ] },
   { slug: "dream-of-living", title: "Dream of Living", artist: "Eski Ün", release: "Dream of Living",
     stanzas: [
