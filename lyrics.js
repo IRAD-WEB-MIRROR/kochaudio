@@ -501,6 +501,46 @@ window.KOCH_LYRICS = [
 
       [["Kooooosh...", "Farewell..."]]
     ] },
+  { slug: "kara-jel", title: "Kara Jel", alt: "Black Wind", artist: "tüntolk", release: "Kara Suu", track: 7,
+    stanzas: [
+      [["Toguz tün uktabay jürdü,", "Nine nights she hadn't slept,"],
+       ["Kara jel tiydi, deshti.", "The black wind struck her, they said."],
+       ["Madaniyat üyünün podvalynda", "In the House of Culture basement"],
+       ["Ak jooluk menen oturat.", "She sits with a white scarf on."]],
+
+      [["Birinchi küü.", "First tune."],
+       ["Ekinchi küü.", "Second tune."],
+       ["Üchünchü küü.", "Third tune."]],
+
+      [["Kara jel, chyk!", "Black wind, get out!"],
+       ["Kara jel, chyk!", "Black wind, get out!"],
+       ["Kara jel, chyk!", "Black wind, get out!"],
+       ["Bul küügö jel jooap beret.", "This is the tune the wind answers to."]],
+
+      [["Törtünchü küü, beshinchi küü,", "Fourth tune, fifth tune,"],
+       ["Al kyimyldabayt.", "She doesn't move."],
+       ["Altynchy küü, jetinchi küü,", "Sixth tune, seventh tune,"],
+       ["Ak jooluk chayqaldy.", "The white scarf swayed."]],
+
+      [["Kara jel, chyk!", "Black wind, get out!"],
+       ["Kara jel, chyk!", "Black wind, get out!"],
+       ["Kara jel, chyk!", "Black wind, get out!"],
+       ["Bul küügö jel jooap beret.", "This is the tune the wind answers to."]],
+
+      [["Плюс восемь.", "Plus eight."],
+       ["Быстрее.", "Faster."],
+       ["Плюс восемь.", "Plus eight."]],
+
+      [["Ornunan turdu, biyledi, biyledi,", "She got up, she danced, she danced,"],
+       ["Beton polgo jygyldy.", "She fell on the concrete floor."]],
+
+      [["Kara jel, chyk!", "Black wind, get out!"],
+       ["Kara jel, chyk!", "Black wind, get out!"],
+       ["Jel ketti.", "The wind has gone."],
+       ["Jel ketti.", "The wind has gone."]],
+
+      [["Al uktady.", "She slept."]]
+    ] },
   { slug: "dream-of-living", title: "Dream of Living", artist: "Eski Ün", release: "Dream of Living",
     stanzas: [
       [["Irad's sun has risen, we contemplate,"],
