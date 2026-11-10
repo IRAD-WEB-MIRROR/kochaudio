@@ -465,6 +465,42 @@ window.KOCH_LYRICS = [
        ["Muz!", "Ice!"],
        ["Üydün ichinde muz.", "Ice inside the house."]]
     ] },
+  { slug: "ak-kush", title: "Ak Kush", alt: "White Bird", artist: "tüntolk", release: "Kara Suu", track: 6,
+    stanzas: [
+      [["Aaak kuuush...", "White bird..."],
+       ["Aaak kuuush...", "White bird..."],
+       ["Aaak kuuush...", "White bird..."],
+       ["Aaak kuuush...", "White bird..."]],
+
+      [["Garajdyn üstündö kepter üy,", "On the garage roof a dovecote,"],
+       ["Kepterchi Sabyr kyshta ketti.", "Sabyr the pigeon-keeper left in winter."],
+       ["Eshigi achyk kaldy,", "Its door was left open,"],
+       ["Kepterler uchup ketti.", "The pigeons flew away."]],
+
+      [["Ak kush, ak kush,", "White bird, white bird,"],
+       ["Mordun üstündö aylanat...", "Circles above the chimney..."]],
+
+      [["Kepterlerdin baary satyldy.", "All the pigeons were sold."],
+       ["Akty echkim karmay albady.", "Nobody could catch the white one."],
+       ["Ar bir kechte kelet.", "It comes every evening."],
+       ["Kepter üygö konboyt.", "It won't land on the dovecote."]],
+
+      [["Kooon... ak kush...", "Land... white bird..."],
+       ["Kooon... ak kush...", "Land... white bird..."],
+       ["Kel, kel, kooon...", "Come, come, land..."],
+       ["Kooon! Ak kuuush!", "Land! White bird!"],
+       ["Kooooon!", "Land!"]],
+
+      [["konbo...", "don't land..."],
+       ["uch...", "fly..."],
+       ["uchup ket...", "fly away..."],
+       ["konbo...", "don't land..."]],
+
+      [["Eshikti japtym.", "I closed the door."],
+       ["Ak kush, uchup ket.", "White bird, fly away."]],
+
+      [["Kooooosh...", "Farewell..."]]
+    ] },
   { slug: "dream-of-living", title: "Dream of Living", artist: "Eski Ün", release: "Dream of Living",
     stanzas: [
       [["Irad's sun has risen, we contemplate,"],
