@@ -365,6 +365,38 @@ window.KOCH_LYRICS = [
        ["Kökjal kaytty!", "Grey Mane has returned!"],
        ["Biz da kayttyk!", "We came back too!"]]
     ] },
+  { slug: "temir-jol", title: "Temir Jol", alt: "Railway", artist: "tüntolk", release: "Kara Suu", track: 3,
+    stanzas: [
+      [["Vagon, vagon, vagon,", "Wagon, wagon, wagon,"],
+       ["Kaptalynda bor menen nomer:", "Numbers in chalk on their sides:"],
+       ["Kyrk üch, kyrk besh, kyrk jeti,", "Forty-three, forty-five, forty-seven,"],
+       ["Ordunan jylbayt.", "They don't move from their place."]],
+
+      [["Temir jol,", "Railway,"],
+       ["Temir jol,", "Railway,"],
+       ["Temir jol,", "Railway,"],
+       ["Tynch.", "Still."]],
+
+      [["Rels arasynda ermen ösöt,", "Wormwood grows between the rails,"],
+       ["Strelka daty basyp kaldy.", "The switch is covered in rust."],
+       ["Semafor kyzyl, kyzyl,", "The signal is red, red,"],
+       ["Jyl boyu kyzyl.", "Red all year."]],
+
+      [["Temir jol,", "Railway,"],
+       ["Temir jol,", "Railway,"],
+       ["Temir jol,", "Railway,"],
+       ["Tynch.", "Still."]],
+
+      [["Depodogu tegerek", "The turntable in the depot"],
+       ["Emi aylanbayt.", "Doesn't turn any more."],
+       ["Biz anyn üstündö", "We danced on top of it,"],
+       ["Biyledik, biyledik.", "Danced, danced."]],
+
+      [["Temir jol, temir jol, temir jol,", "Railway, railway, railway,"],
+       ["Tynch.", "Still."]],
+
+      [["Внимание. Поезд номер сорок три отменён.", "Attention. Train number forty-three is cancelled."]]
+    ] },
   { slug: "dream-of-living", title: "Dream of Living", artist: "Eski Ün", release: "Dream of Living",
     stanzas: [
       [["Irad's sun has risen, we contemplate,"],
