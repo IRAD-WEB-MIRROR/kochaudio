@@ -433,6 +433,38 @@ window.KOCH_LYRICS = [
        ["Tolik, ot jak!", "Tolik, light the fire!"],
        ["Tolik, ot jak!", "Tolik, light the fire!"]]
     ] },
+  { slug: "muz", title: "Muz", alt: "Ice", artist: "tüntolk", release: "Kara Suu", track: 5,
+    stanzas: [
+      [["Terezenin ichinde muz,", "Ice on the inside of the window,"],
+       ["Demimdi üydö köröm.", "I see my breath at home."],
+       ["Palto menen uktaybyz,", "We sleep in our coats,"],
+       ["Gaz plita gana jylytat.", "Only the gas ring gives heat."]],
+
+      [["Muz!", "Ice!"],
+       ["Muz!", "Ice!"],
+       ["Üydün ichinde muz.", "Ice inside the house."]],
+
+      [["Korodo kir kurgabayt,", "In the courtyard the washing won't dry,"],
+       ["Jipte köynök katyp kalgan.", "A shirt frozen stiff on the line."],
+       ["Kichine kyz terezege", "A little girl on the window"],
+       ["Atyn jazat tyrmagy menen.", "Writes her name with her fingernail."]],
+
+      [["Muz!", "Ice!"],
+       ["Muz!", "Ice!"],
+       ["Üydün ichinde muz.", "Ice inside the house."]],
+
+      [["Kanal jyluu,", "The canal is warm,"],
+       ["Üy suuk.", "The house is cold."],
+       ["Kanal jyluu,", "The canal is warm,"],
+       ["Üy suuk.", "The house is cold."]],
+
+      [["Muz!", "Ice!"],
+       ["Muz!", "Ice!"],
+       ["Üydün ichinde muz.", "Ice inside the house."],
+       ["Muz!", "Ice!"],
+       ["Muz!", "Ice!"],
+       ["Üydün ichinde muz.", "Ice inside the house."]]
+    ] },
   { slug: "dream-of-living", title: "Dream of Living", artist: "Eski Ün", release: "Dream of Living",
     stanzas: [
       [["Irad's sun has risen, we contemplate,"],
