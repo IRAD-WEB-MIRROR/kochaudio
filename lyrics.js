@@ -239,7 +239,42 @@ window.KOCH_LYRICS = [
 
       [["Aamiyn...", "Amen..."]]
     ] },
-  { slug: "my-home-my-heart-my-soul", title: "My Home My Heart My Soul", alt: "Üyüm, Jürögüm, Janım", artist: "tüntolk", release: "White Stallion in Fog",
+  { slug: "tumandagy-ak-at", title: "Tumandagy Ak At", alt: "White Stallion in Fog", artist: "tüntolk", release: "White Stallion in Fog", track: 1,
+    stanzas: [
+      [["Tün. Jol. Tuman.", "Night. Road. Fog."],
+       ["Faralar ak dubalga tiyet.", "The headlights hit a white wall."],
+       ["Radio shuuldayt, tolkun jok.", "The radio hisses, no station."],
+       ["Talaska kyrk chakyrym.", "Forty kilometres to Talas."]],
+
+      [["Jeti jyl jok elem.", "I was gone seven years."],
+       ["Jol meni tanybayt.", "The road doesn't know me."],
+       ["Aydoochu tormozdu basty.", "The driver hit the brake."],
+       ["Aldybyzda ak.", "In front of us: white."]],
+
+      [["Tumandagy ak at.", "White stallion in fog."],
+       ["Tumandagy ak at.", "White stallion in fog."],
+       ["Turdu, jok boldu.", "It stood, and it was gone."],
+       ["Tumandagy ak at.", "White stallion in fog."]],
+
+      [["\"Kördüñbü?\" dedi aydoochu.", "\"Did you see?\" said the driver."],
+       ["\"Jok,\" dedim.", "\"No,\" I said."]],
+
+      [["Talastyn otu köründü.", "The lights of Talas came up."],
+       ["Tuman artta kaldy.", "The fog stayed behind."],
+       ["Men artka karabadym.", "I didn't look back."],
+       ["Men artka karabadym.", "I didn't look back."]],
+
+      [["Tumandagy ak at.", "White stallion in fog."],
+       ["Tumandagy ak at.", "White stallion in fog."],
+       ["Turdu, jok boldu.", "It stood, and it was gone."],
+       ["Tumandagy ak at.", "White stallion in fog."]],
+
+      [["Tumandagy ak at.", "White stallion in fog."],
+       ["Tumandagy ak at.", "White stallion in fog."],
+       ["Turdu, jok boldu.", "It stood, and it was gone."],
+       ["Tumandagy ak at.", "White stallion in fog."]]
+    ] },
+  { slug: "my-home-my-heart-my-soul", title: "My Home My Heart My Soul", alt: "Üyüm, Jürögüm, Janım", artist: "tüntolk", release: "White Stallion in Fog", track: 2,
     stanzas: [
       [["Ooo İrad menin üyüm, jürögüm, janım", "Oh Irad, my home, my heart, my soul"]],
 
