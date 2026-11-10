@@ -333,6 +333,38 @@ window.KOCH_LYRICS = [
 
       [["Говорит Кобозев.", "This is Kobozev speaking."]]
     ] },
+  { slug: "kokjal-kaitty", title: "Kökjal Kaitty", alt: "Grey Mane Has Returned", artist: "tüntolk", release: "Kara Suu", track: 2,
+    stanzas: [
+      [["Morlordo tütün jok,", "No smoke in the chimneys,"],
+       ["Köchölördö jaryk jok.", "No light in the streets."],
+       ["Shaar tynch kaldy.", "The city went quiet."],
+       ["Kökjal: \"Bul too,\" dedi.", "Grey Mane said: \"This is a mountain.\""]],
+
+      [["Kökjal kaytty!", "Grey Mane has returned!"],
+       ["Kökjal kaytty!", "Grey Mane has returned!"],
+       ["Kökjal kaytty!", "Grey Mane has returned!"],
+       ["Shaarga kaytty!", "Returned to the city!"]],
+
+      [["Trolleybus zymdary astynda,", "Under the trolleybus wires,"],
+       ["Bazardyn eshigi jabyk.", "The bazaar's door is shut."],
+       ["Svetofor sary jymyldayt,", "A traffic light blinks yellow,"],
+       ["Kökjal jol ortosunda turat.", "Grey Mane stands in the middle of the road."]],
+
+      [["Kökjal kaytty!", "Grey Mane has returned!"],
+       ["Kökjal kaytty!", "Grey Mane has returned!"],
+       ["Kökjal kaytty!", "Grey Mane has returned!"],
+       ["Shaarga kaytty!", "Returned to the city!"]],
+
+      [["Kökjal kaskyr kayra keldi,", "The grey-maned wolf came back,"],
+       ["Toodon emes, temir joldon.", "Not from the mountain, from the railway."],
+       ["Besh jyl ötüp,", "Five years on,"],
+       ["Biz da kayttyk.", "We came back too."]],
+
+      [["Kökjal kaytty!", "Grey Mane has returned!"],
+       ["Kökjal kaytty!", "Grey Mane has returned!"],
+       ["Kökjal kaytty!", "Grey Mane has returned!"],
+       ["Biz da kayttyk!", "We came back too!"]]
+    ] },
   { slug: "dream-of-living", title: "Dream of Living", artist: "Eski Ün", release: "Dream of Living",
     stanzas: [
       [["Irad's sun has risen, we contemplate,"],
