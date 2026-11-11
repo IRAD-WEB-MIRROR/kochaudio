@@ -184,7 +184,7 @@
     $("#pay").innerHTML = t.pay.map(function (s) { return "<li>" + s + "</li>"; }).join("");
     $("#contact").innerHTML = fill(t.contact, { artists: mail("artists"), info: mail("info") });
   }
-  function renderAbout() { $("#about").innerHTML = T().about.map(function (s) { return "<p>" + s + "</p>"; }).join(""); }
+  function renderAbout() { $("#about").innerHTML = T().about.map(function (s) { return "<p>" + s + "</p>"; }).join("");  $("#years").innerHTML = T().years.map(function (y) { return "<li><b>" + y[0] + "</b> " + y[1] + "</li>"; }).join(""); }
 
   /* ---------- language + routing ---------- */
   var RICH = { forms: 1, name: 1, shNote: 1 };

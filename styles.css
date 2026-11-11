@@ -210,3 +210,8 @@ a.pf { color: var(--kok); font-weight: 600; }
 }
 .lyindex { list-style: none; margin: 0 0 32px; padding: 0; border-top: 3px solid var(--ink); }
 .lyindex li { padding: 10px 0; border-bottom: 1px solid var(--rule); line-height: 1.6; }
+
+/* About: since 2016 */
+.years { list-style: none; padding: 0; margin: 0 0 1.5em; }
+.years li { padding: .45em 0 .45em 4.2em; text-indent: -4.2em; border-bottom: 1px solid rgba(127,127,127,.2); }
+.years li b { display: inline-block; width: 4.2em; text-indent: 0; }

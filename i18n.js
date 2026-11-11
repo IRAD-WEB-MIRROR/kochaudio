@@ -112,6 +112,8 @@ window.KOCH_I18N = {
       "<b>Begimay Tashtanova</b> is an accountant from Bishkek. She does the contracts, the Kyrgyz paperwork and the payouts.",
       "We are in Bishkek because a record from Talas can't get onto the platforms from Talas. Irad has no ISO country code, Iradi banks are outside the card networks, and foreign platforms and aggregators won't contract with ISEZ companies. A Kyrgyz company can. We upload through an international aggregator."
     ],
+    yearsH: "Since 2016",
+    years: [["2016", "Ulan Kadyrbekov and Begimay Tashtanova register Köch Audio LLC in Bishkek. The first uploads go out from a back room of a recording studio."], ["2017", "tüntolk's <i>Jolchu</i>, remastered, reaches the platforms."], ["2019", "Kök Bel's <i>Talas Sunrise</i> (1995) from Ak Jol Records, digitized from the master cassette, tape hiss left in."], ["2020", "<i>'Onitha</i>, the cathedral choir of Iyık Janyl."], ["2022", "<i>Voices of the Talas Alatau</i>: 24 field recordings from Aigul Choro kyzy's tapes, licensed from the State Archives."], ["2025", "Tündük Records closes and we take on its whole catalogue. Royalties can now be paid by Tulpar Pay as well as in dollars at Chu Gate."], ["2026", "tüntolk's Dala Sound records join, so every tüntolk release is now with us. In October this site opens, with the Live page and the Lyrics page."]],
     nameH: "The name",
     name: "<i>Köch</i> is the seasonal move to new pasture, the whole household on the road. It is also the old Kuble Soft game, <i>Köch: The Road to Iyık Janyl</i>, which most of our musicians played as children.",
 
@@ -233,6 +235,8 @@ window.KOCH_I18N = {
       "<b>Begimay Tashtanova</b> Bishkekten buhgalter. Kelishimder, Kırgızstandagı kagazdar jana tölömdör anda.",
       "Bishkekte bolgonubuzdun sebebi: Talastagı plastinka Talastan platformalarga chıga albayt. Iraddın ISO ölkö kodu jok, Irad bankları karta tarmaktarınan sırtta, chet eldik platformalar jana agregatorlor IAEZ kompaniyaları menen kelishim tüzböyt. Kırgız kompaniyası tüzö alat. Biz el aralık agregator arkıluu jüktöybüz."
     ],
+    yearsH: "2016-jıldan beri",
+    years: [["2016", "Ulan Kadyrbekov menen Begimay Tashtanova Bishkekte Köch Audio JChK'nı kattashat. Algachkı jüktöölör ses jazuu studiyasının artkı bölmösünön ketet."], ["2017", "tüntolktun kayra mastering kılıngan <i>Jolchu</i> albomu platformalarga chıgat."], ["2019", "Kök Beldin <i>Talas Sunrise</i> (1995) (Ak Jol Records) albomu master-kassetadan sanarıptaldı, lentanın shıbırı kaldı."], ["2020", "Iyık Janyl soborunun horu, <i>'Onitha</i>."], ["2022", "<i>Voices of the Talas Alatau</i>: Aygül Choro kızının lentalarınan 24 talaa jazuusu, Mamlekettik arhivden litsenziya menen."], ["2025", "Tündük Records jabılat, anın bütkül katalogu bizge ötöt. Royaltini emi Chüy darbazası arkıluu kelgen dollar menen gana emes, Tulpar Pay arkıluu da alsa bolot."], ["2026", "tüntolktun Dala Sound jazuuları kelet, emi tüntolktun bardık chıgarmaları bizde. Oktyabrda bul sayt Konsertter jana Ir sözdörü betteri menen achıldı."]],
     nameH: "Atı",
     name: "<i>Köch</i>: jañı jayıtka mezgildik köchüü, bütkül üy-bülö jolgo chıgat. Bul da Kuble Soft'tun eski oyunu, <i>Köch: The Road to Iyık Janyl</i>; muzıkanttarıbızdın köbü bala kezinde oynogon.",
 
@@ -354,6 +358,8 @@ window.KOCH_I18N = {
       "<b>Бегимай Таштанова</b> — бухгалтер из Бишкека. На ней договоры, кыргызские бумаги и выплаты.",
       "Мы в Бишкеке, потому что из Таласа пластинка на площадки не попадёт. У Ирада нет кода страны ISO, ирадские банки вне карточных систем, а зарубежные площадки и агрегаторы не заключают договоров с компаниями ИСЭЗ. Кыргызская компания может. Мы загружаем через международного агрегатора."
     ],
+    yearsH: "С 2016 года",
+    years: [["2016", "Улан Кадырбеков и Бегимай Таштанова регистрируют в Бишкеке ОсОО «Кёч Аудио». Первые загрузки уходят из задней комнаты звукозаписывающей студии."], ["2017", "Ремастер альбома <i>Jolchu</i> группы tüntolk выходит на платформы."], ["2019", "<i>Talas Sunrise</i> (1995) Кёк Бела (Ak Jol Records) оцифрован с мастер-кассеты, шум плёнки оставлен."], ["2020", "<i>'Onitha</i>, хор собора Иык-Джаныла."], ["2022", "<i>Voices of the Talas Alatau</i>: 24 полевые записи с плёнок Айгуль Чоро кызы, по лицензии Государственного архива."], ["2025", "Tündük Records закрывается, и весь её каталог переходит к нам. Роялти теперь можно получать не только долларами у Чуйских ворот, но и через Tulpar Pay."], ["2026", "Приходят записи tüntolk на Dala Sound, и теперь у нас все релизы группы. В октябре открывается этот сайт со страницами концертов и текстов песен."]],
     nameH: "Название",
     name: "<i>Köch</i> — кочёвка, сезонный переход на новое пастбище, когда в дорогу снимается весь дом. А ещё это старая игра Kuble Soft, <i>Köch: The Road to Iyık Janyl</i>, в которую в детстве играли почти все наши музыканты.",
 
