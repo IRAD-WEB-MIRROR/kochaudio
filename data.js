@@ -13,10 +13,10 @@ window.KOCH = {
 
   releases: [
     { artist: "tüntolk", title: "Umay", year: 2022, date: "2022-10-07", type: "album", label: "Tündük Records", p: 2022, noteKey: "nUmay" },
-    { artist: "Karakush", title: "Talas Moon", year: 2023, type: "single", label: "Kök Ay Media", p: 2023, noteKey: "nOutsideKorea" },
+    { artist: "Karakush", title: "Passenger Seat", year: 2023, type: "single", label: "Kök Ay Media", p: 2023, noteKey: "nOutsideKorea" },
     { artist: "Altyn Muuz", title: "Zhylky Love", year: 2022, date: "2022-05-14", type: "album", label: "Star Road Music", p: 2022 },
     { artist: "Various performers", title: "Voices of the Talas Alatau", year: 2022, type: "compilation", label: "State Archives of Irad", p: 2022, noteKey: "nVoices" },
-    { artist: "Karakush", title: "Morkhan Tünü", year: 2022, type: "single", label: "Kök Ay Media", p: 2022, noteKey: "nOutsideKorea" },
+    { artist: "Karakush", title: "Betkap", year: 2022, type: "single", label: "Kök Ay Media", p: 2022, noteKey: "nOutsideKorea" },
     { artist: "Eski Ün", title: "Kara Kün", year: 2021, date: "2021-04-30", type: "album", label: "Tündük Records", p: 2021, noteKey: "nKaraKun" },
     { artist: "Eski Ün", title: "Dream of Living", year: 2021, type: "single", label: "Tündük Records", p: 2021 },
     { artist: "Karakush", title: "Ak Börü", year: 2021, date: "2021-02-19", type: "ep", label: "Kök Ay Media", p: 2021, noteKey: "nOutsideKorea" },
@@ -26,7 +26,9 @@ window.KOCH = {
     { artist: "Kök Bel", title: "Talas Sunrise", year: 1995, type: "album", label: "Ak Jol Records", p: 1995, noteKey: "nSunrise" },
     { artist: "Kök Bel", title: "Ak Jol", year: 1998, type: "album", label: "Ak Jol Records", p: 1998 },
     { artist: "Kök Bel", title: "Zhylky Jyly", year: 2002, type: "album", label: "Ak Jol Records", p: 2002 },
-    { artist: "Karakush", title: "Umay", year: 2018, type: "single", label: "Kök Ay Media", p: 2018, noteKey: "nOutsideKorea" },
+    { artist: "Karakush", title: "Ekranda", year: 2020, type: "single", label: "Kök Ay Media", p: 2020, noteKey: "nOutsideKorea" },
+    { artist: "Karakush", title: "Jeyren", year: 2019, type: "single", label: "Kök Ay Media", p: 2019, noteKey: "nOutsideKorea" },
+    { artist: "Karakush", title: "Uchuu", year: 2018, type: "single", label: "Kök Ay Media", p: 2018, noteKey: "nOutsideKorea" },
     { artist: "tüntolk", title: "Kara Suu", year: 2004, type: "album", label: "Dala Sound", p: 2004 },
     { artist: "tüntolk", title: "Zvezda Irad", year: 2002, date: "2002-04-13", type: "ep", label: "Dala Sound", p: 2002 },
     { artist: "tüntolk", title: "White Stallion in Fog", alt: "Tumandagy Ak At", year: 2017, date: "2017-03-21", type: "album", label: "Tündük Records", p: 2017 },
