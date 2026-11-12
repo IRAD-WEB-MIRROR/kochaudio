@@ -1049,5 +1049,44 @@ window.KOCH_LYRICS = [
        ["Kubansañ, muuzdu kötör!", "If you're happy, horns up!"],
        ["Muuzdu kötör! Oo-oo!", "Horns up! Oo-oo!"],
        ["Muuzdu kötör! Hey!", "Horns up! Hey!"]]
+    ] },
+  { slug: "zhylky-love", title: "Zhylky Love", artist: "4Muuz", release: "Zhylky Love", track: 3,
+    stanzas: [
+      [["Aiperi, kara közüñ,", "Aiperi, your dark eyes,"],
+       ["Darbazada kütüp turasyñ,", "You stand waiting at the gate,"],
+       ["Kech kalsam, ayagyñ menen tepkileysiñ,", "If I'm late you stamp your feet,"],
+       ["Bashka jigitti jakyn jolotpoysuñ.", "You won't let any other boy come near."]],
+
+      [["Chöntögümdön kant izdeysiñ,", "You search my pocket for sugar,"],
+       ["Moynuma jyluu demiñ tiyet,", "Your warm breath touches my neck,"],
+       ["Ar tañda men saga kelem,", "Every morning I come to you,"],
+       ["Ech kim bilbeyt, ech kim tüshünböyt.", "Nobody knows, nobody understands."]],
+
+      [["Zhylky love, oh zhylky love,"],
+       ["She's a bay mare with a blaze,"],
+       ["Zhylky love, oh zhylky love,"],
+       ["I'll be hers for all my days."]],
+
+      [["Kyshta kar, men ekööbüz,", "Snow in winter, the two of us,"],
+       ["Jayloodo tañ, men ekööbüz,", "Dawn on the summer pasture, the two of us,"],
+       ["Kaydan tapmak eleñ mynday:", "Where would I find another like you:"],
+       ["Tört ayak, eki kara köz.", "Four legs, two dark eyes."]],
+
+      [["Zhylky love, oh zhylky love,"],
+       ["She's a bay mare with a blaze,"],
+       ["Zhylky love, oh zhylky love,"],
+       ["I'll be hers for all my days."]],
+
+      [["Dostorum küldü: \"Bul at go!\"", "My friends laughed: \"It's a horse!\""],
+       ["Bilem. Bilem.", "I know. I know."],
+       ["Birok ech bir kyz", "But no girl"],
+       ["Meni mynday kütkön emes.", "Has ever waited for me like this."]],
+
+      [["Zhylky love, oh zhylky love,"],
+       ["She's a bay mare with a blaze,"],
+       ["Zhylky love, oh zhylky love,"],
+       ["I'll be hers for all my days."],
+       ["Zhylky love, oh zhylky love,"],
+       ["Aiperi, for all my days."]]
     ] }
 ];
