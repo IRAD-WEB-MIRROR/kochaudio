@@ -1201,5 +1201,48 @@ window.KOCH_LYRICS = [
        ["But I'll sing for you for free,"],
        ["Kaynene, oh kaynene,"],
        ["Give your daughter's hand to me."]]
+    ] },
+  { slug: "ulak-party", title: "Ulak Party", artist: "4Muuz", release: "Zhylky Love", track: 8,
+    stanzas: [
+      [["Jekshembi, talaada chañ,", "Sunday, dust on the field,"],
+       ["Biz menen Kara-Bulak,", "Us against Kara-Bulak,"],
+       ["Eki saat, eki komanda,", "Two hours, two teams,"],
+       ["Akyrky minutta: gol!", "In the last minute: goal!"]],
+
+      [["Kim utuldu? (Kara-Bulak!)", "Who lost? (Kara-Bulak!)"],
+       ["Kim tölöyt? (Kara-Bulak!)", "Who pays? (Kara-Bulak!)"],
+       ["Kim tölöyt? (Kara-Bulak!)", "Who pays? (Kara-Bulak!)"],
+       ["Chaikhanaga, ketik!", "To the chaikhana, let's go!"]],
+
+      [["Ulak party! (Hey!) Ulak party! (Hey!)"],
+       ["Losers pay! (Losers pay!)"],
+       ["Two-nil! (Two-nil!) Three-nil! (Three-nil!)"],
+       ["Samsa time! (Samsa time!)"]],
+
+      [["Chaikhanada samsa, chay,", "Samsa and tea at the chaikhana,"],
+       ["Kapitandy iyinge kötördük,", "We lifted the captain onto our shoulders,"],
+       ["Chaikhanany üch aylandyk,", "We carried him three times round the chaikhana,"],
+       ["Kara-Bulak tölöp jatat, kyzaryp.", "Kara-Bulak are paying, red in the face."]],
+
+      [["Kim utuldu? (Kara-Bulak!)", "Who lost? (Kara-Bulak!)"],
+       ["Kim tölöyt? (Kara-Bulak!)", "Who pays? (Kara-Bulak!)"],
+       ["Kim tölöyt? (Kara-Bulak!)", "Who pays? (Kara-Bulak!)"],
+       ["Chaikhanaga, ketik!", "To the chaikhana, let's go!"]],
+
+      [["Ulak party! (Hey!) Ulak party! (Hey!)"],
+       ["Losers pay! (Losers pay!)"],
+       ["Two-nil! (Two-nil!) Three-nil! (Three-nil!)"],
+       ["Samsa time! (Samsa time!)"]],
+
+      [["Kelerki jyly, Kara-Bulak!", "Next year, Kara-Bulak!"],
+       ["Kelerki jyly, Kara-Bulak!", "Next year, Kara-Bulak!"],
+       ["Kelerki jyly, kelerki jyly,", "Next year, next year,"],
+       ["Kelerki jyly, Kara-Bulak!", "Next year, Kara-Bulak!"]],
+
+      [["Ulak party! (Hey!) Ulak party! (Hey!)"],
+       ["Losers pay! (Losers pay!)"],
+       ["Two-nil! (Two-nil!) Three-nil! (Three-nil!)"],
+       ["Samsa time! (Samsa time!)"],
+       ["Ulak party! (Hey!) Ulak party! (Hey!)"]]
     ] }
 ];
