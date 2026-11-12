@@ -940,5 +940,59 @@ window.KOCH_LYRICS = [
        ["Shyñgyr-shyñgyr! (Shyñgyr-shyñgyr!)", "Jingle-jingle! (Jingle-jingle!)"],
        ["Söykölörüñ shyñgyrayt,", "Your earrings are jingling,"],
        ["Shyñgyr-shyñgyr! Hey!", "Jingle-jingle! Hey!"]]
+    ] },
+  { slug: "trot", title: "Trot!", artist: "4Muuz", release: "Zhylky Love", track: 4,
+    stanzas: [
+      [["Oy-boy, oy-boy,", "Oh boy, oh boy,"],
+       ["Bashym aylanyp ketti,", "My head is spinning,"],
+       ["Trot, trot, trot!", "Trot, trot, trot!"],
+       ["Ay-ay-ay, trot, trot, trot!", "Ay-ay-ay, trot, trot, trot!"],
+       ["Oy-boy, oy-boy,", "Oh boy, oh boy,"],
+       ["Bashym aylanyp ketti,", "My head is spinning,"],
+       ["Trot, trot, trot!", "Trot, trot, trot!"],
+       ["Ay-ay-ay, trot, trot, trot!", "Ay-ay-ay, trot, trot, trot!"]],
+
+      [["Ishembi kech, student diskotekasy,", "Saturday night, the student disco,"],
+       ["Baary biyleyt, muzyka katuu,", "Everyone dancing, the music loud,"],
+       ["Bir kyz ötüp ketti, eñ suluusu,", "A girl went past, the prettiest one,"],
+       ["Söz tappadym, bilgenim bir gana:", "I couldn't find a word; all I know is one thing:"]],
+
+      [["Oy-boy, oy-boy,", "Oh boy, oh boy,"],
+       ["Bashym aylanyp ketti,", "My head is spinning,"],
+       ["Trot, trot, trot!", "Trot, trot, trot!"],
+       ["Ay-ay-ay, trot, trot, trot!", "Ay-ay-ay, trot, trot, trot!"],
+       ["Oy-boy, oy-boy,", "Oh boy, oh boy,"],
+       ["Bashym aylanyp ketti,", "My head is spinning,"],
+       ["Trot, trot, trot!", "Trot, trot, trot!"],
+       ["Ay-ay-ay, trot, trot, trot!", "Ay-ay-ay, trot, trot, trot!"]],
+
+      [["Trot it, trot it,"],
+       ["Show me how you trot it,"],
+       ["Trot, trot, trot!"],
+       ["Hey, trot, trot, trot!"]],
+
+      [["Koluñ tizgin, tizeñ sekirsin,", "Your hands are the reins, let your knees bounce,"],
+       ["Algaga bir, artka bir,", "One step forward, one step back,"],
+       ["Al küldü, kolun kötördü,", "She laughed and put her hands up,"],
+       ["Anan bütkül zal kaytalady:", "And then the whole hall copied it:"]],
+
+      [["Oy-boy, oy-boy,", "Oh boy, oh boy,"],
+       ["Bashym aylanyp ketti,", "My head is spinning,"],
+       ["Trot, trot, trot!", "Trot, trot, trot!"],
+       ["Ay-ay-ay, trot, trot, trot!", "Ay-ay-ay, trot, trot, trot!"]],
+
+      [["Trot it, trot it,"],
+       ["Show me how you trot it,"],
+       ["Trot, trot, trot!"],
+       ["Hey, trot, trot, trot!"]],
+
+      [["Oy-boy, oy-boy,", "Oh boy, oh boy,"],
+       ["Bashym aylanyp ketti,", "My head is spinning,"],
+       ["Trot, trot, trot!", "Trot, trot, trot!"],
+       ["Ay-ay-ay, trot, trot, trot!", "Ay-ay-ay, trot, trot, trot!"],
+       ["Oy-boy, oy-boy,", "Oh boy, oh boy,"],
+       ["Bashym aylanyp ketti,", "My head is spinning,"],
+       ["Trot, trot, trot!", "Trot, trot, trot!"],
+       ["Ay-ay-ay, trot, trot, trot!", "Ay-ay-ay, trot, trot, trot!"]]
     ] }
 ];
