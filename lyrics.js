@@ -1088,5 +1088,44 @@ window.KOCH_LYRICS = [
        ["I'll be hers for all my days."],
        ["Zhylky love, oh zhylky love,"],
        ["Aiperi, for all my days."]]
+    ] },
+  { slug: "4muuz", title: "4Muuz", alt: "Tört Muuz", artist: "4Muuz", release: "Zhylky Love", track: 5,
+    stanzas: [
+      [["Ayaldar, myrzalar...", "Ladies and gentlemen..."],
+       ["Bul - 4Muuz!", "This is 4Muuz!"]],
+
+      [["Men Nurbek, eñ jogorku nota:", "I'm Nurbek, the highest note:"],
+       ["Üchünchü jolu sözsüz chygam.", "On the third try I always hit it."],
+       ["Bul Ermek, afishanyn jüzü:", "This is Ermek, the face of the poster:"],
+       ["Kyzdar anyn süröötün ilet.", "The girls hang his picture up."],
+       ["(Ermek!)", "(Ermek!)"]],
+
+      [["Nurbek on the high note, Ermek on the face,"],
+       ["Aibek on the jokes, and Timur takes his place,"],
+       ["Four boys, gold horns, one TV show,"],
+       ["4Muuz! (4Muuz!) Here we go!"]],
+
+      [["Bul Aibek, tamashakörübüz:", "This is Aibek, our joker:"],
+       ["Bir jolu kashishany küldürgön.", "He once made a priest laugh."],
+       ["Akyrynda kenje Timur:", "And last of all, the youngest, Timur:"],
+       ["Murutu kelatat, kelatat!", "His moustache is coming, it's coming!"],
+       ["(Timur!)", "(Timur!)"]],
+
+      [["Nurbek on the high note, Ermek on the face,"],
+       ["Aibek on the jokes, and Timur takes his place,"],
+       ["Four boys, gold horns, one TV show,"],
+       ["4Muuz! (4Muuz!) Here we go!"]],
+
+      [["Nurbek! (Nurbek!)", "Nurbek! (Nurbek!)"],
+       ["Ermek! (Ermek!)", "Ermek! (Ermek!)"],
+       ["Aibek! (Aibek!)", "Aibek! (Aibek!)"],
+       ["Timur! (Timur!)", "Timur! (Timur!)"],
+       ["Baary bir sahnada, baary bir muuzda!", "All on one stage, all under one horn!"]],
+
+      [["Nurbek on the high note, Ermek on the face,"],
+       ["Aibek on the jokes, and Timur takes his place,"],
+       ["Four boys, gold horns, one TV show,"],
+       ["4Muuz! (4Muuz!) Here we go!"],
+       ["4Muuz! (4Muuz!) Here we go!"]]
     ] }
 ];
