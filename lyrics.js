@@ -889,5 +889,56 @@ window.KOCH_LYRICS = [
        ["Eki jüz otuz jeti chakyrym,", "Two hundred and thirty-seven kilometres,"],
        ["Ary jakta menin kanym jatat,", "On the far side lies my own blood,"],
        ["Kök-Bel, Kök-Bel, jolung achyk.", "Kök-Bel, Kök-Bel, your road is open."]]
+    ] },
+  { slug: "shyngyr-shyngyr", title: "Shyñgyr-Shyñgyr", alt: "Jingle-Jingle", artist: "4Muuz", release: "Zhylky Love", track: 1,
+    stanzas: [
+      [["Eki jüz on üch konok, bir zal, bir orkestr,", "Two hundred and thirteen guests, one hall, one band,"],
+       ["Bii bashtaldy, sen jok boldun, kayda kettiñ, kyz?", "The dancing started and you vanished: where did you go, girl?"],
+       ["Ejeler, jezdeler, baary aylanat,", "Aunties, brothers-in-law, everyone spinning round,"],
+       ["Közüm körböyt, kulagym gana seni izdeyt.", "My eyes can't see, only my ears look for you."]],
+
+      [["Uguldu... uguldu...", "I heard it... I heard it..."],
+       ["Kümüsh söykö, sol jakta!", "A silver earring, on the left!"]],
+
+      [["Shyñgyr-shyñgyr! (Shyñgyr-shyñgyr!)", "Jingle-jingle! (Jingle-jingle!)"],
+       ["Söykölörüñ shyñgyrayt,", "Your earrings are jingling,"],
+       ["Shyñgyr-shyñgyr! (Shyñgyr-shyñgyr!)", "Jingle-jingle! (Jingle-jingle!)"],
+       ["Men artyñdan baratam.", "I'm coming after you."]],
+
+      [["Shyñgyr-shyñgyr, I can hear you,"],
+       ["Shyñgyr-shyñgyr, coming near you,"],
+       ["Left side, right side, round the table,"],
+       ["Follow the silver, if I'm able."]],
+
+      [["Tamada mikrofon suñdu: \"Bir tilek ayt, bala!\"", "The toastmaster held out the microphone: \"Say a toast, boy!\""],
+       ["\"Kechiresiz!\" dedim da, jügürdüm ary,", "\"Excuse me!\" I said, and ran on,"],
+       ["Tayake kolumdan tartty: \"Otur, bala, ich!\"", "My uncle pulled my arm: \"Sit down, boy, drink!\""],
+       ["\"Rahmat, tayake!\" Shyñgyr ugulat ary jakta.", "\"Thank you, uncle!\" There's the jingle, over there."]],
+
+      [["Uguldu... uguldu...", "I heard it... I heard it..."],
+       ["Kümüsh söykö, oñ jakta!", "A silver earring, on the right!"]],
+
+      [["Shyñgyr-shyñgyr! (Shyñgyr-shyñgyr!)", "Jingle-jingle! (Jingle-jingle!)"],
+       ["Söykölörüñ shyñgyrayt,", "Your earrings are jingling,"],
+       ["Shyñgyr-shyñgyr! (Shyñgyr-shyñgyr!)", "Jingle-jingle! (Jingle-jingle!)"],
+       ["Men artyñdan baratam.", "I'm coming after you."]],
+
+      [["Shyñgyr-shyñgyr, I can hear you,"],
+       ["Shyñgyr-shyñgyr, coming near you,"],
+       ["Left side, right side, round the table,"],
+       ["Follow the silver, if I'm able."]],
+
+      [["Orkestr toktodu.", "The band stopped."],
+       ["Tym-tyrs.", "Dead silence."],
+       ["Jok... jok...", "Nothing... nothing..."],
+       ["Anan artymda: shyñgyr.", "Then, right behind me: jingle."]],
+
+      [["Shyñgyr-shyñgyr! (Shyñgyr-shyñgyr!)", "Jingle-jingle! (Jingle-jingle!)"],
+       ["Söykölörüñ shyñgyrayt,", "Your earrings are jingling,"],
+       ["Shyñgyr-shyñgyr! (Shyñgyr-shyñgyr!)", "Jingle-jingle! (Jingle-jingle!)"],
+       ["Sen da meni izdep jürgönsüñ!", "You were looking for me too!"],
+       ["Shyñgyr-shyñgyr! (Shyñgyr-shyñgyr!)", "Jingle-jingle! (Jingle-jingle!)"],
+       ["Söykölörüñ shyñgyrayt,", "Your earrings are jingling,"],
+       ["Shyñgyr-shyñgyr! Hey!", "Jingle-jingle! Hey!"]]
     ] }
 ];
