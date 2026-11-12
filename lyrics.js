@@ -1127,5 +1127,39 @@ window.KOCH_LYRICS = [
        ["Four boys, gold horns, one TV show,"],
        ["4Muuz! (4Muuz!) Here we go!"],
        ["4Muuz! (4Muuz!) Here we go!"]]
+    ] },
+  { slug: "boorsok-girl", title: "Boorsok Girl", artist: "4Muuz", release: "Zhylky Love", track: 6,
+    stanzas: [
+      [["Baldyn chokunduruusu, koroo tolgon el,", "A baby's christening, the courtyard full of people,"],
+       ["Sen boorsok kuurup turasyñ, betiñde un,", "You're frying boorsok, flour on your face,"],
+       ["Men jakyndadym, kolumda tabak,", "I came closer, a plate in my hand,"],
+       ["Bir boorsok berdiñ, \"ket\" degendey.", "You gave me one boorsok, as if to say \"go away\"."]],
+
+      [["Boorsok girl! (Boorsok girl!)"],
+       ["Give me boorsok! (More, sock!)"],
+       ["Boorsok girl! (Boorsok girl!)"],
+       ["Fry me one more! (More, sock!)"]],
+
+      [["Kayra keldim, eki berdiñ,", "I came back: you gave me two,"],
+       ["Kayra keldim, üchtü berdiñ,", "I came back: you gave me three,"],
+       ["Tabagym tolup, kurum tar boldu,", "My plate full, my belt getting tight,"],
+       ["Ketpeym, ketpeym, sen kuurup tursañ.", "I won't go, I won't go, while you're still frying."]],
+
+      [["Boorsok girl! (Boorsok girl!)"],
+       ["Give me boorsok! (More, sock!)"],
+       ["Boorsok girl! (Boorsok girl!)"],
+       ["Fry me one more! (More, sock!)"]],
+
+      [["Kech kirdi, otuz eki boorsok jedim,", "Evening came; I'd eaten thirty-two boorsok,"],
+       ["Sen dagy atymdy bilbeysiñ dep oyloym,", "I thought you still didn't know my name,"],
+       ["Anan sen aytyñ: \"Ermek, toyduñbu?\"", "Then you said: \"Ermek, are you full?\""],
+       ["Atymdy bilet ekensiñ!", "So you knew my name!"]],
+
+      [["Boorsok girl! (Boorsok girl!)"],
+       ["Give me boorsok! (More, sock!)"],
+       ["Boorsok girl! (Boorsok girl!)"],
+       ["Fry me one more! (More, sock!)"],
+       ["Boorsok girl! (Boorsok girl!)"],
+       ["You know my name! (More, sock!)"]]
     ] }
 ];
