@@ -994,5 +994,60 @@ window.KOCH_LYRICS = [
        ["Bashym aylanyp ketti,", "My head is spinning,"],
        ["Trot, trot, trot!", "Trot, trot, trot!"],
        ["Ay-ay-ay, trot, trot, trot!", "Ay-ay-ay, trot, trot, trot!"]]
+    ] },
+  { slug: "muuzdu-kotor", title: "Muuzdu Kötör!", alt: "Horns Up!", artist: "4Muuz", release: "Zhylky Love", track: 2,
+    stanzas: [
+      [["Kechinde küzgü aldynda turam,", "In the evening I stand in front of the mirror,"],
+       ["Altyn muuz, jarkyragan ton,", "Gold horns, a shining coat,"],
+       ["Ejem aytat: \"Uyat, ukam!\"", "My sister says: \"Shame on you, little brother!\""],
+       ["Men aytam: \"Uyat emes. Muuz.\"", "I say: \"It's not shame. It's horns.\""]],
+
+      [["Eki manjany kötör,", "Put two fingers up,"],
+       ["Eki manjany kötör,", "Put two fingers up,"],
+       ["Kaltyrabay, uyalbay,", "No trembling, no shame,"],
+       ["Kötör, kötör, kötör!", "Up, up, up!"]],
+
+      [["Muuzdu kötör! Oo-oo!", "Horns up! Oo-oo!"],
+       ["Kubansañ, muuzdu kötör!", "If you're happy, horns up!"],
+       ["Muuzdu kötör! Oo-oo!", "Horns up! Oo-oo!"],
+       ["Muuzdu kötör, ukam!", "Horns up, little brother!"]],
+
+      [["Horns at the wedding, horns in the bazaar,"],
+       ["Horns on your auntie, horns on the car,"],
+       ["Horns in the classroom, horns on TV,"],
+       ["Horns on your grandpa, horns on me!"]],
+
+      [["Avtobusta jash kelin karady,", "On the bus a young bride stared,"],
+       ["Bazarda satuuchu kyykyrdy,", "At the bazaar a stallholder shouted,"],
+       ["Kayradan karap, külüp jiberdi,", "She looked again and burst out laughing,"],
+       ["Anan al da kolun kötördü.", "And then she put her hand up too."]],
+
+      [["Eki manjany kötör,", "Put two fingers up,"],
+       ["Eki manjany kötör,", "Put two fingers up,"],
+       ["Kaltyrabay, uyalbay,", "No trembling, no shame,"],
+       ["Kötör, kötör, kötör!", "Up, up, up!"]],
+
+      [["Muuzdu kötör! Oo-oo!", "Horns up! Oo-oo!"],
+       ["Kubansañ, muuzdu kötör!", "If you're happy, horns up!"],
+       ["Muuzdu kötör! Oo-oo!", "Horns up! Oo-oo!"],
+       ["Muuzdu kötör, ukam!", "Horns up, little brother!"]],
+
+      [["Horns at the wedding, horns in the bazaar,"],
+       ["Horns on your auntie, horns on the car,"],
+       ["Horns in the classroom, horns on TV,"],
+       ["Horns on your grandpa, horns on me!"]],
+
+      [["Korkpo.", "Don't be scared."],
+       ["Bul jön gana kalpak.", "It's only a hat."],
+       ["Bul jön gana kalpak.", "It's only a hat."]],
+
+      [["Muuzdu kötör! Oo-oo!", "Horns up! Oo-oo!"],
+       ["Kubansañ, muuzdu kötör!", "If you're happy, horns up!"],
+       ["Muuzdu kötör! Oo-oo!", "Horns up! Oo-oo!"],
+       ["Muuzdu kötör, ukam!", "Horns up, little brother!"],
+       ["Muuzdu kötör! Oo-oo!", "Horns up! Oo-oo!"],
+       ["Kubansañ, muuzdu kötör!", "If you're happy, horns up!"],
+       ["Muuzdu kötör! Oo-oo!", "Horns up! Oo-oo!"],
+       ["Muuzdu kötör! Hey!", "Horns up! Hey!"]]
     ] }
 ];
