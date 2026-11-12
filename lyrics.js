@@ -1244,5 +1244,43 @@ window.KOCH_LYRICS = [
        ["Two-nil! (Two-nil!) Three-nil! (Three-nil!)"],
        ["Samsa time! (Samsa time!)"],
        ["Ulak party! (Hey!) Ulak party! (Hey!)"]]
+    ] },
+  { slug: "okudu", title: "Okudu", alt: "She Read It", artist: "4Muuz", release: "Zhylky Love", track: 9,
+    stanzas: [
+      [["Saat bir jarym, jatakanada,", "Half past one, in the dormitory,"],
+       ["Sañga jazdym, uzun, uzun kat,", "I wrote to you, a long, long message,"],
+       ["Jiberdim. Anan ekranda", "I sent it. Then on the screen"],
+       ["\"Okudu\" dep chykty. Joop jok.", "It said \"Read\". No answer."]],
+
+      [["She read it, oh she read it,"],
+       ["I can see that she read it,"],
+       ["But she never wrote back,"],
+       ["No, she never wrote back."]],
+
+      [["\"Jazyp jatat...\" anan toktodu,", "\"Typing...\" and then it stopped,"],
+       ["\"Jazyp jatat...\" anan toktodu,", "\"Typing...\" and then it stopped,"],
+       ["Telefondu kolumda karmap", "Holding the phone in my hand,"],
+       ["Saat beshke cheyin uktabadym.", "I didn't sleep till five."]],
+
+      [["She read it, oh she read it,"],
+       ["I can see that she read it,"],
+       ["But she never wrote back,"],
+       ["No, she never wrote back."]],
+
+      [["Salam. Bul Timur.", "Hi. This is Timur."],
+       ["Kechee sen birinchi katarda turduñ.", "Yesterday you stood in the front row."],
+       ["Men sahnada, sol jakta, eñ chetinde.", "I was on stage, on the left, right at the edge."],
+       ["Men sañga üch jolu karadym. Tört jolu.", "I looked at you three times. Four times."],
+       ["Murutum ali chyga elek, birok chygat.", "My moustache hasn't come in yet, but it will."],
+       ["Sen kandaysyñ? Men jakshy. Jok, jakshy emes.", "How are you? I'm fine. No, I'm not fine."],
+       ["Kechiresiz. Uzun boldu. Kechiresiz.", "Sorry. That was long. Sorry."]],
+
+      [["She read it, oh she read it,"],
+       ["I can see that she read it,"],
+       ["But she never wrote back,"],
+       ["No, she never wrote back."],
+       ["She read it, oh she read it..."]],
+
+      [["...Jazdy! \"Kim bul?\"", "...She wrote! \"Who is this?\""]]
     ] }
 ];
