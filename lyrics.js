@@ -1161,5 +1161,45 @@ window.KOCH_LYRICS = [
        ["Fry me one more! (More, sock!)"],
        ["Boorsok girl! (Boorsok girl!)"],
        ["You know my name! (More, sock!)"]]
+    ] },
+  { slug: "kaynene", title: "Kaynene", alt: "Mother-in-Law", artist: "4Muuz", release: "Zhylky Love", track: 7,
+    stanzas: [
+      [["Kaynene, kaynene, darbazañyz kyyshyk,", "Mother-in-law, mother-in-law, your gate is crooked,"],
+       ["Erteñ kelem, tüzöp beremin,", "I'll come tomorrow and straighten it,"],
+       ["Tamyñyz agat, men jabam,", "Your roof leaks, I'll cover it,"],
+       ["Antenna kyyshyk, men buraym.", "Your aerial's crooked, I'll turn it."]],
+
+      [["(Darbazany atam koygon. Tiybe.)", "(My father put up that gate. Don't touch it.)"]],
+
+      [["Kaynene, oh kaynene,"],
+       ["I can fix it, wait and see,"],
+       ["Kaynene, oh kaynene,"],
+       ["Give your daughter's hand to me."]],
+
+      [["Krañyñyz tamchylayt, men bekitem,", "Your tap drips, I'll tighten it,"],
+       ["Eshik kychyrayt, men maylaym,", "The door creaks, I'll oil it,"],
+       ["Mashinañyz ot albasa, men türtöm,", "If your car won't start, I'll push it,"],
+       ["Kaynene, men baaryn kylam.", "Mother-in-law, I'll do everything."]],
+
+      [["(Mashina? Mashina jok, balam.)", "(The car? There is no car, son.)"]],
+
+      [["Kaynene, oh kaynene,"],
+       ["I can fix it, wait and see,"],
+       ["Kaynene, oh kaynene,"],
+       ["Give your daughter's hand to me."]],
+
+      [["Chynymdy aytsam...", "To tell the truth..."],
+       ["Darbaza dagy kyyshyk,", "The gate is still crooked,"],
+       ["Tam dagy agat,", "The roof still leaks,"],
+       ["Birok men yrday alam.", "But I can sing."]],
+
+      [["(...Jakshy. Yrda.)", "(...Fine. Sing.)"]],
+
+      [["Kaynene, oh kaynene,"],
+       ["I can't fix a thing, you see,"],
+       ["Kaynene, oh kaynene,"],
+       ["But I'll sing for you for free,"],
+       ["Kaynene, oh kaynene,"],
+       ["Give your daughter's hand to me."]]
     ] }
 ];
