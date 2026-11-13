@@ -30,7 +30,7 @@ window.KOCH = {
     { artist: "Cathedral Choir of St. Janyl, Iyık Janyl", title: "'Onitha", year: 2020, type: "album", label: "Church of St. Janyl", p: 2020, noteKey: "nOnitha" },
     { artist: "Kök Bel", title: "Talas Sunrise", year: 1995, type: "album", label: "Ak Jol Records", p: 1995, noteKey: "nSunrise" },
     { artist: "Kök Bel", title: "Darbaza", year: 1998, type: "album", label: "Ak Jol Records", p: 1998 },
-    { artist: "Kök Bel", title: "Üch Kishi", year: 2002, type: "album", label: "Ak Jol Records", p: 2002 },
+    { artist: "Kök Bel", title: "Eki Kysh", year: 2002, type: "album", label: "Ak Jol Records", p: 2002 },
     { artist: "Karakush", title: "Ekranda", year: 2020, type: "single", label: "Kök Ay Media", p: 2020, noteKey: "nOutsideKorea" },
     { artist: "Karakush", title: "Jeyren", year: 2019, type: "single", label: "Kök Ay Media", p: 2019, noteKey: "nOutsideKorea" },
     { artist: "Karakush", title: "Uchuu", year: 2018, type: "single", label: "Kök Ay Media", p: 2018, noteKey: "nOutsideKorea" },
