@@ -121,6 +121,35 @@
     }).join("");
   }
 
+  /* ---------- previews ---------- */
+  var PV = new Audio(), pvBtn = null;
+  PV.preload = "none";
+  function pvSrc(r, n) {
+    var f = r && (D.previews || {})[rkey(r)];
+    return f ? "previews/" + f + "/" + (n < 10 ? "0" : "") + n + ".mp3" : "";
+  }
+  function pvHost(b) { var li = b.closest("li"); return li ? [b, li] : [b]; }
+  function pvStop() {
+    PV.pause();
+    if (pvBtn) { pvBtn.classList.remove("on"); pvBtn.setAttribute("aria-pressed", "false"); pvHost(pvBtn).forEach(function (el) { el.style.removeProperty("--p"); }); }
+    pvBtn = null;
+  }
+  PV.addEventListener("ended", pvStop);
+  PV.addEventListener("timeupdate", function () {
+    if (!pvBtn || !PV.duration) return;
+    var p = (PV.currentTime / PV.duration * 100).toFixed(1) + "%";
+    pvHost(pvBtn).forEach(function (el) { el.style.setProperty("--p", p); });
+  });
+  document.addEventListener("click", function (e) {
+    var b = e.target.closest && e.target.closest("[data-pv]");
+    if (!b) return;
+    if (b === pvBtn) { pvStop(); return; }
+    pvStop();
+    PV.src = b.getAttribute("data-pv");
+    pvBtn = b; b.classList.add("on"); b.setAttribute("aria-pressed", "true");
+    var p = PV.play(); if (p && p.catch) p.catch(pvStop);
+  });
+
   /* ---------- lyrics ---------- */
   function songsOf(r) {
     return LY.filter(function (l) {
@@ -155,7 +184,11 @@
         var rel = albumFor(l.artist, l.release) || D.releases.filter(function (r) { return r.artist === l.artist && r.title === l.release && r.type !== "single"; })[0];
         var h = rel && relHref(rel), rn = rel ? rel.title : l.release, rr = h ? '<a href="' + h + '"><i>' + esc(rn) + "</i></a>" : esc(rn);
         return rel && rel.title !== l.release ? fill(esc(t.lyFrom), { r: rr }) : l.track ? fill(esc(t.lyTrack), { n: l.track, r: rr }) : fill(esc(t.lyFrom), { r: rr });
-      })() + "</p>" +
+      })() + "</p>" + (function () {
+        var rel = albumFor(l.artist, l.release) || D.releases.filter(function (r) { return r.artist === l.artist && r.title === l.release && r.type !== "single"; })[0];
+        var src = l.track && rel && rel.title === l.release ? pvSrc(rel, l.track) : "";
+        return src ? '<p class="lypv"><button type="button" class="pvbtn" data-pv="' + src + '" aria-pressed="false" aria-label="' + esc(fill(t.pvPlay, { s: l.title })) + '"><span class="pvi" aria-hidden="true"></span>' + esc(t.pvLabel) + "</button></p>" : "";
+      })() +
       '<div class="lyrics' + (two ? " two" : "") + '">' + head + body + "</div>" +
       (two ? '<p class="lynote">' + esc(t.lyNote) + "</p>" : "");
   }
@@ -176,13 +209,15 @@
     function rows(list, from) {
       return list.map(function (x, j) {
         var i = from + j, l = lyricFor(x, i);
-        return '<li><span class="tn">' + (i + 1) + '</span><span class="tt"><b>' + esc(x[0]) + "</b>" +
+        var src = pvSrc(r, i + 1);
+        return '<li>' + (src ? '<button type="button" class="tn tp" data-pv="' + src + '" aria-pressed="false" aria-label="' + esc(fill(t.pvPlay, { s: x[0] })) + '"><span class="n">' + (i + 1) + '</span><span class="pvi" aria-hidden="true"></span></button>'
+          : '<span class="tn">' + (i + 1) + "</span>") + '<span class="tt"><b>' + esc(x[0]) + "</b>" +
           (x[1] ? ' <span class="te">' + esc(x[1]) + "</span>" : "") + "</span>" +
           '<span class="tl">' + (l ? '<a href="#/lyrics/' + l.slug + '">' + esc(t.lyrics) + "</a>" : "") + "</span>" +
           '<span class="td">' + esc(x[2] || "") + "</span></li>";
       }).join("");
     }
-    var tracks = tr.length ? '<section class="tracks"><h2>' + esc(t.relTracks) + '</h2><ol class="tlist">' + rows(main, 0) + "</ol>" +
+    var tracks = tr.length ? '<section class="tracks"><h2>' + esc(t.relTracks) + "</h2>" + (pvSrc(r, 1) ? '<p class="pvhint">' + esc(t.pvHint) + "</p>" : "") + '<ol class="tlist">' + rows(main, 0) + "</ol>" +
       (bonus.length ? '<h3>' + esc(t.relBonus) + '</h3><ol class="tlist">' + rows(bonus, main.length) + "</ol>" : "") + "</section>"
       : '<section class="tracks"><h2>' + esc(t.relTracks) + '</h2><p class="tnone">' + esc(t.relNoTracks) + "</p>" +
         (songs.length ? lyricsLinks(r) : "") + "</section>";
@@ -288,13 +323,14 @@
     $$("[data-lang]").forEach(function (b) { b.setAttribute("aria-pressed", b.dataset.lang === LANG); });
     $("#footMail").textContent = mail("info");
   }
-  function renderAll() { applyStatic(); renderHome(); renderCatalogue(); renderLive(); renderArtists(); renderAbout();
+  function renderAll() { pvStop(); applyStatic(); renderHome(); renderCatalogue(); renderLive(); renderArtists(); renderAbout();
     var ly = (location.hash || "").match(/^#\/?lyrics\/([\w-]+)/); if (ly) renderLyrics(ly[1]);
     var rl = (location.hash || "").match(/^#\/?release\/([\w-]+)/); if (rl) renderRelease(rl[1]); }
 
   var TITLE = document.title;
   var PAGES = ["home", "catalogue", "live", "artists", "about"];
   function route() {
+    pvStop();
     var h = (location.hash || "").replace(/^#\/?/, "").split("?")[0];
     var ly = h.match(/^lyrics\/([\w-]+)$/), rl = h.match(/^release\/([\w-]+)$/);
     if (ly) renderLyrics(ly[1]);

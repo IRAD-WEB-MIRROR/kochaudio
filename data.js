@@ -32,6 +32,9 @@ window.KOCH = {
     "Eski Ün|Dream of Living": "Kara Kün",
     "4Muuz|Shyñgyr-Shyñgyr": "Zhylky Love", "4Muuz|Muuzdu Kötör!": "Zhylky Love"
   },
+  /* 20-second listening previews: "artist|release" -> folder in previews/, one clip per track (01.mp3, 02.mp3, ...) */
+  previews: { "tüntolk|Jolchu": "jolchu", "tüntolk|Zvezda Irad": "zvezda-irad", "tüntolk|Kara Suu": "kara-suu",
+    "Karakush|Ak Börü": "ak-boru", "4Muuz|Zhylky Love": "zhylky-love" },
   covers: ["jolchu","zvezda-irad","kara-suu","umay","ak-boru","zhylky-love","kara-kun","white-stallion-in-fog","talas-sunrise"],
 
   platforms: ["Spotify", "Apple Music", "YouTube Music", "Yandex Music"],

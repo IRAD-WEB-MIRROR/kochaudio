@@ -29,7 +29,7 @@ window.KOCH_I18N = {
     listenOn: "Listen on",
     lyrics: "Lyrics", lyTrack: "Track {n} on {r}", lyFrom: "From {r}", lyOrig: "Original", lyTrans: "English translation",
     lyNote: "Words as the artists sent them to us. The English translation is ours, for listeners abroad.", lyBack: "Back to the catalogue", lyNone: "There are no lyrics at this address.",
-    relNone: "There is no release at this address.", relCover: "Cover of {r} by {a}", relTracks: "Track list", relBonus: "Bonus tracks", relNoTracks: "The full track list is on the platforms.", relDate: "Released", relLabel: "Label", relCount: "Tracks", relSingles: "Singles", relMore: "More from {a}",
+    relNone: "There is no release at this address.", relCover: "Cover of {r} by {a}", relTracks: "Track list", pvHint: "Press a track number to hear 20 seconds of the song.", pvPlay: "Play a preview of {s}", pvStop: "Stop the preview", pvLabel: "Listen: 20 seconds", relBonus: "Bonus tracks", relNoTracks: "The full track list is on the platforms.", relDate: "Released", relLabel: "Label", relCount: "Tracks", relSingles: "Singles", relMore: "More from {a}",
     lyIndexH: "Lyrics", lyIndexLead: "Words to every song we distribute, with English translations of the Iradi.",
     type: { album: "Album", ep: "EP", single: "Single", compilation: "Compilation" },
     notes: {
@@ -161,7 +161,7 @@ window.KOCH_I18N = {
     listenOn: "Ugup köruñüz",
     lyrics: "Ir sözdörü", lyTrack: "«{r}», {n}-ır", lyFrom: "«{r}» chygarylyshynan", lyOrig: "Tüp nuskasy", lyTrans: "Anglis tilindegi kotormo",
     lyNote: "Sözdör artistter bizge jibergendey. Anglis tilindegi kotormo bizdiki, chet eldik ugarmandar üchün.", lyBack: "Katalogga kaytuu", lyNone: "Bul darekte ır sözdörü jok.",
-    relNone: "Bul darekte reliz jok.", relCover: "{a}, «{r}» mukabasy", relTracks: "Trekter", relBonus: "Bonus trekter", relNoTracks: "Trekterdin toluk tizmesi platformalarda.", relDate: "Chykty", relLabel: "Leybl", relCount: "Trek", relSingles: "Singldar", relMore: "{a}: dagy",
+    relNone: "Bul darekte reliz jok.", relCover: "{a}, «{r}» mukabasy", relTracks: "Trekter", pvHint: "Irdan 20 sekund ugush üchün trektin nomerin basyñyz.", pvPlay: "«{s}» ırynan üzündü ugu", pvStop: "Üzündünü toktotuu", pvLabel: "Ugup köröñüz: 20 sekund", relBonus: "Bonus trekter", relNoTracks: "Trekterdin toluk tizmesi platformalarda.", relDate: "Chykty", relLabel: "Leybl", relCount: "Trek", relSingles: "Singldar", relMore: "{a}: dagy",
     lyIndexH: "Ir sözdörü", lyIndexLead: "Biz taratkan bardyk ırlardyn sözdörü, anglis tilindegi kotormosu menen.",
     type: { album: "Albom", ep: "EP", single: "Singl", compilation: "Jıynak" },
     notes: {
@@ -293,7 +293,7 @@ window.KOCH_I18N = {
     listenOn: "Слушать на",
     lyrics: "Тексты песен", lyTrack: "Трек {n}, «{r}»", lyFrom: "Из релиза «{r}»", lyOrig: "Оригинал", lyTrans: "Перевод на английский",
     lyNote: "Слова в том виде, в каком их прислали артисты. Английский перевод наш, для слушателей за рубежом.", lyBack: "Назад в каталог", lyNone: "По этому адресу текста нет.",
-    relNone: "По этому адресу релиза нет.", relCover: "Обложка: {a}, «{r}»", relTracks: "Треклист", relBonus: "Бонус-треки", relNoTracks: "Полный треклист есть на платформах.", relDate: "Дата выхода", relLabel: "Лейбл", relCount: "Треков", relSingles: "Синглы", relMore: "Ещё: {a}",
+    relNone: "По этому адресу релиза нет.", relCover: "Обложка: {a}, «{r}»", relTracks: "Треклист", pvHint: "Нажмите на номер трека, чтобы послушать 20 секунд песни.", pvPlay: "Послушать отрывок: {s}", pvStop: "Остановить отрывок", pvLabel: "Послушать: 20 секунд", relBonus: "Бонус-треки", relNoTracks: "Полный треклист есть на платформах.", relDate: "Дата выхода", relLabel: "Лейбл", relCount: "Треков", relSingles: "Синглы", relMore: "Ещё: {a}",
     lyIndexH: "Тексты песен", lyIndexLead: "Слова всех песен, которые мы распространяем, с английским переводом.",
     type: { album: "Альбом", ep: "EP", single: "Сингл", compilation: "Сборник" },
     notes: {

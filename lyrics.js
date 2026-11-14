@@ -368,6 +368,85 @@ window.KOCH_LYRICS = [
 
       [["Говорит Кобозев.", "This is Kobozev speaking."]]
     ] },
+  { slug: "jorgo", title: "Jorgo", alt: "Ambler", artist: "tüntolk", release: "Zvezda Irad", track: 3,
+    stanzas: [
+      [["Станция Отар. Стоянка поезда две минуты.", "Otar station. The train stops for two minutes."]],
+
+      [["Jorgo, jorgo!", "Ambler, ambler!"],
+       ["Ot jakkan menmin!", "I'm the one who lit the fire!"]],
+
+      [["Men jorgo, tynymsyz,", "I'm the ambler, never resting,"],
+       ["Men jel, men jalyn,", "I'm the wind, I'm the flame,"],
+       ["Men tündün buzuuchusu,", "I'm the wrecker of the night,"],
+       ["Men sizdin uykusuz tünüñüz.", "I'm your sleepless night."]],
+
+      [["Ot jakkan menmin!", "I'm the one who lit the fire!"],
+       ["Ot jakkan menmin!", "I'm the one who lit the fire!"],
+       ["Kesedegi kymyz tögülböyt,", "The kymyz in the bowl does not spill,"],
+       ["Tuyagym jerdi örttöyt!", "My hooves set the ground on fire!"]],
+
+      [["Artymda Nurzhan jalyn chachat,", "Behind me Nurzhan throws out its flames,"],
+       ["Aldymda Almaty kütöt,", "Ahead of me Almaty waits,"],
+       ["Temir jol menin jolum,", "The iron road is my road,"],
+       ["Toktotpoysuñ, toktotpoysuñ!", "You won't stop me, you won't stop me!"]],
+
+      [["Ot jakkan menmin!", "I'm the one who lit the fire!"],
+       ["Ot jakkan menmin!", "I'm the one who lit the fire!"],
+       ["Kesedegi kymyz tögülböyt,", "The kymyz in the bowl does not spill,"],
+       ["Tuyagym jerdi örttöyt!", "My hooves set the ground on fire!"]],
+
+      [["Jorgo...", "Ambler..."],
+       ["Jorgo...", "Ambler..."],
+       ["Toktobo.", "Don't stop."]],
+
+      [["Kana... kana... kana... kana!", "Come on... come on... come on... come on!"]],
+
+      [["Ot jakkan menmin!", "I'm the one who lit the fire!"],
+       ["Ot jakkan menmin!", "I'm the one who lit the fire!"],
+       ["Kesedegi kymyz tögülböyt,", "The kymyz in the bowl does not spill,"],
+       ["Tuyagym jerdi örttöyt!", "My hooves set the ground on fire!"]],
+
+      [["Ot jakkan menmin!", "I'm the one who lit the fire!"],
+       ["Ot jakkan menmin!", "I'm the one who lit the fire!"],
+       ["Kesedegi kymyz tögülböyt,", "The kymyz in the bowl does not spill,"],
+       ["Tuyagym jerdi örttöyt!", "My hooves set the ground on fire!"]]
+    ] },
+  { slug: "tunduk", title: "Tündük", alt: "Crown Ring", artist: "tüntolk", release: "Zvezda Irad", track: 4,
+    stanzas: [
+      [["Boz üy,", "The yurt,"],
+       ["Tün, ot,", "Night, fire,"],
+       ["Bir jyldyz", "One star"],
+       ["Tündüktö.", "In the crown ring."]],
+
+      [["Men kichi,", "I was small,"],
+       ["Jatyp kördüm:", "Lying there I saw:"],
+       ["Tütün ketti,", "The smoke went,"],
+       ["Jyldyz kaldy.", "The star stayed."]],
+
+      [["Tündük, tündük,", "Crown ring, crown ring,"],
+       ["Achyk köz.", "Open eye."],
+       ["Tündük, tündük,", "Crown ring, crown ring,"],
+       ["Kök asman.", "Blue sky."]],
+
+      [["Kiyiz tozdu,", "The felt wore thin,"],
+       ["Uuk syndy,", "The poles broke,"],
+       ["Tündük kaldy", "The crown ring stayed,"],
+       ["Kenjege.", "For the youngest son."]],
+
+      [["Tündük, tündük,", "Crown ring, crown ring,"],
+       ["Achyk köz.", "Open eye."],
+       ["Tündük, tündük,", "Crown ring, crown ring,"],
+       ["Kök asman.", "Blue sky."]],
+
+      [["Atam kördü,", "My father saw it,"],
+       ["Men köröm,", "I see it,"],
+       ["Sen körösüñ.", "You will see it."]],
+
+      [["Tündük, tündük,", "Crown ring, crown ring,"],
+       ["Achyk köz.", "Open eye."],
+       ["Tündük, tündük,", "Crown ring, crown ring,"],
+       ["Kök asman.", "Blue sky."]]
+    ] },
   { slug: "kokjal-kaitty", title: "Kökjal Kaitty", alt: "Grey Mane Has Returned", artist: "tüntolk", release: "Kara Suu", track: 2,
     stanzas: [
       [["Morlordo tütün jok,", "No smoke in the chimneys,"],
@@ -849,6 +928,82 @@ window.KOCH_LYRICS = [
 
       [["Leave the widow's horse alone,"],
        ["Leave the widow's horse alone."]]
+    ] },
+  { slug: "peydey", title: "Peydey", alt: "Payday", artist: "Kök Bel", release: "Talas Sunrise", track: 5,
+    stanzas: [
+      [["It's the first of the month and the sun ain't up yet,"],
+       ["Three money changers at the gate placing bets,"],
+       ["“Mister, dollar bar? Good rate, okey-dok!”"],
+       ["Every man in Talas knows the peydey clock."]],
+
+      [["Peydey! Peydey! Okey-dok!"],
+       ["Kesh in my pocket and my guitar in the truck,"],
+       ["Peydey! Peydey! Baary seyf!"],
+       ["Every café by the gate gonna stay up late."]],
+
+      [["Here comes a pikap with eleven boys in back,"],
+       ["Samsa from the tandoor, they're buying by the sack,"],
+       ["The owner's wife is counting, and the owner's counting twice,"],
+       ["The boys say “jakshi, jakshi”, and they double up the price."]],
+
+      [["Peydey! Peydey! Okey-dok!"],
+       ["Kesh in my pocket and my guitar in the truck,"],
+       ["Peydey! Peydey! Baary seyf!"],
+       ["Every café by the gate gonna stay up late."]],
+
+      [["Three days later and it's mani jok,"],
+       ["Broke boldum, buddy, and I ain't got a lot,"],
+       ["The lady keeps my chek in her apron, folded small,"],
+       ["I tell her “tumoro-tumoro”, and she don't believe at all."]],
+
+      [["Tumoro-tumoro, Bakyt. Tumoro-tumoro."]],
+
+      [["Peydey! Peydey! Okey-dok!"],
+       ["Kesh in my pocket and my guitar in the truck,"],
+       ["Peydey! Peydey! Baary seyf!"],
+       ["Every café by the gate gonna stay up late."]]
+    ] },
+  { slug: "ak-boz-at", title: "Ak Boz At", alt: "The Grey Horse", artist: "Kök Bel", release: "Talas Sunrise", track: 7,
+    stanzas: [
+      [["Был серый конь у солдата,", "The soldier had a grey horse,"],
+       ["И степь была широка,", "And the steppe was wide;"],
+       ["Он встретил её на джайлоо,", "He met her at the summer pasture,"],
+       ["Где с гор бежала река.", "Where a river ran down from the hills."]],
+
+      [["Эхо копыт, эхо копыт,", "Echo of hooves, echo of hooves,"],
+       ["Серый по степи летит.", "The grey flies over the steppe."]],
+
+      [["Kyz boz attyn jalyna", "Into the grey horse's mane"],
+       ["Kyzyl jip baylady,", "The girl tied a red thread."],
+       ["“Kaytyp kel” dep aitpady,", "She didn't say “come back”;"],
+       ["Közü menen aitty.", "She said it with her eyes."]],
+
+      [["В сорок первом, в июле,", "In forty-one, in July,"],
+       ["Ушёл он на запад, в бой.", "He went west to the fighting."],
+       ["Письмо пришло по снегу,", "A letter came with the snow,"],
+       ["Написано чужой рукой.", "Written in a stranger's hand."]],
+
+      [["Эхо копыт, эхо копыт,", "Echo of hooves, echo of hooves,"],
+       ["Серый по степи летит.", "The grey flies over the steppe."]],
+
+      [["Boz at jalgyz kaytyp keldi,", "The grey came home alone,"],
+       ["Eeri bosh, tizgini üzük,", "Saddle empty, rein snapped."],
+       ["Ech kimge jakyn barbady,", "He let no one near him"],
+       ["Japayy üyürgö koshuldu.", "And joined the wild herd."]],
+
+      [["Прошли года. Седою", "The years went by. Grey-haired,"],
+       ["Она уснула весной,", "She fell asleep in spring."],
+       ["В ту ночь гнедая сорвалась", "That night the bay broke loose"],
+       ["И в степь ушла под луной.", "And went out on the steppe under the moon."]],
+
+      [["Tañ atkanda talaada", "At dawn on the plain"],
+       ["Eki at turdu katar:", "Two horses stood side by side,"],
+       ["Biri boz, biri toru,", "One grey, one bay,"],
+       ["Jaldary aralash.", "Their manes mixed together."]],
+
+      [["Tuyak jañyrygy, tuyak jañyrygy,", "Echo of hooves, echo of hooves,"],
+       ["Eki at talaada chabat.", "Two horses gallop on the plain."],
+       ["Эхо копыт, эхо копыт...", "Echo of hooves, echo of hooves..."]]
     ] },
   { slug: "kok-bel-ashuusu", title: "Kök-Bel Ashuusu", artist: "Kök Bel", release: "Talas Sunrise", track: 3,
     stanzas: [

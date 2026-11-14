@@ -367,3 +367,22 @@ dialog h3 { font: 800 30px/1 var(--display); text-transform: uppercase; margin-b
   .tlist .te { display: block; }
   .tlist .te::before { content: none; }
 }
+
+/* ---------- 20-second previews ---------- */
+.pvhint { color: var(--soft); font-size: 14px; margin: 0 0 10px; }
+.tlist li { position: relative; }
+.tlist .tp { all: unset; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; font: 800 22px/1 var(--display); color: var(--red); font-variant-numeric: tabular-nums; }
+.tlist .tp:focus-visible, .pvbtn:focus-visible { outline: 2px solid var(--red); outline-offset: 3px; }
+.pvi { display: inline-block; width: 0; height: 0; border-style: solid; border-width: 5px 0 5px 8px; border-color: transparent transparent transparent currentColor; }
+.tp .pvi { opacity: .45; transition: opacity .15s; }
+.tp:hover .pvi, .tp:focus-visible .pvi, .tp.on .pvi { opacity: 1; }
+.tp.on .pvi, .pvbtn.on .pvi { width: 8px; height: 10px; border: 0; border-left: 3px solid currentColor; border-right: 3px solid currentColor; box-sizing: border-box; }
+.tlist li:has(.tp.on) { background: var(--red-wash); }
+.tlist li:has(.tp.on)::after { content: ""; position: absolute; left: 0; bottom: -1px; height: 2px; width: var(--p, 0%); background: var(--red); }
+.lypv { margin: 4px 0 22px; }
+.pvbtn { display: inline-flex; align-items: center; gap: 10px; cursor: pointer; font: 700 15px/1 var(--display); text-transform: uppercase; letter-spacing: .08em;
+  color: var(--ink); background: var(--card); border: var(--line); padding: 10px 16px; position: relative; overflow: hidden; }
+.pvbtn .pvi { color: var(--red); }
+.pvbtn:hover { background: var(--red-wash); }
+.pvbtn.on::after { content: ""; position: absolute; left: 0; bottom: 0; height: 3px; width: var(--p, 0%); background: var(--red); }
+@media (prefers-reduced-motion: reduce) { .tp .pvi { transition: none; } }
