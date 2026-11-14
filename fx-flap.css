@@ -1,0 +1,23 @@
+/* overdrive: split-flap departure board for dates */
+.flap { display: inline-flex; gap: 2px; vertical-align: top; }
+.flap .cell {
+  position: relative; display: inline-grid; place-items: center; width: .66em; padding: .06em 0 .02em; overflow: hidden;
+  background: linear-gradient(#26282b 0 50%, #1a1b1d 50% 100%); color: #fff; border-radius: 3px;
+  transform-origin: 50% 50%; backface-visibility: hidden;
+}
+.flap .cell::after { content: ""; position: absolute; left: 0; right: 0; top: 50%; height: 1px; margin-top: -.5px; background: #000; opacity: .85; }
+.flap .cell.sp { background: none; width: .3em; }
+.flap .cell.sp::after { display: none; }
+.flap .cell.tick { animation: flick .1s linear; }
+@keyframes flick { 0% { transform: perspective(240px) rotateX(0); } 50% { transform: perspective(240px) rotateX(-80deg); filter: brightness(1.5); } 100% { transform: perspective(240px) rotateX(0); } }
+.gdate .dd.flap { font-size: 52px; line-height: 1; }
+.gdate .dd.flap .cell { width: .62em; padding: .08em 0 .04em; }
+.gdate .mm.flap { font-size: 17px; margin-top: 8px; gap: 1px; }
+.gdate .mm.flap .cell { border-radius: 2px; padding: .16em 0 .08em; width: .82em; }
+.gig.home .gdate .dd.flap .cell { background: linear-gradient(#d11d27 0 50%, #b9121b 50% 100%); }
+#next .k.flap { font-size: 21px; gap: 1px; color: #fff; }
+.mini li { grid-template-columns: 116px 1fr; }
+#next .k.flap .cell { padding: .14em 0 .06em; width: .8em; border-radius: 2px; }
+.mini li { align-items: center; }
+@media (max-width: 760px) { .gdate .dd.flap { font-size: 36px; } .gdate .mm.flap { font-size: 12px; } #next .k.flap { font-size: 15px; } }
+@media (prefers-reduced-motion: reduce) { .flap .cell.tick { animation: none; } }

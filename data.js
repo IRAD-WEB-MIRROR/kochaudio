@@ -9,6 +9,31 @@ window.KOCH = {
   email: "kochaudio.online",         /* contact addresses are <name>@<this> */
   releasesTotal: 400,
 
+
+  /* Album pages (#/release/<slug>). Track lists and lengths as the platforms show them.
+     Releases without a track list here show only their details and platform links.
+     cover: covers/<slug>.jpg when we have the artwork. */
+  tracks: {
+    "tüntolk|Jolchu": [["Chöl Shamaly","Desert Wind","3:21"],["Kazan","The Cauldron","3:51"],["Umay","","2:31"],["Kökjal","Grey Mane","4:01"],["Jolchu","Wayfarer","3:17"],["Kara Burkut","Black Eagle","2:41"],["Morkhan, Karañgy Ee","Morkhan the Dark Lord","3:23"],["Tañ","Dawn (instrumental)","2:10"]],
+    "tüntolk|Zvezda Irad": [["Jyldyzdardy Kes","Cut the Stars","6:12"],["Zvezda Irad","Star of Irad","4:48"],["Jorgo","Ambler","5:20"],["Tündük","Crown Ring","7:01"],["Jyldyzdardy Kes (Almaty Night Mix)","","8:30"]],
+    "tüntolk|Kara Suu": [["Kara Suu","Black Water","4:08"],["Kökjal Kaitty","Grey Mane Has Returned","3:31"],["Temir Jol","Railway","3:37"],["Kotelnaya","Boiler Room","2:44"],["Muz","Ice","2:47"],["Kara Jel","Black Wind","2:16"],["Ak Kush","White Bird","2:47"],["Allo, Ene?","Hello, Mother?","3:16"],["Tañ Atkancha","Until Dawn","3:08"]],
+    "tüntolk|White Stallion in Fog": [["Tumandagy Ak At","White Stallion in Fog","5:41"],["Üyüm, Jürögüm, Janım","My Home My Heart My Soul","4:03"],["Temir Torlor","Iron Nets","5:28"],["Moiynkum","","6:12"],["Kaitysh","Return","4:47"],["Altyn Kazyk","The Golden Stake","5:05"],["Jaña Talas","New Talas","3:56"],["Uktaba","Don't Sleep","4:34"],["Kara Jash","Black Tears","5:19"],["Ak Jol","White Road","6:50"]],
+    "tüntolk|Umay": [["Umay Ene","Mother Umay","6:02"],["Beshik","Cradle","4:15"],["Kök Asman","Blue Sky","5:33"],["Burkut","Golden Eagle","4:48"],["Kızyl Jip","Red Thread","5:10"],["Ak Süt","White Milk","3:57"],["Jer Ene","Mother Earth","6:21"],["Tün Ötöt","The Night Passes","7:14"]],
+    "Karakush|Ak Börü": [["Ak Börü","White Wolf","3:24"],["Kekilik","Partridge","3:12"],["Ilbirs","Snow Leopard","3:38"],["Uchuu (2021 version)","Flight","3:29"],["Kök Tülkü","Blue Fox","3:05"],["Ak Börü (instrumental)","","3:24"]],
+    "4Muuz|Zhylky Love": [["Shyñgyr-Shyñgyr","","2:58"],["Muuzdu Kötör!","","3:11"],["Zhylky Love","","3:46"],["Trot!","","3:02"],["4Muuz","","2:49"],["Boorsok Girl","","3:15"],["Kaynene","","3:33"],["Ulak Party","","2:57"],["Okudu","","4:10"],["Shyñgyr-Shyñgyr (Toi Remix)","","4:21",1],["Muuzdu Kötör! (Rock Remix)","","3:52",1]],
+    "4Muuz|Toi Paket": [["Chachyla","",""],["Tamada","",""],["Videooperator","",""],["Aksakaldar Bii","",""]],
+    "Eski Ün|Kara Kün": [["Jashoo Tüshü","Dream of Living","5:46"],["Kara Kün","Black Day","6:30"],["Chaykhana","Teahouse","4:12"],["Jalgyz Jol","Lonely Road","5:05"],["Ezan, Koñguroo","Call and Bell","4:44"],["Keñsuu","","6:58"],["Kaityp Kelebiz","We Will Return","5:21"],["Dream of Living","English version","5:40",1]],
+    "Kök Bel|Talas Sunrise": [["Talas Sunrise","","3:42"],["Talas Üchün Chap","","3:55"],["Kök-Bel Ashuusu","","4:26"],["Jesir Aty","","5:12"],["Peydey","","2:51"],["Bir, Eki, Üch","","3:37"],["Ak Boz At","","4:04"],["Talaadagy Jyldyz","","3:29"],["Suu Kezegi","","4:48"]]
+  },
+  /* singles that are also on an album: the catalogue lists only the album. "artist|single": "album" */
+  onAlbum: {
+    "Altynai Torobek kyzy|Ekööbüz": "Ekööbüz",
+    "Karakush|Jeyren": "Uya", "Karakush|Ekranda": "Uya", "Karakush|Uchuu": "Ak Börü",
+    "Eski Ün|Dream of Living": "Kara Kün",
+    "4Muuz|Shyñgyr-Shyñgyr": "Zhylky Love", "4Muuz|Muuzdu Kötör!": "Zhylky Love"
+  },
+  covers: ["jolchu","zvezda-irad","kara-suu","umay","ak-boru","zhylky-love","kara-kun","white-stallion-in-fog","talas-sunrise"],
+
   platforms: ["Spotify", "Apple Music", "YouTube Music", "Yandex Music"],
 
   releases: [
