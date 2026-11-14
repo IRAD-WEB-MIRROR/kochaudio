@@ -1,6 +1,8 @@
 (function () {
   "use strict";
   var D = window.KOCH, I18N = window.KOCH_I18N, LY = window.KOCH_LYRICS || [];
+  var VENUE_URL = { "Irad Palace of Art, concert hall": "https://palace.korkom.org/" };
+  function venue(g) { var u = VENUE_URL[g.venue]; return u ? '<a href="' + u + '">' + esc(g.venue) + "</a>" : esc(g.venue); }
   var $ = function (s, r) { return (r || document).querySelector(s); };
   var $$ = function (s, r) { return Array.prototype.slice.call((r || document).querySelectorAll(s)); };
 
@@ -157,13 +159,13 @@
         '<div class="gdate"><span class="dd">' + (+p[2]) + '</span><span class="mm">' + esc(t.months[+p[1] - 1]) + " " + p[0] + '</span><span class="wd">' + esc(t.days[d.getUTCDay()]) + "</span></div>" +
         '<div class="gmain"><p class="gk">' + esc(g.kind === "abroad" ? t.kindAbroad : t.kindHome) + "</p>" +
         "<h3>" + esc(g.artist) + (g.guest ? ' <span class="guest">' + esc(fill(t.withGuest, { g: g.guest })) + "</span>" : "") + "</h3>" +
-        '<p class="gplace"><b>' + esc(place(g)) + "</b><br>" + esc(g.venue) + "</p>" +
+        '<p class="gplace"><b>' + esc(place(g)) + "</b><br>" + venue(g) + "</p>" +
         (meta.length ? '<p class="gmeta">' + esc(meta.join(", ")) + "</p>" : "") + note + permit + "</div>" +
         '<div class="gstat">' + statusHtml(g) + "</div></li>";
     }).join("");
     $$("#gigs .tix").forEach(function (b) { b.onclick = function () { openTickets(b.dataset.gig); }; });
     $("#past").innerHTML = past.map(function (g) {
-      return "<li><span class=\"k\">" + esc(fmtDate(g.date)) + "</span><span><b>" + esc(g.artist) + "</b>, " + esc(place(g)) + ", " + esc(g.venue) + "</span></li>";
+      return "<li><span class=\"k\">" + esc(fmtDate(g.date)) + "</span><span><b>" + esc(g.artist) + "</b>, " + esc(place(g)) + ", " + venue(g) + "</span></li>";
     }).join("");
   }
   function openTickets(id) {

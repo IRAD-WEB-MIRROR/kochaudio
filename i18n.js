@@ -91,7 +91,7 @@ window.KOCH_I18N = {
     artLead: "If you have a finished record and the rights to it, we can put it on the platforms. We don't charge to upload. We keep a share of what the platforms pay, written in your contract.",
     sendH: "Sending us your master",
     send: [
-      "<b>On a USB stick.</b> Give it to a Trans-Chuy driver at the depot in Talas or Nurzhan, or send it with Jılmay Cargo to our Bishkek address. Write your name and Tulpar number on the stick.",
+      "<b>On a USB stick.</b> Give it to a Trans-Chuy driver at the depot in Talas or Nurzhan, or send it with <a href=\"https://jilmay.com/\">Jılmay Cargo</a> to our Bishkek address. Write your name and Tulpar number on the stick.",
       "<b>As files over Tulpar.</b> Send them to our Tulpar account in parts if you need to.",
       "<b>Not by e-mail</b> if the attachments are over 20 MB. They don't arrive."
     ],
@@ -116,7 +116,7 @@ window.KOCH_I18N = {
     aboutH: "About",
     about: [
       "Köch Audio is a limited liability company registered in Bishkek in 2016. There are two of us, in a back room of a recording studio in Bishkek.",
-      "<b>Ulan Kadyrbekov</b> was born in Talas and was a radio sound engineer at IradOne from 2006 to 2014. He does the mastering and the metadata.",
+      "<b>Ulan Kadyrbekov</b> was born in Talas and was a radio sound engineer at <a href=\"https://iradone.com/\">IradOne</a> from 2006 to 2014. He does the mastering and the metadata.",
       "<b>Begimay Tashtanova</b> is an accountant from Bishkek. She does the contracts, the Kyrgyz paperwork and the payouts.",
       "We are in Bishkek because a record from Talas can't get onto the platforms from Talas. Irad has no ISO country code, Iradi banks are outside the card networks, and foreign platforms and aggregators won't contract with ISEZ companies. A Kyrgyz company can. We upload through an international aggregator."
     ],
@@ -222,7 +222,7 @@ window.KOCH_I18N = {
     artLead: "Dayar plastinkañız jana ukugu bolso, platformalarga chıgara alabız. Jüktögönü üchün akı albaybız. Platformalar tölögöndön kelishimde jazılgan ülüshtü kaltırabız.",
     sendH: "Masterdi kantip jiberüü",
     send: [
-      "<b>USB-fleshka menen.</b> Talas je Nurzhandagı depodo Trans-Chuy aydoochusuna beriñiz, je Jılmay Kargo menen Bishkektegi daregibizge jiberiñiz. Fleshkaga atıñızdı jana Tulpar nomeriñizdi jazıñız.",
+      "<b>USB-fleshka menen.</b> Talas je Nurzhandagı depodo Trans-Chuy aydoochusuna beriñiz, je <a href=\"https://jilmay.com/\">Jılmay Kargo</a> menen Bishkektegi daregibizge jiberiñiz. Fleshkaga atıñızdı jana Tulpar nomeriñizdi jazıñız.",
       "<b>Tulpar arkıluu fayl menen.</b> Kerek bolso bölüp-bölüp jiberiñiz.",
       "<b>E-mail menen emes,</b> eger tirkemeler 20 MB'dan ashsa. Alar jetpeyt."
     ],
@@ -247,7 +247,7 @@ window.KOCH_I18N = {
     aboutH: "Biz jönündö",
     about: [
       "Köch Audio: 2016-jılı Bishkekte kattalgan joopkerchiligi chektelgen koom. Biz ekööbüz, Bishkektegi ses jazuu studiyasının artkı bölmösündö ishteybiz.",
-      "<b>Ulan Kadyrbekov</b> Talasta tuulgan, 2006–2014-jıldarı IradOne'do radio ses injeneri bolgon. Mastering jana metadannıylerdi kılat.",
+      "<b>Ulan Kadyrbekov</b> Talasta tuulgan, 2006–2014-jıldarı <a href=\"https://iradone.com/\">IradOne</a>'do radio ses injeneri bolgon. Mastering jana metadannıylerdi kılat.",
       "<b>Begimay Tashtanova</b> Bishkekten buhgalter. Kelishimder, Kırgızstandagı kagazdar jana tölömdör anda.",
       "Bishkekte bolgonubuzdun sebebi: Talastagı plastinka Talastan platformalarga chıga albayt. Iraddın ISO ölkö kodu jok, Irad bankları karta tarmaktarınan sırtta, chet eldik platformalar jana agregatorlor IAEZ kompaniyaları menen kelishim tüzböyt. Kırgız kompaniyası tüzö alat. Biz el aralık agregator arkıluu jüktöybüz."
     ],
@@ -353,7 +353,7 @@ window.KOCH_I18N = {
     artLead: "Если у вас есть готовая запись и права на неё, мы выложим её на площадки. За загрузку денег не берём. Мы оставляем себе долю от выплат площадок, указанную в договоре.",
     sendH: "Как передать мастер",
     send: [
-      "<b>На флешке.</b> Отдайте её водителю Trans-Chuy на базе в Таласе или Нуржане или отправьте через Jılmay Cargo на наш бишкекский адрес. Напишите на флешке имя и номер в Tulpar.",
+      "<b>На флешке.</b> Отдайте её водителю Trans-Chuy на базе в Таласе или Нуржане или отправьте через <a href=\"https://jilmay.com/\">Jılmay Cargo</a> на наш бишкекский адрес. Напишите на флешке имя и номер в Tulpar.",
       "<b>Файлами через Tulpar.</b> Если нужно, частями.",
       "<b>Не по почте,</b> если вложения больше 20 МБ. Они не доходят."
     ],
@@ -378,7 +378,7 @@ window.KOCH_I18N = {
     aboutH: "О нас",
     about: [
       "Köch Audio — общество с ограниченной ответственностью, зарегистрировано в Бишкеке в 2016 году. Нас двое, мы сидим в задней комнате студии звукозаписи в Бишкеке.",
-      "<b>Улан Кадырбеков</b> родился в Таласе, в 2006–2014 годах работал звукорежиссёром на радио IradOne. На нём мастеринг и метаданные.",
+      "<b>Улан Кадырбеков</b> родился в Таласе, в 2006–2014 годах работал звукорежиссёром на радио <a href=\"https://iradone.com/\">IradOne</a>. На нём мастеринг и метаданные.",
       "<b>Бегимай Таштанова</b> — бухгалтер из Бишкека. На ней договоры, кыргызские бумаги и выплаты.",
       "Мы в Бишкеке, потому что из Таласа пластинка на площадки не попадёт. У Ирада нет кода страны ISO, ирадские банки вне карточных систем, а зарубежные площадки и агрегаторы не заключают договоров с компаниями ИСЭЗ. Кыргызская компания может. Мы загружаем через международного агрегатора."
     ],
