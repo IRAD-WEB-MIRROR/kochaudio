@@ -38,6 +38,7 @@ window.KOCH_I18N = {
       nKaraKun: "Recorded in a teahouse in the Old Talas Citadel Quarter.",
       nOnitha: "East Syriac antiphons, recorded in the cathedral.",
       nSunrise: "Digitized in 2019 from the master cassette. We left the tape hiss in.",
+      nZhylky: "The 2018 album, reissued in 2022 with two bonus remixes.",
       nJolchu: "The 2000 album, remastered in 2017. The 1999 cassette is not reissued, at the band's wish."
     },
     faqH: "Why isn't it here?",
@@ -161,6 +162,7 @@ window.KOCH_I18N = {
       nKaraKun: "Eski Talas Chebi kvartalındagı chaykanada jazılgan.",
       nOnitha: "Chıgısh-Siriya antifondoru, chirköödö jazılgan.",
       nSunrise: "2019-jılı master-kassetadan sanariptelgen. Lentanın shıldırın kaltırdık.",
+      nZhylky: "2018-jılkı albom, 2022-jılı eki bonus remiks menen kayra chıgarılgan.",
       nJolchu: "2000-jılkı albom, 2017-jılı remasterlengen. 1999-jılkı kasseta toptun kaaloosu boyuncha kayra chıgarılbayt."
     },
     faqH: "Emne üchün bul jerde jok?",
@@ -284,6 +286,7 @@ window.KOCH_I18N = {
       nKaraKun: "Записан в чайхане в квартале Старой Таласской цитадели.",
       nOnitha: "Восточносирийские антифоны, записаны в соборе.",
       nSunrise: "Оцифрован в 2019 году с мастер-кассеты. Шум плёнки мы оставили.",
+      nZhylky: "Альбом 2018 года, переиздание 2022 года с двумя бонусными ремиксами.",
       nJolchu: "Альбом 2000 года, ремастер 2017 года. Кассета 1999 года по желанию группы не переиздаётся."
     },
     faqH: "Почему этого здесь нет?",
