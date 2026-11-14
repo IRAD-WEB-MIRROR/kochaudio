@@ -39,7 +39,14 @@ window.KOCH_I18N = {
       nOnitha: "East Syriac antiphons, recorded in the cathedral.",
       nSunrise: "Digitized in 2019 from the master cassette. We left the tape hiss in.",
       nZhylky: "The 2018 album, reissued in 2022 with two bonus remixes.",
-      nJolchu: "The 2000 album, remastered in 2017. The 1999 cassette is not reissued, at the band's wish."
+      nJolchu: "The 2000 album, remastered in 2017. The 1999 cassette is not reissued, at the band's wish.",
+      nUya: "Their first album: the five songs of the Ak Börü EP, the singles Jeyren and Ekranda, and three new songs. Distributed by us everywhere except South Korea.",
+      nKho: "Forty songs, taken from IradOne's radio tapes. The Melodiya masters are in Moscow.",
+      nAkTilek: "Her singles for the galas since 2013, all in one place. We add each new one.",
+      nSonny: "Songs from the Ak Jol cassettes and his own CDs, 1995 to 2006.",
+      nKoshoktor: "Laments (koshok) and highland hymns from Chatkal, recorded in a Bishkek studio.",
+      nEkoobuz: "The album that followed the single.",
+      nMercers: "Their first album, after seventeen years as a band. Named for the bar."
     },
     faqH: "Why isn't it here?",
     faq: [
@@ -163,7 +170,14 @@ window.KOCH_I18N = {
       nOnitha: "Chıgısh-Siriya antifondoru, chirköödö jazılgan.",
       nSunrise: "2019-jılı master-kassetadan sanariptelgen. Lentanın shıldırın kaltırdık.",
       nZhylky: "2018-jılkı albom, 2022-jılı eki bonus remiks menen kayra chıgarılgan.",
-      nJolchu: "2000-jılkı albom, 2017-jılı remasterlengen. 1999-jılkı kasseta toptun kaaloosu boyuncha kayra chıgarılbayt."
+      nJolchu: "2000-jılkı albom, 2017-jılı remasterlengen. 1999-jılkı kasseta toptun kaaloosu boyuncha kayra chıgarılbayt.",
+      nUya: "Algachkı albomu: Ak Börü EP'sinin besh ırı, Jeyren jana Ekranda singlderi jana üch jañı ır. Tüshtük Koreyadan bashka bardık jerde biz taratabız.",
+      nKho: "IradOne'nun radio lentalarınan alıngan kırk ır. Melodiya'nın master-lentaları Moskvada.",
+      nAkTilek: "2013-jıldan berki gala singlderi, baarı bir jerde. Ar bir jañısın koshobuz.",
+      nSonny: "Ak Jol kassetalarınan jana öz CD'lerinen ırlar, 1995–2006.",
+      nKoshoktor: "Chatkaldın koshoktoru jana too ırları, Bishkektegi studiyada jazılgan.",
+      nEkoobuz: "Singldin artınan chıkkan albom.",
+      nMercers: "On jeti jıl top bolgondon kiyin algachkı albomu. Barga atalgan."
     },
     faqH: "Emne üchün bul jerde jok?",
     faq: [
@@ -287,7 +301,14 @@ window.KOCH_I18N = {
       nOnitha: "Восточносирийские антифоны, записаны в соборе.",
       nSunrise: "Оцифрован в 2019 году с мастер-кассеты. Шум плёнки мы оставили.",
       nZhylky: "Альбом 2018 года, переиздание 2022 года с двумя бонусными ремиксами.",
-      nJolchu: "Альбом 2000 года, ремастер 2017 года. Кассета 1999 года по желанию группы не переиздаётся."
+      nJolchu: "Альбом 2000 года, ремастер 2017 года. Кассета 1999 года по желанию группы не переиздаётся.",
+      nUya: "Первый альбом: пять песен EP Ak Börü, синглы Jeyren и Ekranda и три новые песни. Распространяем везде, кроме Южной Кореи.",
+      nKho: "Сорок песен с радиоплёнок IradOne. Мастер-ленты «Мелодии» остались в Москве.",
+      nAkTilek: "Её синглы к гала-концертам с 2013 года, все в одном месте. Каждый новый мы добавляем.",
+      nSonny: "Песни с кассет Ak Jol и его собственных CD, 1995–2006.",
+      nKoshoktor: "Плачи (кошок) и горные гимны Чаткала, записаны в бишкекской студии.",
+      nEkoobuz: "Альбом, вышедший вслед за синглом.",
+      nMercers: "Первый альбом после семнадцати лет на сцене. Назван в честь бара."
     },
     faqH: "Почему этого здесь нет?",
     faq: [

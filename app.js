@@ -97,7 +97,7 @@
 
   /* ---------- lyrics ---------- */
   function songsOf(r) {
-    return LY.filter(function (l) { return l.release === r.title && l.artist === r.artist; })
+    return LY.filter(function (l) { return (l.release === r.title || (l.also || []).indexOf(r.title) >= 0) && l.artist === r.artist; })
       .sort(function (a, b) { return (a.track || 99) - (b.track || 99); });
   }
   function lyricsLinks(r) {

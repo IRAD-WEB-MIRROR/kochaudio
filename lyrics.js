@@ -1,6 +1,6 @@
 /* Lyrics shown on the site, with English translations of the Iradi.
    Each song: slug (its address, #/lyrics/<slug>), title, alt (translated or original title), artist,
-   release (a title in KOCH.releases), track (its number on that release, if known), and stanzas: lines as
+   release (a title in KOCH.releases), also (other releases the song is on, optional), track (its number on that release, if known), and stanzas: lines as
    [original, English]; a one-item line is sung in English. */
 
 window.KOCH_LYRICS = [
@@ -1282,5 +1282,269 @@ window.KOCH_LYRICS = [
        ["She read it, oh she read it..."]],
 
       [["...Jazdy! \"Kim bul?\"", "...She wrote! \"Who is this?\""]]
+    ] },
+  { slug: "ak-boru", title: "Ak Börü", alt: "White Wolf", artist: "Karakush", release: "Ak Börü", also: ["Uya"], track: 1,
+    stanzas: [
+      [["Muz üstündö iz jok eken,", "There are no tracks on the ice,"],
+       ["Birinchi izdi men salam.", "I'll lay the first ones."],
+       ["Demim bulut bolup uchat,", "My breath flies off as cloud,"],
+       ["Arky jeekti karap baram.", "I go with my eyes on the far shore."]],
+
+      [["Muz jarylat, uktungbu?", "The ice is cracking, did you hear?"],
+       ["Korkpoym, kadamym tak.", "I'm not afraid, my step is sure."],
+       ["Muz jarylat, uktungbu?", "The ice is cracking, did you hear?"],
+       ["Korkpoym.", "I'm not afraid."]],
+
+      [["Ak börü, ak börü! (Ak börü!)", "White wolf, white wolf! (White wolf!)"],
+       ["Topko kirbeym, jalgyz basam.", "I don't join the pack, I walk alone."],
+       ["Ak börü, ak börü! (Ak börü!)", "White wolf, white wolf! (White wolf!)"],
+       ["Jolumdu özüm tandaym.", "I choose my own road."]],
+
+      [["White wolf, white wolf,"],
+       ["Nobody's leading me."],
+       ["White wolf, white wolf,"],
+       ["Watch me cross the ice. (Hey!)"]],
+
+      [["Arttan top ündöyt: kaytyp kel!", "Behind me the pack calls: come back!"],
+       ["Jyluu ura, tok kursak, deyt.", "A warm den, a full belly, they say."],
+       ["Tishimdi kysyp, ündöböy,", "Teeth clenched, without a sound,"],
+       ["Köldün ortosuna jettim.", "I've reached the middle of the lake."]],
+
+      [["Muz jarylat, uktungbu?", "The ice is cracking, did you hear?"],
+       ["Korkpoym, kadamym tak.", "I'm not afraid, my step is sure."],
+       ["Muz jarylat, uktungbu?", "The ice is cracking, did you hear?"],
+       ["Korkpoym.", "I'm not afraid."]],
+
+      [["Ak börü, ak börü! (Ak börü!)", "White wolf, white wolf! (White wolf!)"],
+       ["Topko kirbeym, jalgyz basam.", "I don't join the pack, I walk alone."],
+       ["Ak börü, ak börü! (Ak börü!)", "White wolf, white wolf! (White wolf!)"],
+       ["Jolumdu özüm tandaym.", "I choose my own road."]],
+
+      [["White wolf, white wolf,"],
+       ["Nobody's leading me."],
+       ["White wolf, white wolf,"],
+       ["Watch me cross the ice. (Hey!)"]],
+
+      [["Bolboyt deshti, Talastan chykpaysyng,", "\"Can't be done,\" they said, \"you'll never get out of Talas.\""],
+       ["Chyktym, emi izimdi karap kalyshty.", "I got out, and now they stand there staring at my tracks."],
+       ["Tyrmagym muzda, közüm alys jeekte,", "My claws on the ice, my eyes on the far shore,"],
+       ["Suuk menen dos boldum, suuk menin üyüm.", "I made friends with the cold; the cold is my home."]],
+
+      [["Muz jarylsa, jarylsyn,", "If the ice cracks, let it crack,"],
+       ["Men jetem arky jeekke.", "I'll reach the far shore."],
+       ["Muz jarylsa, jarylsyn,", "If the ice cracks, let it crack,"],
+       ["Men jetem.", "I'll get there."]],
+
+      [["Ak börü, ak börü! (Ak börü!)", "White wolf, white wolf! (White wolf!)"],
+       ["Topko kirbeym, jalgyz basam.", "I don't join the pack, I walk alone."],
+       ["Ak börü, ak börü! (Ak börü!)", "White wolf, white wolf! (White wolf!)"],
+       ["Jolumdu özüm tandaym.", "I choose my own road."]],
+
+      [["White wolf, white wolf,"],
+       ["Nobody's leading me."],
+       ["White wolf, white wolf,"],
+       ["Watch me cross the ice. (Hey!)"]]
+    ] },
+  { slug: "kekilik", title: "Kekilik", alt: "Partridge", artist: "Karakush", release: "Ak Börü", also: ["Uya"], track: 2,
+    stanzas: [
+      [["Tashtakta kekilik chakyrat,", "On the scree a partridge calls,"],
+       ["Joop jok, kayra chakyrat.", "No answer, it calls again."],
+       ["Men da sendey bölmömdö", "Like you, I sit in my room"],
+       ["Telefongo akyryn yrdaym.", "And sing softly into the phone."]],
+
+      [["Eshik jabyk, köchö bosh,", "The door is shut, the street is empty,"],
+       ["Kiyimim ilingen boydon.", "My coat still hanging where it was."],
+       ["Eki boz belgi turat,", "Two grey marks sit there"],
+       ["Kökkö aylanbayt.", "And don't turn blue."]],
+
+      [["Joop ber, joop ber,", "Answer, answer,"],
+       ["Bir gana söz jaz.", "Write just one word."]],
+
+      [["Kekilik bolup chakyram,", "I call like a partridge,"],
+       ["Tashtan tashka, sen jakka.", "From stone to stone, towards you."],
+       ["Ünüm kaytyp kelet,", "My voice comes back,"],
+       ["Bir özüm ugam.", "And only I hear it."]],
+
+      [["I called, I called,"],
+       ["Only the stones called back."]],
+
+      [["Aaa-ay, ay-ay,"],
+       ["Ay-day, ay-day-ay."]],
+
+      [["Ar kechte ushul saatta", "Every night at this hour"],
+       ["Jazdyrgan ünüm jetpeyt.", "The voice I recorded doesn't arrive."],
+       ["Kekilik da tynbayt,", "The partridge doesn't rest either,"],
+       ["Biz ekööbüz tashta.", "The two of us on the stones."]],
+
+      [["Joop ber, joop ber,", "Answer, answer,"],
+       ["Bir gana söz jaz.", "Write just one word."]],
+
+      [["Kekilik bolup chakyram,", "I call like a partridge,"],
+       ["Tashtan tashka, sen jakka.", "From stone to stone, towards you."],
+       ["Ünüm kaytyp kelet,", "My voice comes back,"],
+       ["Bir özüm ugam.", "And only I hear it."]],
+
+      [["I called, I called,"],
+       ["Only the stones called back."]],
+
+      [["Men üyrönöm ündöböskö.", "I'll learn to stay quiet."],
+       ["Biroq bügün, akyrky jolu,", "But today, one last time,"],
+       ["Chakyram.", "I call."]],
+
+      [["Aaa-ay, ay-ay,"],
+       ["Ay-day, ay-day-ay,"],
+       ["Aaa-ay."]],
+
+      [["Kekilik bolup chakyram,", "I call like a partridge,"],
+       ["Tashtan tashka, sen jakka.", "From stone to stone, towards you."],
+       ["Ünüm kaytyp kelet,", "My voice comes back,"],
+       ["Bir özüm ugam.", "And only I hear it."]],
+
+      [["I called."]]
+    ] },
+  { slug: "ilbirs", title: "Ilbirs", alt: "Snow Leopard", artist: "Karakush", release: "Ak Börü", also: ["Uya"], track: 3,
+    stanzas: [
+      [["Men körünböym, biroq men bar,", "You can't see me, but I'm here,"],
+       ["Kar tüstüü, tash tüstüü.", "The colour of snow, the colour of stone."],
+       ["Siler meni izdep chyktyngar,", "You came out looking for me,"],
+       ["Men silerdi bayaq kördüm.", "I saw you a long time ago."]],
+
+      [["Tynch, tynch,", "Quiet, quiet,"],
+       ["Kaydamyn, bilbeysing.", "You don't know where I am."]],
+
+      [["Ilbirs, ilbirs! (Ilbirs!)", "Snow leopard, snow leopard! (Ilbirs!)"],
+       ["Körsöng, bir gana jolu.", "If you see me, it's only once."],
+       ["Ilbirs, ilbirs! (Ilbirs!)", "Snow leopard, snow leopard! (Ilbirs!)"],
+       ["Bir jark, anan jokmun.", "One flash, then I'm gone."]],
+
+      [["One flash and I'm gone,"],
+       ["You'll never see me twice."]],
+
+      [["Kapkan emes, kamera,", "Not a trap, a camera,"],
+       ["Tashka bekitilgen kara kuti.", "A black box fixed to a rock."],
+       ["Saat tört, kar jaap turat,", "Four in the morning, the snow coming down,"],
+       ["Bir jark, kuyrugum gana.", "One flash: only my tail."]],
+
+      [["Tynch, tynch,", "Quiet, quiet,"],
+       ["Kaydamyn, bilbeysing.", "You don't know where I am."]],
+
+      [["Ilbirs, ilbirs! (Ilbirs!)", "Snow leopard, snow leopard! (Ilbirs!)"],
+       ["Körsöng, bir gana jolu.", "If you see me, it's only once."],
+       ["Ilbirs, ilbirs! (Ilbirs!)", "Snow leopard, snow leopard! (Ilbirs!)"],
+       ["Bir jark, anan jokmun.", "One flash, then I'm gone."]],
+
+      [["One flash and I'm gone,"],
+       ["You'll never see me twice."]],
+
+      [["Toptun eng tynchy, dep koyushtu,", "\"The quietest in the group,\" they said."],
+       ["Bilishpeyt, tynchtyk menin kuralym.", "They don't know quiet is my weapon."],
+       ["Siler kyirykta, men kütöm,", "You're out on the edge, I'm waiting,"],
+       ["Bir sekirsem, sözüngör büttü.", "One leap and you've said your last word."]],
+
+      [["Artyngdamyn.", "I'm behind you."]],
+
+      [["Ilbirs, ilbirs! (Ilbirs!)", "Snow leopard, snow leopard! (Ilbirs!)"],
+       ["Körsöng, bir gana jolu.", "If you see me, it's only once."],
+       ["Ilbirs, ilbirs! (Ilbirs!)", "Snow leopard, snow leopard! (Ilbirs!)"],
+       ["Bir jark, anan jokmun.", "One flash, then I'm gone."]],
+
+      [["One flash and I'm gone,"],
+       ["You'll never see me twice."]]
+    ] },
+  { slug: "uchuu", title: "Uchuu", alt: "Flight", artist: "Karakush", release: "Ak Börü", also: ["Uya"], track: 4,
+    stanzas: [
+      [["Uyamdyn chetinde turam,", "I stand at the edge of my nest,"],
+       ["Aldymda bosh aba.", "Empty air in front of me."],
+       ["Uchup ketti ata-enem,", "My parents have flown away,"],
+       ["Endi ech kim üyrötpöyt.", "Now no one will teach me."]],
+
+      [["Tyrmagym tashty kysat,", "My claws grip the rock,"],
+       ["Jürögüm tez soguuda.", "My heart is beating fast."],
+       ["Bir kadam, anan aba,", "One step, and then the air,"],
+       ["Ishenem, ishenem.", "I believe, I believe."]],
+
+      [["Közümdü jumbaym,", "I won't close my eyes,"],
+       ["Közümdü jumbaym.", "I won't close my eyes."]],
+
+      [["Uchuu! (Uchuu!)", "Flight! (Flight!)"],
+       ["Abaga özümdü tashtaym.", "I throw myself into the air."],
+       ["Uchuu! (Uchuu!)", "Flight! (Flight!)"],
+       ["Aba meni kötördü.", "The air lifted me."]],
+
+      [["I'm flying, I'm flying,"],
+       ["Look at me, I didn't fall."]],
+
+      [["Tömöndö kichine üylör,", "Below me, tiny houses,"],
+       ["Kaltyrgan uyam tash bolup.", "The nest I left is just a stone."],
+       ["Kalkyp baratam aylanyp,", "I'm soaring round in circles,"],
+       ["Ar aylanganda biyiktep.", "Higher with every turn."]],
+
+      [["Közümdü jumbaym,", "I won't close my eyes,"],
+       ["Közümdü jumbaym.", "I won't close my eyes."]],
+
+      [["Uchuu! (Uchuu!)", "Flight! (Flight!)"],
+       ["Abaga özümdü tashtaym.", "I throw myself into the air."],
+       ["Uchuu! (Uchuu!)", "Flight! (Flight!)"],
+       ["Aba meni kötördü.", "The air lifted me."]],
+
+      [["I'm flying, I'm flying,"],
+       ["Look at me, I didn't fall."]],
+
+      [["Jerden biyik, kündön tömön,", "Higher than the ground, lower than the sun,"],
+       ["Jerden biyik, kündön tömön.", "Higher than the ground, lower than the sun."],
+       ["(Uchuu... Uchuu...)", "(Flight... flight...)"]],
+
+      [["Uchuu! (Uchuu!)", "Flight! (Flight!)"],
+       ["Abaga özümdü tashtaym.", "I throw myself into the air."],
+       ["Uchuu! (Uchuu!)", "Flight! (Flight!)"],
+       ["Aba meni kötördü.", "The air lifted me."]],
+
+      [["I'm flying, I'm flying,"],
+       ["Look at me, I didn't fall."]]
+    ] },
+  { slug: "kok-tulku", title: "Kök Tülkü", alt: "Blue Fox", artist: "Karakush", release: "Ak Börü", also: ["Uya"], track: 5,
+    stanzas: [
+      [["Tuzagyngdy kördüm, jigit, gülgö orop koyupsung,", "I saw your snare, boy, you wrapped it up in flowers,"],
+       ["Kant söz menen meni alam dep oyloypsung.", "You thought you'd get me with your sugar words."],
+       ["Kulup koyom, bashym ilip, tyngshap turgan bolom,", "I laugh, I tilt my head, I act like I'm listening,"],
+       ["Biroq bilip koy, jigitim, men senden amalkoymun.", "But know this, my boy, I'm the better trickster."]],
+
+      [["Karmap kör, karmap kör,", "Go on, catch me, go on, catch me,"],
+       ["Kolungdu suny, karmap kör.", "Reach out your hand, go on, catch me."]],
+
+      [["Kök tülkü, kök tülkü, (Kök tülkü!)", "Blue fox, blue fox, (Blue fox!)"],
+       ["Karmay albaysyng, karmay albaysyng.", "You can't catch me, you can't catch me."],
+       ["Kök tülkü, kök tülkü, (Kök tülkü!)", "Blue fox, blue fox, (Blue fox!)"],
+       ["Tuzagyng bosh kaldy, oy-oy-oy.", "Your snare stayed empty, oy-oy-oy."]],
+
+      [["Can't catch me, can't catch me,"],
+       ["Ha-ha, you missed again!"]],
+
+      [["Joldo jatam ölgöndöy, közdörümdü jumup alam,", "I lie on the road like I'm dead, eyes shut tight,"],
+       ["Sen kubanyp, meni alyp, arabanga saldyng, balam.", "You're thrilled, you pick me up and put me in your cart, my dear."],
+       ["Bir burulup arty jakka karasang, men jokmun,", "You turn round once to look behind you, and I'm gone,"],
+       ["Tuzagyngdy da ala kettim, rahmat, dostum!", "I took your snare with me too, thanks, my friend!"]],
+
+      [["Karmap kör, karmap kör,", "Go on, catch me, go on, catch me,"],
+       ["Kolungdu suny, karmap kör.", "Reach out your hand, go on, catch me."]],
+
+      [["Kök tülkü, kök tülkü, (Kök tülkü!)", "Blue fox, blue fox, (Blue fox!)"],
+       ["Karmay albaysyng, karmay albaysyng.", "You can't catch me, you can't catch me."],
+       ["Kök tülkü, kök tülkü, (Kök tülkü!)", "Blue fox, blue fox, (Blue fox!)"],
+       ["Tuzagyng bosh kaldy, oy-oy-oy.", "Your snare stayed empty, oy-oy-oy."]],
+
+      [["Can't catch me, can't catch me,"],
+       ["Ha-ha, you missed again!"]],
+
+      [["Dagy bir jolu? Makul, makul,", "One more time? Fine, fine,"],
+       ["Dagy bir jolu syna.", "Try one more time."]],
+
+      [["Kök tülkü, kök tülkü, (Kök tülkü!)", "Blue fox, blue fox, (Blue fox!)"],
+       ["Karmay albaysyng, karmay albaysyng.", "You can't catch me, you can't catch me."],
+       ["Kök tülkü, kök tülkü, (Kök tülkü!)", "Blue fox, blue fox, (Blue fox!)"],
+       ["Tuzagyng bosh kaldy, oy-oy-oy.", "Your snare stayed empty, oy-oy-oy."]],
+
+      [["Can't catch me, can't catch me,"],
+       ["Ha-ha, you missed again!"]]
     ] }
 ];
