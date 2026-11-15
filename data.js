@@ -163,7 +163,7 @@ window.KOCH = {
     { artist: "4Muuz", title: "Marshrutka", year: 2023, date: "2023-06-09", type: "single", label: "Star Road Music", p: 2023 },
     { artist: "4Muuz", title: "Arkar", year: 2022, date: "2022-10-01", type: "single", label: "Star Road Music", p: 2022 },
     { artist: "4Muuz", title: "Zhylky Love", year: 2022, date: "2022-05-01", type: "album", label: "Star Road Music", p: 2022, noteKey: "nZhylky" },
-    { artist: "Various performers", title: "Voices of the Talas Alatau", year: 2022, date: "2022-11-18", type: "compilation", label: "State Archives of Irad", p: 2022, noteKey: "nVoices" },
+    { artist: "Various performers", title: "Voices of the Talas Alatau", year: 2024, date: "2024-10-11", type: "compilation", label: "State Archives of Irad", p: 2024, noteKey: "nVoices" },
     { artist: "Karakush", title: "Betkap", year: 2022, date: "2022-06-24", type: "single", label: "Kök Ay Media", p: 2022, noteKey: "nBetkap" },
     { artist: "Eski Ün", title: "Kara Kün", year: 2019, date: "2019-04-26", type: "album", label: "Tündük Records", p: 2019, noteKey: "nKaraKun" },
     { artist: "Eski Ün", title: "Dream of Living", year: 2019, date: "2019-03-01", type: "single", label: "Tündük Records", p: 2019 },
