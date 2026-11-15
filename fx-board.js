@@ -67,6 +67,8 @@
 
   function size() {
     var cs = getComputedStyle(wrapEl), w = wrapEl.clientWidth - parseFloat(cs.paddingLeft) - parseFloat(cs.paddingRight);
+    /* the home page may be hidden (another page open) or not laid out yet: guess from the window, the observer re-measures later */
+    if (!(w > 100)) w = (document.documentElement.clientWidth || window.innerWidth) - 2 * Math.max(16, window.innerWidth * .03);
     w = Math.min(w, 1440);
     var hh = header ? header.offsetHeight : 0;
     document.documentElement.style.setProperty("--hh", hh + "px");
@@ -167,6 +169,20 @@
   setInterval(function () { var c = clock(); if (c !== lastClock && visible && !document.hidden) { lastClock = c; paint(grid(msgs[idx])); } }, 5000);
   function restart(keep) { size(); build(); show(keep ? Math.min(idx, msgs.length - 1) : 0); schedule(); }
   document.addEventListener("click", function (e) { if (e.target.closest && e.target.closest("[data-lang]")) setTimeout(function () { restart(true); }, 0); });
-  var rt; window.addEventListener("resize", function () { clearTimeout(rt); rt = setTimeout(function () { var c = cols, changed = size(); if (changed || cols !== c) { build(); show(idx); } }, 150); });
+  var rt, lastW = 0, lastH = 0;
+  function remeasure() {
+    clearTimeout(rt);
+    rt = setTimeout(function () {
+      if (!wrapEl.clientWidth) return;
+      var c = cols, changed = size(); if (changed || cols !== c) { build(); show(idx); }
+    }, 120);
+  }
+  window.addEventListener("resize", remeasure);
+  /* re-measure when the board's own width changes: first layout, coming back to the home page, late stylesheets */
+  if ("ResizeObserver" in window) new ResizeObserver(function (es) {
+    var r = es[0].contentRect; if (r.width === lastW && r.height === lastH) return; lastW = r.width; lastH = r.height; remeasure();
+  }).observe(wrapEl);
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(remeasure);
+  window.addEventListener("load", remeasure);
   restart(false);
 })();
