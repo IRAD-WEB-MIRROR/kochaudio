@@ -140,9 +140,25 @@
     var p = (PV.currentTime / PV.duration * 100).toFixed(1) + "%";
     pvHost(pvBtn).forEach(function (el) { el.style.setProperty("--p", p); });
   });
+  var pvErrT = 0;
+  function pvErrClear() {
+    clearTimeout(pvErrT);
+    Array.prototype.forEach.call(document.querySelectorAll(".perr"), function (el) { el.parentNode.removeChild(el); });
+    Array.prototype.forEach.call(document.querySelectorAll(".tp.bad"), function (el) { el.classList.remove("bad"); });
+  }
   document.addEventListener("click", function (e) {
+    var x = e.target.closest && e.target.closest("[data-pvx]");
+    if (x) {
+      pvStop(); pvErrClear();
+      var li = x.closest("li"), m = document.createElement("span");
+      m.className = "perr"; m.setAttribute("role", "alert"); m.textContent = T().pvErr;
+      x.classList.add("bad"); if (li) li.appendChild(m);
+      pvErrT = setTimeout(pvErrClear, 6000);
+      return;
+    }
     var b = e.target.closest && e.target.closest("[data-pv]");
     if (!b) return;
+    pvErrClear();
     if (b === pvBtn) { pvStop(); return; }
     pvStop();
     PV.src = b.getAttribute("data-pv");
@@ -199,7 +215,7 @@
     var cover = D.covers && D.covers.indexOf(slug) >= 0
       ? '<img src="covers/' + slug + '.jpg" width="600" height="600" alt="' + esc(fill(t.relCover, { r: r.title, a: r.artist })) + '">'
       : '<div class="nocover" aria-hidden="true"><span class="plate">köch</span><b>' + esc(r.title) + "</b><span>" + esc(r.artist) + "</span></div>";
-    var songs = songsOf(r), tr = (D.tracks || {})[rkey(r)] || [];
+    var songs = songsOf(r), tr = (D.tracks || {})[rkey(r)] || [], parts = (D.parts || {})[rkey(r)] || [];
     function lyricFor(x, i) {
       var base = x[0].replace(/\s*\(.*\)$/, "");
       return songs.filter(function (l) { return l.release === r.title && l.track === i + 1 && !x[3]; })[0] ||
@@ -216,14 +232,15 @@
       return list.map(function (x, j) {
         var i = from + j, l = lyricFor(x, i);
         var src = pvSrc(r, i + 1);
-        return '<li>' + (src ? '<button type="button" class="tn tp" data-pv="' + src + '" aria-pressed="false" aria-label="' + esc(fill(t.pvPlay, { s: x[0] })) + '"><span class="n">' + (i + 1) + '</span><span class="pvi" aria-hidden="true"></span></button>'
-          : '<span class="tn">' + (i + 1) + "</span>") + '<span class="tt"><b>' + esc(x[0]) + "</b>" +
+        var pt = parts.filter(function (q) { return q[0] === i + 1; })[0];
+        return (pt ? '<li class="tpart">' + esc(fill(t.relPart, { n: parts.indexOf(pt) + 1 })) + (pt[1] ? " \u00b7 " + esc(pt[1]) : "") + "</li>" : "") + '<li>' + (src ? '<button type="button" class="tn tp" data-pv="' + src + '" aria-pressed="false" aria-label="' + esc(fill(t.pvPlay, { s: x[0] })) + '"><span class="n">' + (i + 1) + '</span><span class="pvi" aria-hidden="true"></span></button>'
+          : '<button type="button" class="tn tp" data-pvx aria-label="' + esc(fill(t.pvPlay, { s: x[0] })) + '"><span class="n">' + (i + 1) + '</span><span class="pvi" aria-hidden="true"></span></button>') + '<span class="tt"><b>' + esc(x[0]) + "</b>" +
           (x[1] ? ' <span class="te">' + esc(x[1]) + "</span>" : "") + singleOf(x) + "</span>" +
           '<span class="tl">' + (l ? '<a href="#/lyrics/' + l.slug + '">' + esc(t.lyrics) + "</a>" : "") + "</span>" +
           '<span class="td">' + esc(x[2] || "") + "</span></li>";
       }).join("");
     }
-    var tracks = tr.length ? '<section class="tracks"><h2>' + esc(t.relTracks) + "</h2>" + (pvSrc(r, 1) ? '<p class="pvhint">' + esc(t.pvHint) + "</p>" : "") + '<ol class="tlist">' + rows(main, 0) + "</ol>" +
+    var tracks = tr.length ? '<section class="tracks"><h2>' + esc(t.relTracks) + "</h2>" + '<p class="pvhint">' + esc(t.pvHint) + "</p>" + '<ol class="tlist">' + rows(main, 0) + "</ol>" +
       (bonus.length ? '<h3>' + esc(t.relBonus) + '</h3><ol class="tlist">' + rows(bonus, main.length) + "</ol>" : "") + "</section>"
       : '<section class="tracks"><h2>' + esc(t.relTracks) + '</h2><p class="tnone">' + esc(t.relNoTracks) + "</p>" +
         (songs.length ? lyricsLinks(r) : "") + "</section>";

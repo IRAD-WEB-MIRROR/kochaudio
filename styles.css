@@ -386,4 +386,9 @@ dialog h3 { font: 800 30px/1 var(--display); text-transform: uppercase; margin-b
 .pvbtn .pvi { color: var(--red); }
 .pvbtn:hover { background: var(--red-wash); }
 .pvbtn.on::after { content: ""; position: absolute; left: 0; bottom: 0; height: 3px; width: var(--p, 0%); background: var(--red); }
+.tlist li.tpart { display: block; padding: 22px 0 8px; font: 700 14px/1.2 var(--display); text-transform: uppercase; letter-spacing: .1em; color: var(--soft); border-bottom: 2px solid var(--ink); }
+.tlist li.tpart:first-child { padding-top: 12px; }
+.tlist li.tpart:hover { background: none; }
+.tlist .perr { grid-column: 2 / -1; color: var(--red); font-size: 14px; font-weight: 600; }
+.tlist .tp.bad .pvi { opacity: 1; border-color: transparent; width: 9px; height: 9px; border: 0; background: linear-gradient(45deg, transparent 42%, currentColor 42% 58%, transparent 58%), linear-gradient(-45deg, transparent 42%, currentColor 42% 58%, transparent 58%); }
 @media (prefers-reduced-motion: reduce) { .tp .pvi { transition: none; } }
