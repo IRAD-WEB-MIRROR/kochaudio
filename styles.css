@@ -135,12 +135,18 @@ b, strong { font-weight: 600; }
 
 /* ---------- catalogue ---------- */
 .releases { list-style: none; margin: 0; padding: 0; border-top: 4px solid var(--ink); }
-.rel { display: grid; grid-template-columns: 88px 1fr; column-gap: 24px; row-gap: 10px; padding: 22px 0; border-bottom: 1px solid var(--rule); }
+.rel { display: grid; grid-template-columns: 96px 1fr; column-gap: 24px; row-gap: 10px; padding: 22px 0; border-bottom: 1px solid var(--rule); }
+.rthumb { display: block; align-self: start; width: 96px; height: 96px; background: var(--board); border: 1px solid var(--rule); overflow: hidden; }
+.rthumb img { display: block; width: 100%; height: 100%; object-fit: cover; }
+a.rthumb { transition: transform .15s ease-out, box-shadow .15s ease-out; }
+a.rthumb:hover, a.rthumb:focus-visible { transform: translateY(-2px); box-shadow: 0 10px 18px -12px rgba(18,19,20,.55); }
+a.rthumb:focus-visible { outline: 2px solid var(--red); outline-offset: 3px; }
+.rnoart { display: flex; align-items: flex-end; width: 100%; height: 100%; padding: 8px; font: 800 18px/1 var(--display); text-transform: lowercase; color: var(--soft); }
 .ryear {
-  align-self: start; justify-self: start; background: var(--red); color: #fff;
-  font: 800 26px/1 var(--display); padding: 6px 9px 7px; border-radius: 2px;
-  box-shadow: inset 0 0 0 2px var(--red), inset 0 0 0 3px #fff;
+  display: inline-block; background: var(--red); color: #fff;
+  font: 800 14px/1 var(--display); letter-spacing: .04em; padding: 4px 6px 3px; border-radius: 2px; margin-left: 6px; vertical-align: 2px;
 }
+@media (prefers-reduced-motion: reduce) { a.rthumb { transition: none; } }
 .rmain h2, .gmain h2 { font: 600 21px/1.25 var(--body); text-transform: none; letter-spacing: 0; margin: 0; }
 .alt { font-family: var(--body); font-weight: 400; color: var(--soft); font-size: 15px; }
 .rart { margin: 4px 0 8px; font-weight: 500; }
@@ -281,7 +287,8 @@ dialog h3 { font: 800 30px/1 var(--display); text-transform: uppercase; margin-b
 
 /* ---------- small screens ---------- */
 @media (max-width: 860px) {
-  .rel { grid-template-columns: 76px 1fr; column-gap: 16px; }
+  .rel { grid-template-columns: 80px 1fr; column-gap: 16px; }
+  .rthumb { width: 80px; height: 80px; }
   .gig { grid-template-columns: 84px 1fr; gap: 16px; }
   .gstat { grid-column: 2; }
   .what .w { grid-template-columns: 1fr; gap: 4px; }
@@ -302,11 +309,12 @@ dialog h3 { font: 800 30px/1 var(--display); text-transform: uppercase; margin-b
   .lbl { font-size: 12px; letter-spacing: .01em; }
   .split, .notes2 { grid-template-columns: 1fr; gap: 28px; }
   .split { margin-top: 52px; }
-  .rel { grid-template-columns: 1fr; gap: 10px; }
-  .rlisten { grid-column: auto; }
+  .rel { grid-template-columns: 64px 1fr; gap: 10px 14px; }
+  .rthumb { width: 64px; height: 64px; }
+  .rnoart { font-size: 14px; padding: 6px; }
+  .rlisten { grid-column: 1 / -1; }
   .stops li { padding-right: 14px; }
   .stops li::after { display: none; }
-  .ryear { font-size: 22px; }
   .gig { grid-template-columns: 68px 1fr; gap: 14px; }
   .gdate .dd { font-size: 48px; }
   .gdate .mm { font-size: 15px; }

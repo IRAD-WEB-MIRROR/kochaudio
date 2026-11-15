@@ -94,9 +94,14 @@
       var note = r.noteKey ? '<p class="rnote">' + esc(t.notes[r.noteKey]) + "</p>" : "";
       var href = relHref(r), ttl = esc(r.title) + (r.alt ? ' <span class="alt">(' + esc(r.alt) + ")</span>" : "");
       return '<li class="rel">' +
-        '<div class="ryear">' + r.year + "</div>" +
+        (function () {
+          var sl = SLUG[rkey(r)], has = sl && D.covers && D.covers.indexOf(sl) >= 0;
+          var im = has ? '<img src="covers/' + sl + '.jpg" width="96" height="96" loading="lazy" alt="' + esc(fill(t.relCover, { r: r.title, a: r.artist })) + '">'
+            : '<span class="rnoart" aria-hidden="true">k\u00f6ch</span>';
+          return href ? '<a class="rthumb" href="' + href + '"' + (has ? "" : ' tabindex="-1" aria-hidden="true"') + ">" + im + "</a>" : '<span class="rthumb">' + im + "</span>";
+        })() +
         '<div class="rmain"><h2>' + (href ? '<a class="rlink" href="' + href + '">' + ttl + "</a>" : ttl) + "</h2>" +
-        '<p class="rart">' + esc(r.artist) + ' <span class="rtype">' + esc(t.type[r.type]) + "</span></p>" + note +
+        '<p class="rart">' + esc(r.artist) + ' <span class="ryear">' + r.year + '</span><span class="rtype">' + esc(t.type[r.type]) + "</span></p>" + note +
         lyricsLinks(r) +
         '<p class="pl">℗ ' + r.p + " " + esc(r.label) + " under exclusive licence to Köch Audio</p></div>" +
         '<div class="rlisten"><span class="lo">' + esc(t.listenOn) + '</span><ul class="stops">' + D.platforms.map(function (p) {
