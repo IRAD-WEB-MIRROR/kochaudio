@@ -67,14 +67,24 @@
     $("#what").innerHTML = t.what.map(function (w) {
       return '<div class="w"><h3>' + esc(w[0]) + "</h3><p>" + esc(fill(w[1], { n: D.releasesTotal })) + "</p></div>";
     }).join("");
-    var latest = D.releases.slice().sort(function (a, b) { return (b.date || b.year + "-00") > (a.date || a.year + "-00") ? 1 : -1; }).slice(0, 4);
+    var latest = D.releases.filter(function (r) { return !r.due; }).sort(function (a, b) { return (b.date || b.year + "-00") > (a.date || a.year + "-00") ? 1 : -1; }).slice(0, 4);
     $("#latest").innerHTML = latest.map(function (r) {
       return "<li><span class=\"k\">" + r.year + "</span><span><b>" + esc(r.title) + "</b><br><small>" + esc(r.artist) + ", " + esc(t.type[r.type]) + "</small></span></li>";
+    }).join("");
+    $("#news").innerHTML = (D.news || []).map(function (n) {
+      var r = n.rel && D.releases.filter(function (x) { return rkey(x) === n.rel; })[0];
+      var href = (r && relHref(r)) || n.href || "#/catalogue";
+      return '<li><span class="k">' + esc(newsDate(n.date)) + '</span><a href="' + href + '">' + (t.news[n.key] || "") + "</a></li>";
     }).join("");
     $("#next").innerHTML = upcoming.slice(0, 4).map(function (g) {
       return "<li><span class=\"k\">" + esc(shortDate(g.date)) + "</span><span><b>" + esc(g.artist) + "</b><br><small>" + esc(place(g)) + "</small></span></li>";
     }).join("");
   }
+  function newsDate(d) {
+    var p = d.split("-"), t = T();
+    return p.length === 3 ? +p[2] + " " + t.months[+p[1] - 1] + " " + p[0] : p.length === 2 ? t.monthsFull[+p[1] - 1] + " " + p[0] : p[0];
+  }
+  function dueText(r) { var q = r.due.split("-"), t = T(); return (t.seasons[q[1]] || q[1]) + " " + q[0]; }
   function shortDate(iso) { var p = iso.split("-"), t = T(); return p[2] + " " + t.months[+p[1] - 1]; }
 
   /* ---------- catalogue ---------- */
@@ -101,9 +111,9 @@
           return href ? '<a class="rthumb" href="' + href + '"' + (has ? "" : ' tabindex="-1" aria-hidden="true"') + ">" + im + "</a>" : '<span class="rthumb">' + im + "</span>";
         })() +
         '<div class="rmain"><h2>' + (href ? '<a class="rlink" href="' + href + '">' + ttl + "</a>" : ttl) + "</h2>" +
-        '<p class="rart">' + esc(r.artist) + ' <span class="ryear">' + r.year + '</span><span class="rtype">' + esc(t.type[r.type]) + "</span></p>" + note +
-        lyricsLinks(r) +
-        '<p class="pl">℗ ' + r.p + " " + esc(r.label) + " under exclusive licence to Köch Audio</p></div>" +
+        '<p class="rart">' + esc(r.artist) + ' <span class="ryear">' + r.year + '</span><span class="rtype">' + esc(t.type[r.type]) + "</span>" + (r.due ? '<span class="rtype fc">' + esc(t.fcTag) + "</span>" : "") + "</p>" + note +
+        (r.due ? '<p class="pl">' + esc(t.relDue) + ": " + esc(dueText(r)) + " \u00b7 " + esc(r.label) + "</p>" : lyricsLinks(r) +
+        '<p class="pl">℗ ' + r.p + " " + esc(r.label) + " under exclusive licence to Köch Audio</p>") + "</div>" +
         (r.links ? '<div class="rlisten"><span class="lo">' + esc(t.listenOn) + '</span><ul class="stops">' + D.platforms.map(function (p) {
           var u = r.links && r.links[p];
           return "<li>" + (u ? '<a class="pf" href="' + esc(u) + '" target="_blank" rel="noopener">' + esc(p) + "</a>" : '<span class="pf">' + esc(p) + "</span>") + "</li>";
@@ -236,30 +246,30 @@
     function rows(list, from) {
       return list.map(function (x, j) {
         var i = from + j, l = lyricFor(x, i);
-        var src = pvSrc(r, i + 1);
+        var src = r.due ? "" : pvSrc(r, i + 1);
         var pt = parts.filter(function (q) { return q[0] === i + 1; })[0];
-        return (pt ? '<li class="tpart">' + esc(fill(t.relPart, { n: parts.indexOf(pt) + 1 })) + (pt[1] ? " \u00b7 " + esc(pt[1]) : "") + "</li>" : "") + '<li>' + (src ? '<button type="button" class="tn tp" data-pv="' + src + '" aria-pressed="false" aria-label="' + esc(fill(t.pvPlay, { s: x[0] })) + '"><span class="n">' + (i + 1) + '</span><span class="pvi" aria-hidden="true"></span></button>'
+        return (pt ? '<li class="tpart">' + esc(fill(t.relPart, { n: parts.indexOf(pt) + 1 })) + (pt[1] ? " \u00b7 " + esc(pt[1]) : "") + "</li>" : "") + '<li>' + (r.due ? '<span class="tn"><span class="n">' + (i + 1) + "</span></span>" : src ? '<button type="button" class="tn tp" data-pv="' + src + '" aria-pressed="false" aria-label="' + esc(fill(t.pvPlay, { s: x[0] })) + '"><span class="n">' + (i + 1) + '</span><span class="pvi" aria-hidden="true"></span></button>'
           : '<button type="button" class="tn tp" data-pvx aria-label="' + esc(fill(t.pvPlay, { s: x[0] })) + '"><span class="n">' + (i + 1) + '</span><span class="pvi" aria-hidden="true"></span></button>') + '<span class="tt"><b>' + esc(x[0]) + "</b>" +
           (x[1] ? ' <span class="te">' + esc(x[1]) + "</span>" : "") + singleOf(x) + "</span>" +
           '<span class="tl">' + (l ? '<a href="#/lyrics/' + l.slug + '">' + esc(t.lyrics) + "</a>" : "") + "</span>" +
           '<span class="td">' + esc(x[2] || "") + "</span></li>";
       }).join("");
     }
-    var tracks = tr.length ? '<section class="tracks"><h2>' + esc(t.relTracks) + "</h2>" + '<p class="pvhint">' + esc(t.pvHint) + "</p>" + '<ol class="tlist">' + rows(main, 0) + "</ol>" +
+    var tracks = tr.length ? '<section class="tracks"><h2>' + esc(t.relTracks) + "</h2>" + (r.due ? "" : '<p class="pvhint">' + esc(t.pvHint) + "</p>") + '<ol class="tlist">' + rows(main, 0) + "</ol>" +
       (bonus.length ? '<h3>' + esc(t.relBonus) + '</h3><ol class="tlist">' + rows(bonus, main.length) + "</ol>" : "") + "</section>"
       : '<section class="tracks"><h2>' + esc(t.relTracks) + '</h2><p class="tnone">' + esc(t.relNoTracks) + "</p>" +
         (songs.length ? lyricsLinks(r) : "") + "</section>";
     var singles = D.releases.filter(function (x) { return onAlbum(x) && D.onAlbum[rkey(x)] === r.title && x.artist === r.artist; });
     var more = shown.filter(function (x) { return x.artist === r.artist && x !== r; })
       .sort(function (a, b) { return (b.date || b.year + "-00") > (a.date || a.year + "-00") ? 1 : -1; });
-    var dt = r.date ? (function (p) { return p[2] + " " + t.months[+p[1] - 1] + " " + p[0]; })(r.date.split("-")) : String(r.year);
+    var dt = r.due ? dueText(r) : r.date ? (function (p) { return p[2] + " " + t.months[+p[1] - 1] + " " + p[0]; })(r.date.split("-")) : String(r.year);
     $("#release").innerHTML = back +
       '<article class="relpage"><div class="relart">' + cover + "</div>" +
-      '<div class="relhead"><p class="reltype">' + esc(t.type[r.type]) + " \u00b7 " + r.year + "</p>" +
+      '<div class="relhead"><p class="reltype">' + esc(t.type[r.type]) + (r.due ? " \u00b7 " + esc(t.fcTag) : " \u00b7 " + r.year) + "</p>" +
       "<h1>" + esc(r.title) + (r.alt ? ' <span class="alt">(' + esc(r.alt) + ")</span>" : "") + "</h1>" +
       '<p class="relartist">' + esc(r.artist) + "</p>" +
       (r.noteKey ? '<p class="rnote">' + esc(t.notes[r.noteKey]) + "</p>" : "") +
-      '<dl class="relfacts"><div><dt>' + esc(t.relDate) + "</dt><dd>" + esc(dt) + "</dd></div>" +
+      '<dl class="relfacts"><div><dt>' + esc(r.due ? t.relDue : t.relDate) + "</dt><dd>" + esc(dt) + "</dd></div>" +
       "<div><dt>" + esc(t.relLabel) + "</dt><dd>" + esc(r.label) + "</dd></div>" +
       (tr.length ? "<div><dt>" + esc(t.relCount) + "</dt><dd>" + tr.length + "</dd></div>" : "") +
       (singles.length ? "<div><dt>" + esc(t.relSingles) + "</dt><dd>" + singles.map(function (x) { return "\u201c" + esc(x.title) + "\u201d (" + x.year + ")"; }).join(", ") + "</dd></div>" : "") +
@@ -269,10 +279,10 @@
         return "<li>" + (u ? '<a class="pf" href="' + esc(u) + '" target="_blank" rel="noopener">' + esc(p) + "</a>" : '<span class="pf">' + esc(p) + "</span>") + "</li>";
       }).join("") + "</ul></div>" : "") + "</div></article>" +
       tracks +
-      '<p class="pl relpl">\u2117 ' + r.p + " " + esc(r.label) + " under exclusive licence to K\u00f6ch Audio</p>" +
+      (r.due ? "" : '<p class="pl relpl">\u2117 ' + r.p + " " + esc(r.label) + " under exclusive licence to K\u00f6ch Audio</p>") +
       (more.length ? '<section class="relmore"><h2>' + esc(fill(t.relMore, { a: r.artist })) + '</h2><ul class="morelist">' + more.map(function (x) {
         var h = relHref(x);
-        return "<li>" + (h ? '<a href="' + h + '">' : "<span>") + "<b>" + esc(x.title) + "</b><small>" + esc(t.type[x.type]) + " \u00b7 " + x.year + "</small>" + (h ? "</a>" : "</span>") + "</li>";
+        return "<li>" + (h ? '<a href="' + h + '">' : "<span>") + "<b>" + esc(x.title) + "</b><small>" + esc(t.type[x.type]) + " \u00b7 " + (x.due ? esc(t.fcTag) : x.year) + "</small>" + (h ? "</a>" : "</span>") + "</li>";
       }).join("") + "</ul></section>" : "");
     document.title = r.title + " \u2013 " + r.artist + " | K\u00f6ch Audio";
   }

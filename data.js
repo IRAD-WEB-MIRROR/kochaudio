@@ -14,6 +14,7 @@ window.KOCH = {
      Releases without a track list here show only their details and platform links.
      cover: covers/<slug>.jpg when we have the artwork. */
   tracks: {
+    "Karakush|Biyikte": [["Biyikte","Up High",""],["Kolkap","The Glove",""],["Örük Gülü","Apricot Blossom",""],["Küzgü","Mirror",""],["Aryk","The Ditch",""],["Shyrdak","",""],["Eki Tilde","In Two Languages",""],["Kartochka","Photocard",""],["Balapan","Eaglet",""]],
     "tüntolk|Jolchu": [["Chöl Shamaly","Desert Wind","3:21"],["Kazan","The Cauldron","3:51"],["Umay","","2:31"],["Kökjal","Grey Mane","4:01"],["Jolchu","Wayfarer","3:17"],["Kara Burkut","Black Eagle","2:41"],["Morkhan, Karañgy Ee","Morkhan the Dark Lord","3:23"],["Tañ","Dawn (instrumental)","2:10"]],
     "tüntolk|Zvezda Irad": [["Jyldyzdardy Kes","Cut the Stars","3:25"],["Zvezda Irad","Star of Irad","3:04"],["Jorgo","Ambler","3:07"],["Tündük","Crown Ring","3:50"],["Jyldyzdardy Kes (Almaty Night Mix)","","4:32"]],
     "tüntolk|Kara Suu": [["Kara Suu","Black Water","4:08"],["Kökjal Kaitty","Grey Mane Has Returned","3:30"],["Temir Jol","Railway","3:37"],["Kotelnaya","Boiler Room","2:44"],["Muz","Ice","2:47"],["Kara Jel","Black Wind","2:16"],["Ak Kush","White Bird","2:47"],["Allo, Ene?","Hello, Mother?","3:16"],["Tañ Atkancha","Until Dawn","3:08"]],
@@ -64,11 +65,26 @@ window.KOCH = {
   /* 20-second listening previews: "artist|release" -> folder in previews/, one clip per track (01.mp3, 02.mp3, ...) */
   previews: { "tüntolk|Jolchu": "jolchu", "tüntolk|Zvezda Irad": "zvezda-irad", "tüntolk|Kara Suu": "kara-suu",
     "Karakush|Ak Börü": "ak-boru", "4Muuz|Zhylky Love": "zhylky-love" },
-  covers: ["jolchu","zvezda-irad","kara-suu","umay","ak-boru","zhylky-love","kara-kun","white-stallion-in-fog","talas-sunrise","ak-tilek","altynai","aylanma","darbaza","eki-kysh","ekoobuz","kho","koshoktor","mercer-s","onitha","sonny-twenty-years","voices-of-the-talas-alatau","toi-paket","uya","jaz-kelet","jymjyrt","sem-nochei","buu","aynek","pass-day","chatkaldan","tsekh-no-4","eki-min-toi"],
+  covers: ["jolchu","zvezda-irad","kara-suu","umay","ak-boru","zhylky-love","kara-kun","white-stallion-in-fog","talas-sunrise","ak-tilek","altynai","aylanma","darbaza","eki-kysh","ekoobuz","kho","koshoktor","mercer-s","onitha","sonny-twenty-years","voices-of-the-talas-alatau","toi-paket","uya","jaz-kelet","jymjyrt","sem-nochei","buu","aynek","pass-day","chatkaldan","tsekh-no-4","eki-min-toi","biyikte"],
 
   platforms: ["Spotify", "Apple Music", "YouTube Music", "Yandex Music"],
 
+  /* news: newest first. date is YYYY, YYYY-MM or YYYY-MM-DD; text in i18n "news" by key; rel = "artist|title" of a release, else href */
+  news: [
+    { date: "2026-11", key: "nwTuntolkNov", href: "#/live" },
+    { date: "2026-09-18", key: "nwJymjyrt", rel: "Altynai Torobek kyzy|Jymjyrt" },
+    { date: "2026-08", key: "nwOkna", href: "#/catalogue" },
+    { date: "2026-06", key: "nwMercers", rel: "Taka|Mercer's" },
+    { date: "2026-05", key: "nwAylanma", rel: "Ürkör|Aylanma" },
+    { date: "2026-04", key: "nwToiPaket", rel: "4Muuz|Toi Paket" },
+    { date: "2026", key: "nwDala", href: "#/catalogue" },
+    { date: "2025-12", key: "nwAwards", href: "#/catalogue" },
+    { date: "2025", key: "nwTunduk", href: "#/catalogue" },
+    { date: "2025", key: "nwTulparPay", href: "#/about" }
+  ],
+
   releases: [
+    { artist: "Karakush", title: "Biyikte", year: 2027, due: "2027-spring", announce: "2027-02-01", type: "album", label: "Kök Ay Media", p: 2027, noteKey: "nBiyikte" },
     { artist: "Altynai Torobek kyzy", title: "Jymjyrt", year: 2026, date: "2026-09-18", type: "album", label: "Star Road Music", p: 2026, noteKey: "nJymjyrt" },
     { artist: "Lena Mirnaya", title: "Okna", year: 2026, date: "2026-08-01", type: "single", label: "Lena Mirnaya", p: 2026, noteKey: "nOkna" },
     { artist: "Taka", title: "Mercer's", year: 2026, date: "2026-06-01", type: "album", label: "Taka", p: 2026, noteKey: "nMercers" },
@@ -171,3 +187,9 @@ window.KOCH = {
     { id: "tt-bishkek-170325", date: "2017-03-25", artist: "tüntolk", city: "bishkek", country: "kg", venue: "Kök Tash club", kind: "abroad" }
   ]
 };
+
+/* Forthcoming releases carry announce: "YYYY-MM-DD" and stay out of the data until that day (Bishkek time). */
+(function () {
+  var today = new Date(Date.now() + 6 * 3600e3).toISOString().slice(0, 10), K = window.KOCH;
+  K.releases = K.releases.filter(function (r) { return !r.announce || r.announce <= today; });
+})();

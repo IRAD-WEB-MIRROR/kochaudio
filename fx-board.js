@@ -91,7 +91,7 @@
   /* ---------- the cards ---------- */
   function build() {
     var t = I[lang()], today = new Date(Date.now() + 6 * 3600e3).toISOString().slice(0, 10);
-    var rel = D.releases.filter(function (r) { return !(r.type === "single" && D.onAlbum && D.onAlbum[r.artist + "|" + r.title]); }).sort(function (a, b) { return (b.date || b.year + "-00") > (a.date || a.year + "-00") ? 1 : -1; }).slice(0, 3);
+    var rel = D.releases.filter(function (r) { return !r.due && !(r.type === "single" && D.onAlbum && D.onAlbum[r.artist + "|" + r.title]); }).sort(function (a, b) { return (b.date || b.year + "-00") > (a.date || a.year + "-00") ? 1 : -1; }).slice(0, 3);
     var gigs = D.gigs.filter(function (g) { return g.date >= today; }).sort(function (a, b) { return a.date < b.date ? -1 : 1; });
     msgs = [{ kind: "tag", rows: wrap(t.tagline, cols).map(function (s) { return { text: s }; }) }];
     rel.forEach(function (r, i) {

@@ -121,6 +121,14 @@ b, strong { font-weight: 600; }
 .mini .k { font: 800 22px/1.1 var(--display); color: var(--red); text-transform: uppercase; padding-top: 1px; }
 .mini b { font-weight: 600; }
 .mini small { color: var(--soft); font-size: 14px; }
+.newsh { margin: 64px 0 0; background: var(--ink); color: #fff; font-size: 26px; padding: 10px 16px 9px; }
+.news { list-style: none; margin: 0 0 14px; padding: 0; border: var(--line); border-top: 0; background: var(--card); }
+.news li { display: grid; grid-template-columns: 170px 1fr; gap: 14px; align-items: start; padding: 12px 16px; border-bottom: 1px solid var(--rule); }
+.news li:last-child { border-bottom: 0; }
+.news .k { font: 800 18px/1.25 var(--display); color: var(--red); text-transform: uppercase; font-variant-numeric: tabular-nums; }
+.news a { color: inherit; text-decoration: none; max-width: 70ch; }
+.news a:hover, .news a:focus-visible { text-decoration: underline; text-decoration-color: var(--red); text-underline-offset: 3px; }
+.rtype.fc { background: var(--ink); color: #fff; }
 .more { font-weight: 600; }
 .more::after { content: " \2192"; }
 
@@ -308,6 +316,7 @@ dialog h3 { font: 800 30px/1 var(--display); text-transform: uppercase; margin-b
   .card-route { padding: 10px 6px 8px; }
   .lbl { font-size: 12px; letter-spacing: .01em; }
   .split, .notes2 { grid-template-columns: 1fr; gap: 28px; }
+  .news li { grid-template-columns: 1fr; gap: 2px; }
   .split { margin-top: 52px; }
   .rel { grid-template-columns: 64px 1fr; gap: 10px 14px; }
   .rthumb { width: 64px; height: 64px; }
