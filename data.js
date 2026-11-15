@@ -107,8 +107,8 @@ window.KOCH = {
     "Various performers|Voices of the Talas Alatau": [["field","Aigul Choro kyzy"],["source","@archives"]],
     "Toktobolot Mamyt uulu|Eki Miñ Toi": [["vocals","Toktobolot Mamyt uulu"],["keyboards","Toktobolot Mamyt uulu"],["source","@busCassettes"],["compiled","Köch Audio"]],
     "Begai|Aynek": [["vocals","Begaiym Nurjigit kyzy"]],
-    "Kara Jel|Sem Nochei": [["vocals","Valery Lysenko"],["synths","Yelena Kogai"]],
-    "Umay-9|Buu": [["vocals","Gulzat Tilebaldy kyzy"],["machines","Ruslan Ten"],["recorded","@house9"]],
+    "Kara Jel|Sem Nochei": [["vocals","Valery Lysenko"],["synths","Vitaly Kogai"]],
+    "Umay-9|Buu": [["vocals","Gulzat Tilebaldy kyzy"],["machines","Ruslan Ten"],["tapes","Zarina Yusupova"],["recorded","@house9"]],
     "Tumoro-Tumoro|Pass Day": [["rap","Azat Kamchy, Ruslan Saparbek uulu, Pyotr Cha"]],
     "The Kapar Family|Chatkaldan": [["vocals","Orozbek Kapar uulu, his two daughters and his son"],["guitar","Mattay Orozbek uulu"]],
     "Promzona|Tsekh No. 4": [["vocals","Kirill Golubev"],["guitar","Leonid Popov"]]
