@@ -104,10 +104,10 @@
         '<p class="rart">' + esc(r.artist) + ' <span class="ryear">' + r.year + '</span><span class="rtype">' + esc(t.type[r.type]) + "</span></p>" + note +
         lyricsLinks(r) +
         '<p class="pl">℗ ' + r.p + " " + esc(r.label) + " under exclusive licence to Köch Audio</p></div>" +
-        '<div class="rlisten"><span class="lo">' + esc(t.listenOn) + '</span><ul class="stops">' + D.platforms.map(function (p) {
+        (r.links ? '<div class="rlisten"><span class="lo">' + esc(t.listenOn) + '</span><ul class="stops">' + D.platforms.map(function (p) {
           var u = r.links && r.links[p];
           return "<li>" + (u ? '<a class="pf" href="' + esc(u) + '" target="_blank" rel="noopener">' + esc(p) + "</a>" : '<span class="pf">' + esc(p) + "</span>") + "</li>";
-        }).join("") + "</ul></div></li>";
+        }).join("") + "</ul></div>" : "") + "</li>";
     }).join("");
     var groups = [];
     LY.forEach(function (l) {
@@ -264,10 +264,10 @@
       (tr.length ? "<div><dt>" + esc(t.relCount) + "</dt><dd>" + tr.length + "</dd></div>" : "") +
       (singles.length ? "<div><dt>" + esc(t.relSingles) + "</dt><dd>" + singles.map(function (x) { return "\u201c" + esc(x.title) + "\u201d (" + x.year + ")"; }).join(", ") + "</dd></div>" : "") +
       "</dl>" +
-      '<div class="rlisten"><span class="lo">' + esc(t.listenOn) + '</span><ul class="stops">' + D.platforms.map(function (p) {
+      (r.links ? '<div class="rlisten"><span class="lo">' + esc(t.listenOn) + '</span><ul class="stops">' + D.platforms.map(function (p) {
         var u = r.links && r.links[p];
         return "<li>" + (u ? '<a class="pf" href="' + esc(u) + '" target="_blank" rel="noopener">' + esc(p) + "</a>" : '<span class="pf">' + esc(p) + "</span>") + "</li>";
-      }).join("") + "</ul></div></div></article>" +
+      }).join("") + "</ul></div>" : "") + "</div></article>" +
       tracks +
       '<p class="pl relpl">\u2117 ' + r.p + " " + esc(r.label) + " under exclusive licence to K\u00f6ch Audio</p>" +
       (more.length ? '<section class="relmore"><h2>' + esc(fill(t.relMore, { a: r.artist })) + '</h2><ul class="morelist">' + more.map(function (x) {
