@@ -22,7 +22,7 @@ window.KOCH = {
     "Karakush|Ak Börü": [["Ak Börü","White Wolf","3:15"],["Kekilik","Partridge","3:42"],["Ilbirs","Snow Leopard","2:19"],["Uchuu (2021 version)","Flight","3:11"],["Kök Tülkü","Blue Fox","2:04"],["Ak Börü (instrumental)","","3:16"]],
     "4Muuz|Zhylky Love": [["Shyñgyr-Shyñgyr","","2:59"],["Muuzdu Kötör!","","3:43"],["Zhylky Love","","3:27"],["Trot!","","3:04"],["4Muuz","","2:22"],["Boorsok Girl","","2:37"],["Kaynene","","2:46"],["Ulak Party","","3:01"],["Okudu","","2:15"],["Shyñgyr-Shyñgyr (Toi Remix)","","3:27",1],["Muuzdu Kötör! (Rock Remix)","","3:41",1]],
     "4Muuz|Toi Paket": [["Chachyla","",""],["Tamada","",""],["Konvert","The Envelope",""],["Videooperator","",""],["Komuz Disco","",""],["Arkar","Argali",""],["Marshrutka","",""],["Toiuña Chakyrdyñ","You Invited Me to Your Wedding",""],["Aksakaldar Bii","The Elders Dance",""],["Mandarin","","",1]],
-    "Eski Ün|Kara Kün": [["Jashoo Tüshü","Dream of Living","5:46"],["Kara Kün","Black Day","6:30"],["Chaykhana","Teahouse","4:12"],["Jalgyz Jol","Lonely Road","5:05"],["Ezan, Koñguroo","Call and Bell","4:44"],["Keñsuu","","6:58"],["Kaityp Kelebiz","We Will Return","5:21"],["Dream of Living","English version","5:40",1]],
+    "Eski Ün|Kara Kün": [["Jashoo Tüshü","Dream of Living","5:46"],["Kara Kün","Black Day","6:30"],["Chaykhana","Teahouse","4:12"],["Jalgyz Jol","Lonely Road","5:05"],["Ezan, Koñguroo","Call and Bell","4:44"],["Keñsuu","","6:58"],["Kaityp Kelebiz","We Will Return","5:21"],["Toguzdun chömüchü","The Nine O'Clock Ladle",""],["Dream of Living","English version","5:40",1]],
     "Kök Bel|Talas Sunrise": [["Talas Sunrise","","3:42"],["Talas Üchün Chap","","3:55"],["Kök-Bel Ashuusu","","4:26"],["Jesir Aty","","5:12"],["Peydey","","2:51"],["Bir, Eki, Üch","","3:37"],["Ak Boz At","","4:04"],["Talaadagy Jyldyz","","3:29"],["Suu Kezegi","","4:48"]]
   },
   /* singles that are also on an album: the catalogue lists only the album, and the album page marks the track
@@ -30,7 +30,7 @@ window.KOCH = {
   onAlbum: {
     "Altynai Torobek kyzy|Ekööbüz": "Ekööbüz",
     "Karakush|Jeyren": "Uya", "Karakush|Ekranda": "Uya", "Karakush|Uchuu": "Ak Börü",
-    "Eski Ün|Dream of Living": "Kara Kün",
+    "Eski Ün|Dream of Living": "Kara Kün", "Eski Ün|Toguzdun chömüchü": "Kara Kün",
     "4Muuz|Shyñgyr-Shyñgyr": "Zhylky Love", "4Muuz|Muuzdu Kötör!": "Zhylky Love",
     "4Muuz|Arkar": "Toi Paket", "4Muuz|Marshrutka": "Toi Paket", "4Muuz|Mandarin": "Toi Paket", "4Muuz|Komuz Disco": "Toi Paket"
   },
@@ -67,6 +67,7 @@ window.KOCH = {
     { artist: "Karakush", title: "Betkap", year: 2022, type: "single", label: "Kök Ay Media", p: 2022, noteKey: "nOutsideKorea" },
     { artist: "Eski Ün", title: "Kara Kün", year: 2021, date: "2021-04-30", type: "album", label: "Tündük Records", p: 2021, noteKey: "nKaraKun" },
     { artist: "Eski Ün", title: "Dream of Living", year: 2021, type: "single", label: "Tündük Records", p: 2021 },
+    { artist: "Eski Ün", title: "Toguzdun chömüchü", year: 2021, date: "2021-03-17", type: "single", label: "Tündük Records", p: 2021 },
     { artist: "Karakush", title: "Ak Börü", year: 2021, date: "2021-02-19", type: "ep", label: "Kök Ay Media", p: 2021, noteKey: "nOutsideKorea" },
     { artist: "Cathedral Choir of St. Janyl, Iyık Janyl", title: "'Onitha", year: 2020, type: "album", label: "Church of St. Janyl", p: 2020, noteKey: "nOnitha" },
     { artist: "Kök Bel", title: "Talas Sunrise", year: 1995, type: "album", label: "Ak Jol Records", p: 1995, noteKey: "nSunrise" },
