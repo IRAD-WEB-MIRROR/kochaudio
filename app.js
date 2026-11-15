@@ -259,6 +259,11 @@
       (bonus.length ? '<h3>' + esc(t.relBonus) + '</h3><ol class="tlist">' + rows(bonus, main.length) + "</ol>" : "") + "</section>"
       : '<section class="tracks"><h2>' + esc(t.relTracks) + '</h2><p class="tnone">' + esc(t.relNoTracks) + "</p>" +
         (songs.length ? lyricsLinks(r) : "") + "</section>";
+    var cr = (D.credits || {})[rkey(r)] || [], ct = t.credits;
+    var credits = cr.length ? '<section class="credits"><h2>' + esc(ct.head) + '</h2><dl class="creditlist">' + cr.map(function (c) {
+      var v = c[1].charAt(0) === "@" ? ct.txt[c[1].slice(1)] : c[1];
+      return "<div><dt>" + esc(ct.roles[c[0]]) + "</dt><dd>" + esc(v) + "</dd></div>";
+    }).join("") + "</dl></section>" : "";
     var singles = D.releases.filter(function (x) { return onAlbum(x) && D.onAlbum[rkey(x)] === r.title && x.artist === r.artist; });
     var more = shown.filter(function (x) { return x.artist === r.artist && x !== r; })
       .sort(function (a, b) { return (b.date || b.year + "-00") > (a.date || a.year + "-00") ? 1 : -1; });
@@ -278,7 +283,7 @@
         var u = r.links && r.links[p];
         return "<li>" + (u ? '<a class="pf" href="' + esc(u) + '" target="_blank" rel="noopener">' + esc(p) + "</a>" : '<span class="pf">' + esc(p) + "</span>") + "</li>";
       }).join("") + "</ul></div>" : "") + "</div></article>" +
-      tracks +
+      tracks + credits +
       (r.due ? "" : '<p class="pl relpl">\u2117 ' + r.p + " " + esc(r.label) + " under exclusive licence to K\u00f6ch Audio</p>") +
       (more.length ? '<section class="relmore"><h2>' + esc(fill(t.relMore, { a: r.artist })) + '</h2><ul class="morelist">' + more.map(function (x) {
         var h = relHref(x);

@@ -83,6 +83,37 @@ window.KOCH = {
     { date: "2025", key: "nwTulparPay", href: "#/about" }
   ],
 
+  /* Credits on album pages: "artist|release" -> [[role, value], ...]. Roles are keys of credits.roles in i18n.js; a value starting with "@" is a key of credits.txt. Only what is on record; releases without an entry show no block. */
+  credits: {
+    "tüntolk|Jolchu": [["voice","Mira Temirova"],["synths","Askar Daniyarov, Mira Temirova"],["producer","Askar Daniyarov"],["recorded","@boiler14"],["finished","@dalaYerlan"]],
+    "tüntolk|Zvezda Irad": [["voice","Mira Temirova"],["synths","Askar Daniyarov, Mira Temirova"],["producer","Askar Daniyarov"],["recorded","@boiler14"],["finished","@dalaYerlan"]],
+    "tüntolk|Kara Suu": [["voice","Mira Temirova"],["synths","Askar Daniyarov, Mira Temirova"],["producer","Askar Daniyarov, Yerlan Abenov"],["recorded","@dalaBoiler"]],
+    "tüntolk|White Stallion in Fog": [["voice","Mira Temirova"],["synths","Askar Daniyarov, Mira Temirova"],["producer","Askar Daniyarov"],["recorded","@talasfilm"]],
+    "tüntolk|Umay": [["voice","Mira Temirova"],["synths","Askar Daniyarov, Mira Temirova"],["with","Eski Ün"],["producer","Askar Daniyarov"],["recorded","@talasfilm"]],
+    "Karakush|Ak Börü": [["vocals","Aruuke Temir kyzy, Meerim Sultan kyzy, Kamila Nurlan"],["rap","Saltanat Abdrakhmanova, Kamila Nurlan"],["producer","Erlan “Kök” Sydykov"],["coproducer","@danaTracks"],["recorded","@kokAy"]],
+    "Karakush|Uya": [["vocals","Aruuke Temir kyzy, Meerim Sultan kyzy, Kamila Nurlan"],["rap","Saltanat Abdrakhmanova, Kamila Nurlan"],["producer","Erlan “Kök” Sydykov"],["coproducer","Dana Pak"]],
+    "4Muuz|Zhylky Love": [["vocals","Nurbek Asanov, Ermek Toktosun uulu, Aibek Ismailov, Timur Bakyt uulu"],["guitar","Rysbek Abdrai uulu"],["producer","Marat Joldoshev"],["recorded","@jyldyz"]],
+    "4Muuz|Toi Paket": [["vocals","Nurbek Asanov, Ermek Toktosun uulu, Aibek Ismailov, Timur Bakyt uulu"],["with","@bekbolot"],["producer","Marat Joldoshev"]],
+    "Eski Ün|Kara Kün": [["vocals","Gulmira Asanova"],["komuz","Aibek Choro"],["choor","Nurlan Abdykadyrov"],["frame","Saltanat Ismailova"],["producer","Ruslan Ten"],["recorded","@teahouse"]],
+    "Kök Bel|Talas Sunrise": [["vocals","Bakyt Sooronbaev, Dale Mercer"],["guitar","Bakyt Sooronbaev"],["banjo","Talant Asan"],["fiddle","Dale Mercer"],["komuz","Erkin Mamyrov"],["kylkyak","Erkin Mamyrov"],["producer","Joldoshbek Kasymbekov"],["recorded","@radio3"],["transfer","@masterTape"]],
+    "Kök Bel|Darbaza": [["vocals","Bakyt Sooronbaev"],["guitar","Bakyt Sooronbaev"],["banjo","Talant Asan"],["komuz","Erkin Mamyrov"],["kylkyak","Erkin Mamyrov"]],
+    "Kök Bel|Eki Kysh": [["vocals","Bakyt Sooronbaev"],["guitar","Bakyt Sooronbaev"],["banjo","Talant Asan"],["komuz","Erkin Mamyrov"],["kylkyak","Erkin Mamyrov"]],
+    "Gulzada Joldosh kyzy|Ak Tilek": [["vocals","Gulzada Joldosh kyzy"],["guitar","Rysbek Abdrai uulu"],["compiled","Köch Audio"],["source","@galaSingles"]],
+    "Marta Adilet kyzy|Koshoktor": [["vocals","Marta Adilet kyzy"],["recorded","@bishkek2021"]],
+    "Taka|Mercer's": [["vocals","Syrgak Esen uulu"]],
+    "Ürkör|Aylanma": [["performer","Asylbek Saparbek uulu"],["machines","@drumMachine"]],
+    "Sonny Mambet|Sonny: Twenty Years": [["vocals","Sanjar Mambet uulu (Sonny Mambet)"],["bandleader","Rysbek Abdrai uulu"],["compiled","Köch Audio"]],
+    "Ivan Kho|Kho": [["vocals","Ivan Kho"],["with","@viaKerbez"],["source","@radioTapes"],["compiled","Köch Audio"]],
+    "Various performers|Voices of the Talas Alatau": [["field","Aigul Choro kyzy"],["source","@archives"]],
+    "Toktobolot Mamyt uulu|Eki Miñ Toi": [["vocals","Toktobolot Mamyt uulu"],["keyboards","Toktobolot Mamyt uulu"],["source","@busCassettes"],["compiled","Köch Audio"]],
+    "Begai|Aynek": [["vocals","Begaiym Nurjigit kyzy"]],
+    "Kara Jel|Sem Nochei": [["vocals","Valery Lysenko"],["synths","Yelena Kogai"]],
+    "Umay-9|Buu": [["vocals","Gulzat Tilebaldy kyzy"],["machines","Ruslan Ten"],["recorded","@house9"]],
+    "Tumoro-Tumoro|Pass Day": [["rap","Azat Kamchy, Ruslan Saparbek uulu, Pyotr Cha"]],
+    "The Kapar Family|Chatkaldan": [["vocals","Orozbek Kapar uulu, his two daughters and his son"],["guitar","Mattay Orozbek uulu"]],
+    "Promzona|Tsekh No. 4": [["vocals","Kirill Golubev"],["guitar","Leonid Popov"]]
+  },
+
   releases: [
     { artist: "Karakush", title: "Biyikte", year: 2027, due: "2027-spring", announce: "2027-02-01", type: "album", label: "Kök Ay Media", p: 2027, noteKey: "nBiyikte" },
     { artist: "Altynai Torobek kyzy", title: "Jymjyrt", year: 2026, date: "2026-09-18", type: "album", label: "Star Road Music", p: 2026, noteKey: "nJymjyrt" },

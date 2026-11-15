@@ -409,3 +409,10 @@ dialog h3 { font: 800 30px/1 var(--display); text-transform: uppercase; margin-b
 .tlist .perr { grid-column: 2 / -1; color: var(--red); font-size: 14px; font-weight: 600; }
 .tlist .tp.bad .pvi { opacity: 1; border-color: transparent; width: 9px; height: 9px; border: 0; background: linear-gradient(45deg, transparent 42%, currentColor 42% 58%, transparent 58%), linear-gradient(-45deg, transparent 42%, currentColor 42% 58%, transparent 58%); }
 @media (prefers-reduced-motion: reduce) { .tp .pvi { transition: none; } }
+
+.credits { margin: 28px 0 0; }
+.creditlist { margin: 0; padding: 0; border-top: 1px solid var(--rule); }
+.creditlist > div { display: grid; grid-template-columns: minmax(120px, 190px) 1fr; gap: 4px 20px; padding: 9px 0; border-bottom: 1px solid var(--rule); }
+.creditlist dt { font: 700 14px/1.4 var(--display); text-transform: uppercase; letter-spacing: .1em; color: var(--soft); }
+.creditlist dd { margin: 0; font-weight: 500; }
+@media (max-width: 560px) { .creditlist > div { grid-template-columns: 1fr; gap: 2px; } }
