@@ -386,6 +386,25 @@ dialog h3 { font: 800 30px/1 var(--display); text-transform: uppercase; margin-b
   .tlist .te::before { content: none; }
 }
 
+/* ---------- artist pages (#/artist/<slug>) ---------- */
+a.alink { color: inherit; text-decoration: underline; text-decoration-color: var(--rule); text-decoration-thickness: 2px; text-underline-offset: 4px; }
+a.alink:hover, a.alink:focus-visible { color: var(--red-deep); text-decoration-color: var(--red); }
+.artpic img, .artpic .nocover { aspect-ratio: 4 / 3; object-fit: cover; }
+.artpage .relhead h1 { font-size: clamp(40px, 5.4vw, 72px); overflow-wrap: anywhere; }
+.abio { font-size: 17px; max-width: 62ch; margin: 0; }
+.artrels { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 12px; }
+.artrels a, .artrels > li > span { display: grid; grid-template-columns: 72px 1fr; gap: 14px; align-items: center; height: 100%; padding: 10px 14px 10px 10px; background: var(--card); border: 1px solid var(--rule); border-left: 4px solid var(--ink); color: var(--ink); text-decoration: none; }
+.artrels a { border-left-color: var(--red); transition: transform .15s ease-out, box-shadow .15s ease-out; }
+.artrels a:hover { transform: translateY(-2px); box-shadow: 0 8px 18px -12px rgba(18,19,20,.5); }
+.artrels .arth { display: block; width: 72px; height: 72px; background: var(--board); border: 1px solid var(--rule); overflow: hidden; }
+.artrels .arth img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.artrels .arth .rnoart { font-size: 14px; padding: 6px; }
+.artrels .arti { display: flex; flex-direction: column; gap: 4px; }
+.artrels b { font-weight: 600; }
+.artrels small { color: var(--soft); font-size: 13px; }
+.artdates .past { margin-bottom: 14px; }
+@media (prefers-reduced-motion: reduce) { .artrels a { transition: none; } }
+
 /* ---------- 20-second previews ---------- */
 .pvhint { color: var(--soft); font-size: 14px; margin: 0 0 10px; }
 .tlist li { position: relative; }

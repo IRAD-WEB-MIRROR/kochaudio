@@ -114,6 +114,32 @@ window.KOCH = {
     "Promzona|Tsekh No. 4": [["vocals","Kirill Golubev"],["guitar","Leonid Popov"]]
   },
 
+  /* artist pages (#/artist/<slug>): name as in releases and gigs; photo = artists/<slug>.jpg (cropped from a cover
+     that shows the act), otherwise the köch tile; also = other spellings used in gigs. Text in i18n.js `art`. */
+  artists: [
+    { name: "tüntolk", slug: "tuntolk" },
+    { name: "Karakush", slug: "karakush", photo: true },
+    { name: "4Muuz", slug: "4muuz", photo: true },
+    { name: "Altynai Torobek kyzy", slug: "altynai-torobek-kyzy", photo: true },
+    { name: "Gulzada Joldosh kyzy", slug: "gulzada-joldosh-kyzy", photo: true },
+    { name: "Eski Ün", slug: "eski-un" },
+    { name: "Kök Bel", slug: "kok-bel", photo: true },
+    { name: "Taka", slug: "taka" },
+    { name: "Ürkör", slug: "urkor" },
+    { name: "Lena Mirnaya", slug: "lena-mirnaya" },
+    { name: "Sonny Mambet", slug: "sonny-mambet", photo: true },
+    { name: "Ivan Kho", slug: "ivan-kho", photo: true },
+    { name: "Toktobolot Mamyt uulu", slug: "toktobolot-mamyt-uulu", photo: true },
+    { name: "Marta Adilet kyzy", slug: "marta-adilet-kyzy", photo: true },
+    { name: "Cathedral Choir of St. Janyl, Iyık Janyl", slug: "cathedral-choir-of-st-janyl", also: ["Cathedral Choir of St. Janyl"] },
+    { name: "Begai", slug: "begai", photo: true },
+    { name: "Kara Jel", slug: "kara-jel" },
+    { name: "Umay-9", slug: "umay-9" },
+    { name: "Tumoro-Tumoro", slug: "tumoro-tumoro", photo: true },
+    { name: "The Kapar Family", slug: "the-kapar-family", photo: true },
+    { name: "Promzona", slug: "promzona" }
+  ],
+
   releases: [
     { artist: "Karakush", title: "Biyikte", year: 2027, due: "2027-spring", announce: "2027-02-01", type: "album", label: "Kök Ay Media", p: 2027, noteKey: "nBiyikte" },
     { artist: "Altynai Torobek kyzy", title: "Jymjyrt", year: 2026, date: "2026-09-18", type: "album", label: "Star Road Music", p: 2026, noteKey: "nJymjyrt" },

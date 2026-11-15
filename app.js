@@ -57,6 +57,15 @@
     return a ? D.releases.filter(function (r) { return r.artist === artist && r.title === a && r.type !== "single"; })[0] : null;
   }
 
+  /* ---------- artist pages ---------- */
+  var ART = {}, ARTSLUG = {};
+  (D.artists || []).forEach(function (a) {
+    ARTSLUG[a.slug] = a; ART[a.name] = a;
+    (a.also || []).forEach(function (n) { ART[n] = a; });
+  });
+  var artHref = function (name) { var a = ART[name]; return a ? "#/artist/" + a.slug : ""; };
+  function artLink(name) { var h = artHref(name); return h ? '<a class="alink" href="' + h + '">' + esc(name) + "</a>" : esc(name); }
+
   /* ---------- home ---------- */
   function renderHome() {
     var t = T();
@@ -111,7 +120,7 @@
           return href ? '<a class="rthumb" href="' + href + '"' + (has ? "" : ' tabindex="-1" aria-hidden="true"') + ">" + im + "</a>" : '<span class="rthumb">' + im + "</span>";
         })() +
         '<div class="rmain"><h2>' + (href ? '<a class="rlink" href="' + href + '">' + ttl + "</a>" : ttl) + "</h2>" +
-        '<p class="rart">' + esc(r.artist) + ' <span class="ryear">' + r.year + '</span><span class="rtype">' + esc(t.type[r.type]) + "</span>" + (r.due ? '<span class="rtype fc">' + esc(t.fcTag) + "</span>" : "") + "</p>" + note +
+        '<p class="rart">' + artLink(r.artist) + ' <span class="ryear">' + r.year + '</span><span class="rtype">' + esc(t.type[r.type]) + "</span>" + (r.due ? '<span class="rtype fc">' + esc(t.fcTag) + "</span>" : "") + "</p>" + note +
         (r.due ? '<p class="pl">' + esc(t.relDue) + ": " + esc(dueText(r)) + " \u00b7 " + esc(r.label) + "</p>" : lyricsLinks(r) +
         '<p class="pl">℗ ' + r.p + " " + esc(r.label) + " under exclusive licence to Köch Audio</p>") + "</div>" +
         (r.links ? '<div class="rlisten"><span class="lo">' + esc(t.listenOn) + '</span><ul class="stops">' + D.platforms.map(function (p) {
@@ -211,7 +220,7 @@
     }).join("");
     $("#lyrics").innerHTML = back +
       "<h1>" + esc(l.title) + (l.alt ? ' <span class="alt">(' + esc(l.alt) + ")</span>" : "") + "</h1>" +
-      '<p class="rart">' + esc(l.artist) + ". " + (function () {
+      '<p class="rart">' + artLink(l.artist) + ". " + (function () {
         var rel = albumFor(l.artist, l.release) || D.releases.filter(function (r) { return r.artist === l.artist && r.title === l.release && r.type !== "single"; })[0];
         var h = rel && relHref(rel), rn = rel ? rel.title : l.release, rr = h ? '<a href="' + h + '"><i>' + esc(rn) + "</i></a>" : esc(rn);
         return rel && rel.title !== l.release ? fill(esc(t.lyFrom), { r: rr }) : l.track ? fill(esc(t.lyTrack), { n: l.track, r: rr }) : fill(esc(t.lyFrom), { r: rr });
@@ -272,7 +281,7 @@
       '<article class="relpage"><div class="relart">' + cover + "</div>" +
       '<div class="relhead"><p class="reltype">' + esc(t.type[r.type]) + (r.due ? " \u00b7 " + esc(t.fcTag) : " \u00b7 " + r.year) + "</p>" +
       "<h1>" + esc(r.title) + (r.alt ? ' <span class="alt">(' + esc(r.alt) + ")</span>" : "") + "</h1>" +
-      '<p class="relartist">' + esc(r.artist) + "</p>" +
+      '<p class="relartist">' + artLink(r.artist) + "</p>" +
       (r.noteKey ? '<p class="rnote">' + esc(t.notes[r.noteKey]) + "</p>" : "") +
       '<dl class="relfacts"><div><dt>' + esc(r.due ? t.relDue : t.relDate) + "</dt><dd>" + esc(dt) + "</dd></div>" +
       "<div><dt>" + esc(t.relLabel) + "</dt><dd>" + esc(r.label) + "</dd></div>" +
@@ -290,6 +299,39 @@
         return "<li>" + (h ? '<a href="' + h + '">' : "<span>") + "<b>" + esc(x.title) + "</b><small>" + esc(t.type[x.type]) + " \u00b7 " + (x.due ? esc(t.fcTag) : x.year) + "</small>" + (h ? "</a>" : "</span>") + "</li>";
       }).join("") + "</ul></section>" : "");
     document.title = r.title + " \u2013 " + r.artist + " | K\u00f6ch Audio";
+  }
+
+  function renderArtist(slug) {
+    var t = T(), a = ARTSLUG[slug], back = '<p class="lyback"><a href="#/catalogue">' + esc(t.lyBack) + "</a></p>";
+    if (!a) { $("#artist").innerHTML = back + "<p>" + esc(t.artNone) + "</p>"; return; }
+    var tx = (t.art || {})[slug] || ["", "", ""], names = [a.name].concat(a.also || []);
+    var pic = a.photo
+      ? '<img src="artists/' + slug + '.jpg" width="480" height="360" alt="' + esc(fill(t.artPhoto, { a: a.name })) + '">'
+      : '<div class="nocover" aria-hidden="true"><span class="plate">k\u00f6ch</span><b>' + esc(a.name) + "</b></div>";
+    var rels = shown.filter(function (r) { return r.artist === a.name; })
+      .sort(function (x, y) { var p = x.date || x.year + "-00", q = y.date || y.year + "-00"; return p < q ? 1 : p > q ? -1 : 0; });
+    var relList = rels.map(function (r) {
+      var h = relHref(r), sl = SLUG[rkey(r)], has = sl && D.covers && D.covers.indexOf(sl) >= 0;
+      var im = has ? '<img src="covers/' + sl + '.jpg" width="72" height="72" loading="lazy" alt="">' : '<span class="rnoart" aria-hidden="true">k\u00f6ch</span>';
+      var inner = '<span class="arth">' + im + '</span><span class="arti"><b>' + esc(r.title) + "</b><small>" + esc(t.type[r.type]) + " \u00b7 " + (r.due ? esc(t.fcTag) : r.year) + "</small></span>";
+      return "<li>" + (h ? '<a href="' + h + '">' + inner + "</a>" : "<span>" + inner + "</span>") + "</li>";
+    }).join("");
+    var dates = upcoming.filter(function (g) { return names.indexOf(g.artist) >= 0 || names.indexOf(g.guest) >= 0; });
+    var dateList = dates.map(function (g) {
+      var mine = names.indexOf(g.artist) >= 0;
+      var who = mine ? (g.guest ? ", " + fill(esc(t.withGuest), { g: artLink(g.guest) }) : "")
+        : ", " + artLink(g.artist) + " " + fill(esc(t.withGuest), { g: esc(g.guest) });
+      return '<li><span class="k">' + esc(fmtDate(g.date)) + "</span><span><b>" + esc(place(g)) + "</b>, " + venue(g) + who + "</span></li>";
+    }).join("");
+    $("#artist").innerHTML = back +
+      '<article class="relpage artpage"><div class="relart artpic">' + pic + "</div>" +
+      '<div class="relhead"><p class="reltype">' + esc(t.artKind) + "</p><h1>" + esc(a.name) + "</h1>" +
+      '<dl class="relfacts">' + (tx[0] ? "<div><dt>" + esc(t.artFrom) + "</dt><dd>" + esc(tx[0]) + "</dd></div>" : "") +
+      (tx[1] ? "<div><dt>" + esc(t.artYears) + "</dt><dd>" + esc(tx[1]) + "</dd></div>" : "") + "</dl>" +
+      (tx[2] ? '<p class="abio">' + esc(tx[2]) + "</p>" : "") + "</div></article>" +
+      (rels.length ? '<section class="relmore"><h2>' + esc(t.artReleases) + '</h2><ul class="artrels">' + relList + "</ul></section>" : "") +
+      (dates.length ? '<section class="relmore artdates"><h2>' + esc(t.artDates) + '</h2><ol class="past">' + dateList + '</ol><p><a class="more" href="#/live">' + esc(t.allDates) + "</a></p></section>" : "");
+    document.title = a.name + " | K\u00f6ch Audio";
   }
 
   /* ---------- live ---------- */
@@ -322,14 +364,14 @@
       return '<li class="gig ' + g.kind + '">' +
         '<div class="gdate"><span class="dd">' + p[2] + '</span><span class="mm">' + esc(t.months[+p[1] - 1]) + " " + p[0] + '</span><span class="wd">' + esc(t.days[d.getUTCDay()]) + "</span></div>" +
         '<div class="gmain"><p class="gk">' + esc(g.kind === "abroad" ? t.kindAbroad : t.kindHome) + "</p>" +
-        "<h2>" + esc(g.artist) + (g.guest ? ' <span class="guest">' + esc(fill(t.withGuest, { g: g.guest })) + "</span>" : "") + "</h2>" +
+        "<h2>" + artLink(g.artist) + (g.guest ? ' <span class="guest">' + fill(esc(t.withGuest), { g: artLink(g.guest) }) + "</span>" : "") + "</h2>" +
         '<p class="gplace"><b>' + esc(place(g)) + "</b><br>" + venue(g) + "</p>" +
         (meta.length ? '<p class="gmeta">' + esc(meta.join(", ")) + "</p>" : "") + note + permit + "</div>" +
         '<div class="gstat">' + statusHtml(g) + "</div></li>";
     }).join("");
     $$("#gigs .tix").forEach(function (b) { b.onclick = function () { openTickets(b.dataset.gig); }; });
     $("#past").innerHTML = past.map(function (g) {
-      return "<li><span class=\"k\">" + esc(fmtDate(g.date)) + "</span><span><b>" + esc(g.artist) + "</b>, " + esc(place(g)) + ", " + venue(g) + "</span></li>";
+      return "<li><span class=\"k\">" + esc(fmtDate(g.date)) + "</span><span><b>" + artLink(g.artist) + "</b>, " + esc(place(g)) + ", " + venue(g) + "</span></li>";
     }).join("");
   }
   function openTickets(id) {
@@ -368,19 +410,20 @@
   }
   function renderAll() { pvStop(); applyStatic(); renderHome(); renderCatalogue(); renderLive(); renderArtists(); renderAbout();
     var ly = (location.hash || "").match(/^#\/?lyrics\/([\w-]+)/); if (ly) renderLyrics(ly[1]);
-    var rl = (location.hash || "").match(/^#\/?release\/([\w-]+)/); if (rl) renderRelease(rl[1]); }
+    var rl = (location.hash || "").match(/^#\/?release\/([\w-]+)/); if (rl) renderRelease(rl[1]);
+    var ar = (location.hash || "").match(/^#\/?artist\/([\w-]+)/); if (ar) renderArtist(ar[1]); }
 
   var TITLE = document.title;
   var PAGES = ["home", "catalogue", "live", "artists", "about"];
   function route() {
     pvStop();
     var h = (location.hash || "").replace(/^#\/?/, "").split("?")[0];
-    var ly = h.match(/^lyrics\/([\w-]+)$/), rl = h.match(/^release\/([\w-]+)$/);
+    var ly = h.match(/^lyrics\/([\w-]+)$/), rl = h.match(/^release\/([\w-]+)$/), ar = h.match(/^artist\/([\w-]+)$/);
     if (ly) renderLyrics(ly[1]);
-    if (rl) renderRelease(rl[1]); else document.title = TITLE;
-    var page = ly ? "lyrics" : rl ? "release" : PAGES.indexOf(h) >= 0 ? h : "home";
-    PAGES.concat("lyrics", "release").forEach(function (p) { $("#p-" + p).hidden = p !== page; });
-    if (ly || rl) page = "catalogue";
+    if (rl) renderRelease(rl[1]); else if (ar) renderArtist(ar[1]); else document.title = TITLE;
+    var page = ly ? "lyrics" : rl ? "release" : ar ? "artist" : PAGES.indexOf(h) >= 0 ? h : "home";
+    PAGES.concat("lyrics", "release", "artist").forEach(function (p) { $("#p-" + p).hidden = p !== page; });
+    if (ly || rl || ar) page = "catalogue";
     $$(".nav a").forEach(function (a) { if (a.dataset.page === page) a.setAttribute("aria-current", "page"); else a.removeAttribute("aria-current"); });
     window.scrollTo(0, 0);
   }
