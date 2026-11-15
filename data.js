@@ -64,7 +64,7 @@ window.KOCH = {
   /* 20-second listening previews: "artist|release" -> folder in previews/, one clip per track (01.mp3, 02.mp3, ...) */
   previews: { "tüntolk|Jolchu": "jolchu", "tüntolk|Zvezda Irad": "zvezda-irad", "tüntolk|Kara Suu": "kara-suu",
     "Karakush|Ak Börü": "ak-boru", "4Muuz|Zhylky Love": "zhylky-love" },
-  covers: ["jolchu","zvezda-irad","kara-suu","umay","ak-boru","zhylky-love","kara-kun","white-stallion-in-fog","talas-sunrise","ak-tilek","altynai","aylanma","darbaza","eki-kysh","ekoobuz","kho","koshoktor","mercer-s","onitha","sonny-twenty-years","voices-of-the-talas-alatau","toi-paket","uya","jaz-kelet","jymjyrt"],
+  covers: ["jolchu","zvezda-irad","kara-suu","umay","ak-boru","zhylky-love","kara-kun","white-stallion-in-fog","talas-sunrise","ak-tilek","altynai","aylanma","darbaza","eki-kysh","ekoobuz","kho","koshoktor","mercer-s","onitha","sonny-twenty-years","voices-of-the-talas-alatau","toi-paket","uya","jaz-kelet","jymjyrt","sem-nochei","buu","aynek","pass-day","chatkaldan","tsekh-no-4","eki-min-toi"],
 
   platforms: ["Spotify", "Apple Music", "YouTube Music", "Yandex Music"],
 
