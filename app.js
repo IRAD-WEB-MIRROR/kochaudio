@@ -206,13 +206,19 @@
         songs.filter(function (l) { return l.title === x[0] || l.title === base || l.alt === x[1]; })[0];
     }
     var main = tr.filter(function (x) { return !x[3]; }), bonus = tr.filter(function (x) { return x[3]; });
+    function singleOf(x) {
+      var sg = D.releases.filter(function (y) { return y.type === "single" && y.artist === r.artist && y.title === x[0] && D.onAlbum && D.onAlbum[rkey(y)] === r.title; })[0];
+      if (!sg) return "";
+      var p = sg.date ? sg.date.split("-") : null;
+      return ' <span class="ts">' + esc(t.type.single) + " \u00b7 " + esc(p ? (t.monthsNom || t.months)[+p[1] - 1] + " " + p[0] : String(sg.year)) + "</span>";
+    }
     function rows(list, from) {
       return list.map(function (x, j) {
         var i = from + j, l = lyricFor(x, i);
         var src = pvSrc(r, i + 1);
         return '<li>' + (src ? '<button type="button" class="tn tp" data-pv="' + src + '" aria-pressed="false" aria-label="' + esc(fill(t.pvPlay, { s: x[0] })) + '"><span class="n">' + (i + 1) + '</span><span class="pvi" aria-hidden="true"></span></button>'
           : '<span class="tn">' + (i + 1) + "</span>") + '<span class="tt"><b>' + esc(x[0]) + "</b>" +
-          (x[1] ? ' <span class="te">' + esc(x[1]) + "</span>" : "") + "</span>" +
+          (x[1] ? ' <span class="te">' + esc(x[1]) + "</span>" : "") + singleOf(x) + "</span>" +
           '<span class="tl">' + (l ? '<a href="#/lyrics/' + l.slug + '">' + esc(t.lyrics) + "</a>" : "") + "</span>" +
           '<span class="td">' + esc(x[2] || "") + "</span></li>";
       }).join("");

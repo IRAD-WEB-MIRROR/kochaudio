@@ -47,7 +47,8 @@ window.KOCH_I18N = {
       nSonny: "Songs from the Ak Jol cassettes and his own CDs, 1995 to 2006.",
       nKoshoktor: "Laments (koshok) and highland hymns from Chatkal, recorded in a Bishkek studio.",
       nEkoobuz: "The album that followed the single.",
-      nMercers: "Their first album, after seventeen years as a band. Named for the bar."
+      nMercers: "Their first album, after seventeen years as a band. Named for the bar.",
+      nToiPaket: "Their second album: songs for the wedding season, with the singles since 2022."
     },
     faqH: "Why isn't it here?",
     faq: [
@@ -179,7 +180,8 @@ window.KOCH_I18N = {
       nSonny: "Ak Jol kassetalarınan jana öz CD'lerinen ırlar, 1995–2006.",
       nKoshoktor: "Chatkaldın koshoktoru jana too ırları, Bishkektegi studiyada jazılgan.",
       nEkoobuz: "Singldin artınan chıkkan albom.",
-      nMercers: "On jeti jıl top bolgondon kiyin algachkı albomu. Barga atalgan."
+      nMercers: "On jeti jıl top bolgondon kiyin algachkı albomu. Barga atalgan.",
+      nToiPaket: "Ekinchi albomu: toi mezgilinin ırları jana 2022-jıldan berki singlder."
     },
     faqH: "Emne üchün bul jerde jok?",
     faq: [
@@ -311,7 +313,8 @@ window.KOCH_I18N = {
       nSonny: "Песни с кассет Ak Jol и его собственных CD, 1995–2006.",
       nKoshoktor: "Плачи (кошок) и горные гимны Чаткала, записаны в бишкекской студии.",
       nEkoobuz: "Альбом, вышедший вслед за синглом.",
-      nMercers: "Первый альбом после семнадцати лет на сцене. Назван в честь бара."
+      nMercers: "Первый альбом после семнадцати лет на сцене. Назван в честь бара.",
+      nToiPaket: "Второй альбом: песни к свадебному сезону и синглы с 2022 года."
     },
     faqH: "Почему этого здесь нет?",
     faq: [
@@ -395,6 +398,7 @@ window.KOCH_I18N = {
     footCopy: "© 2026 ОсОО «Köch Audio», Бишкек, Кыргызская Республика.",
     langLabel: "Язык",
 
+    monthsNom: ["январь", "февраль", "март", "апрель", "май", "июнь", "июль", "август", "сентябрь", "октябрь", "ноябрь", "декабрь"],
     months: ["января", "февраля", "марта", "апреля", "мая", "июня", "июля", "августа", "сентября", "октября", "ноября", "декабря"],
     days: ["вс", "пн", "вт", "ср", "чт", "пт", "сб"],
     dateFmt: "{wd}, {d} {m} {y}",

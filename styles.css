@@ -345,6 +345,7 @@ dialog h3 { font: 800 30px/1 var(--display); text-transform: uppercase; margin-b
 .tlist .tt b { font-weight: 600; }
 .tlist .te { color: var(--soft); font-size: 15px; }
 .tlist .te::before { content: "\2014\00a0"; }
+.tlist .ts { display: inline-block; margin-left: 8px; padding: 2px 7px; border: 1px solid var(--rule); font: 700 12px/1.2 var(--display); text-transform: uppercase; letter-spacing: .08em; color: var(--soft); white-space: nowrap; vertical-align: 1px; }
 .tlist .tl a { font: 700 14px/1 var(--display); text-transform: uppercase; letter-spacing: .08em; color: var(--red); }
 .tlist .td { text-align: right; color: var(--soft); font-variant-numeric: tabular-nums; }
 .tlist li:hover { background: linear-gradient(90deg, var(--red-wash), transparent 70%); }

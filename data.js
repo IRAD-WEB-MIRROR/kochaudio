@@ -21,16 +21,18 @@ window.KOCH = {
     "tüntolk|Umay": [["Umay Ene","Mother Umay","6:02"],["Beshik","Cradle","4:15"],["Kök Asman","Blue Sky","5:33"],["Burkut","Golden Eagle","4:48"],["Kızyl Jip","Red Thread","5:10"],["Ak Süt","White Milk","3:57"],["Jer Ene","Mother Earth","6:21"],["Tün Ötöt","The Night Passes","7:14"]],
     "Karakush|Ak Börü": [["Ak Börü","White Wolf","3:15"],["Kekilik","Partridge","3:42"],["Ilbirs","Snow Leopard","2:19"],["Uchuu (2021 version)","Flight","3:11"],["Kök Tülkü","Blue Fox","2:04"],["Ak Börü (instrumental)","","3:16"]],
     "4Muuz|Zhylky Love": [["Shyñgyr-Shyñgyr","","2:59"],["Muuzdu Kötör!","","3:43"],["Zhylky Love","","3:27"],["Trot!","","3:04"],["4Muuz","","2:22"],["Boorsok Girl","","2:37"],["Kaynene","","2:46"],["Ulak Party","","3:01"],["Okudu","","2:15"],["Shyñgyr-Shyñgyr (Toi Remix)","","3:27",1],["Muuzdu Kötör! (Rock Remix)","","3:41",1]],
-    "4Muuz|Toi Paket": [["Chachyla","",""],["Tamada","",""],["Videooperator","",""],["Aksakaldar Bii","",""]],
+    "4Muuz|Toi Paket": [["Chachyla","",""],["Tamada","",""],["Konvert","The Envelope",""],["Videooperator","",""],["Komuz Disco","",""],["Arkar","Argali",""],["Marshrutka","",""],["Toiuña Chakyrdyñ","You Invited Me to Your Wedding",""],["Aksakaldar Bii","The Elders Dance",""],["Mandarin","","",1]],
     "Eski Ün|Kara Kün": [["Jashoo Tüshü","Dream of Living","5:46"],["Kara Kün","Black Day","6:30"],["Chaykhana","Teahouse","4:12"],["Jalgyz Jol","Lonely Road","5:05"],["Ezan, Koñguroo","Call and Bell","4:44"],["Keñsuu","","6:58"],["Kaityp Kelebiz","We Will Return","5:21"],["Dream of Living","English version","5:40",1]],
     "Kök Bel|Talas Sunrise": [["Talas Sunrise","","3:42"],["Talas Üchün Chap","","3:55"],["Kök-Bel Ashuusu","","4:26"],["Jesir Aty","","5:12"],["Peydey","","2:51"],["Bir, Eki, Üch","","3:37"],["Ak Boz At","","4:04"],["Talaadagy Jyldyz","","3:29"],["Suu Kezegi","","4:48"]]
   },
-  /* singles that are also on an album: the catalogue lists only the album. "artist|single": "album" */
+  /* singles that are also on an album: the catalogue lists only the album, and the album page marks the track
+     with the single's own release date. "artist|single": "album" */
   onAlbum: {
     "Altynai Torobek kyzy|Ekööbüz": "Ekööbüz",
     "Karakush|Jeyren": "Uya", "Karakush|Ekranda": "Uya", "Karakush|Uchuu": "Ak Börü",
     "Eski Ün|Dream of Living": "Kara Kün",
-    "4Muuz|Shyñgyr-Shyñgyr": "Zhylky Love", "4Muuz|Muuzdu Kötör!": "Zhylky Love"
+    "4Muuz|Shyñgyr-Shyñgyr": "Zhylky Love", "4Muuz|Muuzdu Kötör!": "Zhylky Love",
+    "4Muuz|Arkar": "Toi Paket", "4Muuz|Marshrutka": "Toi Paket", "4Muuz|Mandarin": "Toi Paket", "4Muuz|Komuz Disco": "Toi Paket"
   },
   /* 20-second listening previews: "artist|release" -> folder in previews/, one clip per track (01.mp3, 02.mp3, ...) */
   previews: { "tüntolk|Jolchu": "jolchu", "tüntolk|Zvezda Irad": "zvezda-irad", "tüntolk|Kara Suu": "kara-suu",
@@ -55,7 +57,7 @@ window.KOCH = {
     { artist: "Sonny Mambet", title: "Sonny: Twenty Years", year: 2018, type: "compilation", label: "Sonny Mambet", p: 2018, noteKey: "nSonny" },
     { artist: "tüntolk", title: "Umay", year: 2022, date: "2022-10-07", type: "album", label: "Tündük Records", p: 2022, noteKey: "nUmay" },
     { artist: "Karakush", title: "Passenger Seat", year: 2023, type: "single", label: "Kök Ay Media", p: 2023, noteKey: "nOutsideKorea" },
-    { artist: "4Muuz", title: "Toi Paket", year: 2026, type: "ep", label: "Star Road Music", p: 2026 },
+    { artist: "4Muuz", title: "Toi Paket", year: 2026, type: "album", label: "Star Road Music", p: 2026, noteKey: "nToiPaket" },
     { artist: "4Muuz", title: "Komuz Disco", year: 2025, type: "single", label: "Star Road Music", p: 2025 },
     { artist: "4Muuz", title: "Mandarin", year: 2024, type: "single", label: "Star Road Music", p: 2024 },
     { artist: "4Muuz", title: "Marshrutka", year: 2023, type: "single", label: "Star Road Music", p: 2023 },
